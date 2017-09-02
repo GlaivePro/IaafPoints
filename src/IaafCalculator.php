@@ -5,7 +5,7 @@ namespace GlaivePro\IaafPoints;
 Class IaafCalculator
 {
 	private $options = [
-		'discipline' => null;
+		'discipline' => null,
 		'gender' => 'm',
 		'electronicMeasurement' => true,
 		'venueType' => 'outdoor',
@@ -25,7 +25,6 @@ Class IaafCalculator
 		$gender = $this->options['gender'];
 		$discipline = $this->options['discipline'];
 		
-		$constants = $this->constants;
 		if (!isset($this->constants[$edition][$venueType][$gender][$discipline]))
 			return;
 		
@@ -62,11 +61,11 @@ Class IaafCalculator
 	 *	+ discipline - string - after setting other options use getSupportedDisciplineKeys() method for array of available options
 	 */
 	public function setOptions(array $options)
-	{
+	{	
 		foreach ($options as $option => $value)
-			if (isset($this->options[$option]))
+			if (array_key_exists($option, $this->options))
 				$this->options[$option] = $value;
-		
+			
 		$this->loadConstants();
 	}
 	
@@ -113,14 +112,14 @@ Class IaafCalculator
 		if (null === $this->resultShift || null === $this->conversionFactor || null === $this->pointShift)
 			return null;
 		
-		if (!$this->electronicMeasurement)  //hand time corrections
+		if (!$this->options['electronicMeasurement'])  //hand time corrections
 		{
 			//For sprints & hurdles up to 200m
-			if (in_array($discipline, ['50m', '55m', '60m', '100m', '200m', '50mh', '55mh', '60mh', '100mh', '110mh']))
+			if (in_array($this->options['discipline'], ['50m', '55m', '60m', '100m', '200m', '50mh', '55mh', '60mh', '100mh', '110mh']))
 				$result += 0.24;
 				
-			//For sprints & hurdles up to 400m
-			if (in_array($discipline, ['300m', '400m', '500m', '400mh']))
+			//For sprints & hurdles up to 500m
+			if (in_array($this->options['discipline'], ['300m', '400m', '500m', '400mh']))
 				$result += 0.14;
 		}
 		

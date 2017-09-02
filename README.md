@@ -11,7 +11,7 @@ PHP library to calculate IAAF points.
     - [What is the edition?](#what-is-the-edition)
     - [How to pass disciplines?](#how-to-pass-disciplines)
 - [How are the points calculated?](#how-are-the-points-calculated)
-    - [Running events](#running-events)
+    - [Track events](#track-events)
     - [General formula](#general-formula)
 - [Changelog](#changelog)
 - [License](#license)
@@ -31,67 +31,67 @@ If, for some reason you can't or don't want to use composer, the code that does 
 Basic example:
 
 ```php
-	// Start by creating a calculator
+// Start by creating a calculator
 
-	$options = [
-		'venueType' => 'outdoor',
-		'gender' => 'm',
-		'discipline' => '100m',
-	];
+$options = [
+	'venueType' => 'outdoor',
+	'gender' => 'm',
+	'discipline' => '100m',
+];
+
+$calculator = new \GlaivePro\IaafPoints\IaafCalculator($options);
+
+// Use your calculator
+
+$results = [
+	[	'athlete' => 'john',
+		'time' => 12.77,],
+	[	'athlete' => 'peter',
+		'time' => 11.63,],
+];
+
+foreach ($results as $result)
+{
+	$time = $result['time'];
 	
-    $calculator = new \GlaivePro\IaafPoints\IaafCalculator($options);
+	// for track pass seconds, for field pass meters, for combined pass points
+	$points = $calculator->getPoints($time);
 	
-	// Use your calculator
-	
-	$results = [
-		[	'athlete' => 'john',
-			'time' => 12.77,],
-		[	'athlete' => 'peter',
-			'time' => 11.63,],
-	];
-	
-    foreach ($results as $result)
-	{
-		$time = $result['time'];
-		
-		// for track pass seconds, for field pass meters, for combined pass points
-		$points = $calculator->getPoints($time);
-		
-		$result['time'] => $points;
-	}
+	$result['time'] => $points;
+}
 ```
 
 You can set and retrieve options later:
 
 ```php
-	$gentlemenCalculator = new \GlaivePro\IaafPoints\IaafCalculator(['gender' => 'm']);
+$gentlemenCalculator = new \GlaivePro\IaafPoints\IaafCalculator(['gender' => 'm']);
+
+$options = $gentlemenCalculator->getOptions();
+
+/*
+	Here's an example of what you'll get:
 	
-	$options = $gentlemenCalculator->getOptions();
-	
-	/*
-		Here's an example of what you'll get:
-		
-		[	'edition' => '2017',              // edition of IAAF scoring tables
-			'venueType' => 'outdoor',         // indoor or outdoor
-			'gender' => 'm',                  // 'm' or 'f'
-			'electronicMeasurement' => true,  // set to false for hand times
-			'discipline' => '100m',           // discipline
-		];
-	*/
-	
-	// create another calculator without specifying options
-	$ladiesCalculator = new \GlaivePro\IaafPoints\IaafCalculator;
-	
-	// set options now
-	$ladiesCalculator->setOptions($options);
-	
-	// change gender to ladies
-	$ladiesCalculator->setOptions(['gender' => 'f']);
-	$points100m = $ladiesCalculator->getPoints(10.7);
-	
-	// reconfigure again
-	$ladiesCalculator->setOptions(['discipline' => '60m']);
-	$points60m = $ladiesCalculator->getPoints(10.7);  // You'll get different points now
+	[	'edition' => '2017',              // edition of IAAF scoring tables
+		'venueType' => 'outdoor',         // indoor or outdoor
+		'gender' => 'm',                  // 'm' or 'f'
+		'electronicMeasurement' => true,  // set to false for hand times
+		'discipline' => '100m',           // discipline
+	];
+*/
+
+// create another calculator without specifying options
+$ladiesCalculator = new \GlaivePro\IaafPoints\IaafCalculator;
+
+// set options now
+$ladiesCalculator->setOptions($options);
+
+// change gender to ladies
+$ladiesCalculator->setOptions(['gender' => 'f']);
+$points100m = $ladiesCalculator->getPoints(10.7);
+
+// reconfigure again
+$ladiesCalculator->setOptions(['discipline' => '60m']);
+$points60m = $ladiesCalculator->getPoints(10.7);  // You'll get different points now
 ```
 
 You should explicitly select options because the default values might change in the upcoming versions. Exception is the `electronicMeasurement`. It will be `true` by default. And it only matters for track events up to 500 m.
@@ -101,11 +101,11 @@ You should explicitly select options because the default values might change in 
 The IAAF Scoring tables are updated from time to time. If you want to know the supported editions, ask your calculator:
 
 ```php
-	$editions = $calculator->getSupportedEditionKeys();
-	
-	// the editions are ordered starting with the most recent
-	// choose the freshest like this
-	$calculator->setOptions([ 'edition' => $editions[0] ]);
+$editions = $calculator->getSupportedEditionKeys();
+
+// the editions are ordered starting with the most recent
+// choose the freshest like this
+$calculator->setOptions([ 'edition' => $editions[0] ]);
 ```
 
 ### How to pass disciplines?
@@ -113,11 +113,11 @@ The IAAF Scoring tables are updated from time to time. If you want to know the s
 You can request the array of supported disciplines for the current edition, venueType and gender like this:
 
 ```php
-	$disciplines = $calculator->getSupportedDisciplineKeys();
+$disciplines = $calculator->getSupportedDisciplineKeys();
 ```
 
 Generally the keys are strings constructed like this:
- - `60m`, `100m`, `5km`, `10km`, `1mile`, `2miles` etc. for running distances
+ - `60m`, `100m`, `5km`, `10km`, `1mile`, `2miles` etc. for running distances; also `marathon` and `half_marathon`
  - `4x100m`, `4x200m` etc. for relays
  - `60mh`, `110mh` etc. for hurdles
  - `2000mSt`, `3000mSt` for steeplechase
@@ -135,9 +135,9 @@ In track events the result is measured against a reference time. Your improvemen
 
 Let's consider 100m outdoor men as an example. The reference time for this event is 17 seconds in the 2017 edition. 
 
-Suppose John ran the distance in 11.78 seconds. That is 5.22 seconds better than the reference time. John's result is equivalent to 24.63 * 5.22^2 = 952 points. The 24.63 is a coefficient specific to this event.
+Suppose John ran the distance in 11.78 seconds. That is 5.22 seconds better than the reference time. John's result is equivalent to 24.63 * 5.22^2 = 952 points (we round the decimals down to the nearest integer). The 24.63 is a coefficient specific to this event.
 
-The formula for track events can be expressed like this: `points = conversionFactor * (reference - result)^2`.
+The formula for track events can be expressed like this: `points = floor(conversionFactor * (reference - result)^2)`.
 
 ### General formula
 
@@ -147,9 +147,9 @@ First, the result is shifted by a number (similar to comparing with reference in
 
 The shifted result is then squared and multiplied by a factor. And this is then shited by another number.
 
-The formula can be expressed like this: `points = conversionFactor * (result + resultShift)^2 + pointShift`.
+The formula can be expressed like this: `points = floor(conversionFactor * (result + resultShift)^2 + pointShift)`.
 
-This formula can also be used for track events by setting `resultShift = -reference` and `pointShift = 0`.
+This formula can (and is) also be used for track events by setting `resultShift = -reference` and `pointShift = 0`.
 
 ## Changelog
 

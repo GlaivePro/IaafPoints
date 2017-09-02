@@ -32,11 +32,10 @@ class IaafCalculatorTest extends TestCase
 		
         $this->calculator->setOptions(['venueType' => 'outdoor','edition' => '2017']);
 		$options =  $this->calculator->getOptions();
-		$this->assertEquals($options['gender'], 'f');
+		$this->assertEquals($options['venueType'], 'outdoor');
 		
 		$constructorTest = new \GlaivePro\IaafPoints\IaafCalculator(['gender' => 'f', 'edition' => '2055']);
 		$options = $constructorTest->getOptions();
-		
 		$this->assertEquals($options['edition'], '2055');
 	}
 	
@@ -55,8 +54,31 @@ class IaafCalculatorTest extends TestCase
 						$this->calculator->setOptions(['discipline' => $discipline]);
 						
 						$points = $this->calculator->getPoints(1);
+						
 						$this->assertNotNull($points);
 					}
 				}
     }
+	
+	public function testPointsAreCorrect()
+	{
+		$result = 21.61;
+		
+		$this->calculator->setOptions(['edition' => '2017', 'venueType' => 'outdoor', 'gender' => 'm', 'discipline' => '200m']);
+		$points = $this->calculator->getPoints($result);
+		$this->assertEquals(980, $points);
+		
+		$this->calculator->setOptions(['electronicMeasurement' => false]);
+		$points = $this->calculator->getPoints($result);
+		$this->assertEquals(946, $points);
+		
+		$this->calculator->setOptions(['gender' => 'f', 'electronicMeasurement' => true]);
+		$points = $this->calculator->getPoints($result);
+		$this->assertEquals(1279, $points);
+		
+		$this->calculator->setOptions(['venueType' => 'indoor', 'gender' => 'm']);
+		$points = $this->calculator->getPoints($result);
+		$this->assertEquals(1043, $points);
+		
+	}
 }
