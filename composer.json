@@ -1,0 +1,31 @@
+{
+    "name": "glaivepro/iaafpoints",
+    "description": "PHP library to calculate IAAF points.",
+    "keywords": [
+        "iaaf",
+        "track and field",
+		"athletics",
+		"scoring tables"
+    ],
+    "homepage": "https://github.com/GlaivePro/IaafPoints",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Juris Evertovskis",
+            "email": "juris@glaive.pro",
+            "homepage": "http://glaive.pro",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=4.0",
+    },
+    "autoload": {
+        "psr-4": {
+            "GlaivePro\\IaafPoints\\": "src"
+        }
+    }
+}
