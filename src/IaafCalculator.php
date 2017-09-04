@@ -235,6 +235,19 @@ Class IaafCalculator
 						'conversionFactor' => 0.546,
 						'pointShift' => 0,
 					],
+					'2000mSt' => [
+						'resultShift' => -660,
+						'conversionFactor' => 0.01023,
+						'pointShift' => 0,
+					],
+					'3000mSt' => [
+						'resultShift' => -1020,
+						'conversionFactor' => 0.004316,
+						'pointShift' => 0,
+					],
+					/**********/
+					/* RELAYS */
+					/**********/
 					'4x100m' => [
 						'resultShift' => -69.5
 						'conversionFactor' =>, 1.236,
@@ -248,16 +261,6 @@ Class IaafCalculator
 					'4x400m' => [
 						'resultShift' => -334,
 						'conversionFactor' => 0.05026,
-						'pointShift' => 0,
-					],
-					'2000mSt' => [
-						'resultShift' => -660,
-						'conversionFactor' => 0.01023,
-						'pointShift' => 0,
-					],
-					'3000mSt' => [
-						'resultShift' => -1020,
-						'conversionFactor' => 0.004316,
 						'pointShift' => 0,
 					],
 					/****************/
@@ -308,6 +311,44 @@ Class IaafCalculator
 						'conversionFactor' => 0.000001765,
 						'pointShift' => 0,
 					],
+					/****************/
+					/* RACE WALKING */
+					/****************/
+					'3kmW' => [
+						'resultShift' => -1650,
+						'conversionFactor' => 0.001209,
+						'pointShift' => 0,
+					],
+					'5kmW' => [
+						'resultShift' => -2760,
+						'conversionFactor' => 0.000436,
+						'pointShift' => 0,
+					],
+					'10kmW' => [
+						'resultShift' => -5580,
+						'conversionFactor' => 0.0001118,
+						'pointShift' => 0,
+					],
+					'20kmW' => [
+						'resultShift' => -11400,
+						'conversionFactor' => 0.00002735,
+						'pointShift' => 0,
+					],
+					'30kmW' => [
+						'resultShift' => -19110,
+						'conversionFactor' => 0.00000893,
+						'pointShift' => 0,
+					],
+					'35kmW' => [
+						'resultShift' => -23400,
+						'conversionFactor' => 0.00000576,
+						'pointShift' => 0,
+					],
+					'50kmW' => [
+						'resultShift' => -37200,
+						'conversionFactor' => 0.000002125,
+						'pointShift' => 0,
+					],
 					/*********/
 					/* FIELD */
 					/*********/
@@ -354,8 +395,16 @@ Class IaafCalculator
 					/************/
 					/* COMBINED */
 					/************/
+					'decathlon' => [
+						'resultShift' => 71170,
+						'conversionFactor' => 0.00000097749,
+						'pointShift' => -5000,
+					],
 				],
 				'f' => [
+					/*****************/
+					/* TRACK RUNNING */
+					/*****************/
 					'100m' => [
 						'resultShift' => -22,
 						'conversionFactor' => 9.92,
@@ -391,6 +440,9 @@ Class IaafCalculator
 						'conversionFactor' => 0.000808,
 						'pointShift' => 0,
 					],
+					/***********/
+					/* HURDLES */
+					/***********/
 					'100mh' => [
 						'resultShift' => -30,
 						'conversionFactor' => 3.98,
@@ -406,6 +458,27 @@ Class IaafCalculator
 						'conversionFactor' => 0.001323,
 						'pointShift' => 0,
 					],
+					/**********/
+					/* RELAYS */
+					/**********/
+					
+					//
+					
+					/****************/
+					/* ROAD RUNNING */
+					/****************/
+					
+					//
+					
+					/****************/
+					/* RACE WALKING */
+					/****************/
+					
+					//
+					
+					/*********/
+					/* FIELD */
+					/*********/
 					'high_jump' => [
 						'resultShift' => 10.574,
 						'conversionFactor' => 39.34,
@@ -446,10 +519,18 @@ Class IaafCalculator
 						'conversionFactor' => 0.004073,
 						'pointShift' => -20000,
 					],
+					/************/
+					/* COMBINED */
+					/************/
+					
+					//
 				],
 			],
 			'indoor' => [
 				'm' => [
+					/*****************/
+					/* TRACK RUNNING */
+					/*****************/
 					'50m' => [
 						'resultShift' => -9.2,
 						'conversionFactor' => 95.8,
@@ -530,6 +611,9 @@ Class IaafCalculator
 						'conversionFactor' => 0.0029,
 						'pointShift' => 0,
 					],
+					/***********/
+					/* HURDLES */
+					/***********/
 					'50mh' => [
 						'resultShift' => -12.35,
 						'conversionFactor' => 34.2,
@@ -545,6 +629,9 @@ Class IaafCalculator
 						'conversionFactor' => 23.9,
 						'pointShift' => 0,
 					],
+					/**********/
+					/* RELAYS */
+					/**********/
 					'4x200m' => [
 						'resultShift' => -144,
 						'conversionFactor' => 0.312,
@@ -555,6 +642,9 @@ Class IaafCalculator
 						'conversionFactor' => 0.0489,
 						'pointShift' => 0,
 					],
+					/*********/
+					/* FIELD */
+					/*********/
 					'high_jump' => [
 						'resultShift' => 11.534,
 						'conversionFactor' => 32.29,
@@ -580,13 +670,19 @@ Class IaafCalculator
 						'conversionFactor' => 0.042172,
 						'pointShift' => -20000,
 					],
-					'heptathlon' => [  // might be off
+					/************/
+					/* COMBINED */
+					/************/
+					'heptathlon' => [
 						'resultShift' => 53209,
 						'conversionFactor' => 0.00000175,
 						'pointShift' => -5000,
 					],
 				],
 				'f' => [
+					/*****************/
+					/* TRACK RUNNING */
+					/*****************/
 					'50m' => [
 						'resultShift' => -12.1,
 						'conversionFactor' => 33.03,
@@ -667,6 +763,9 @@ Class IaafCalculator
 						'conversionFactor' => 0.000825,
 						'pointShift' => 0,
 					],
+					/***********/
+					/* HURDLES */
+					/***********/
 					'50mh' => [
 						'resultShift' => -15.3,
 						'conversionFactor' => 16.2,
@@ -682,6 +781,9 @@ Class IaafCalculator
 						'conversionFactor' => 11.16,
 						'pointShift' => 0,
 					],
+					/**********/
+					/* RELAYS */
+					/**********/
 					'4x200m' => [
 						'resultShift' => -212,
 						'conversionFactor' => 0.0826,
@@ -692,6 +794,9 @@ Class IaafCalculator
 						'conversionFactor' => 0.0155,
 						'pointShift' => 0,
 					],
+					/*********/
+					/* FIELD */
+					/*********/
 					'high_jump' => [
 						'resultShift' => 10.574,
 						'conversionFactor' => 39.34,
@@ -717,7 +822,10 @@ Class IaafCalculator
 						'conversionFactor' => 0.0462,
 						'pointShift' => -20000,
 					],
-					'pentathlon' => [  // might be off
+					/************/
+					/* COMBINED */
+					/************/
+					'pentathlon' => [
 						'resultShift' => 41025,
 						'conversionFactor' => 0.00000294565,
 						'pointShift' => -5000,
