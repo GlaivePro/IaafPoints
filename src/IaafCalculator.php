@@ -149,6 +149,9 @@ Class IaafCalculator
 		'2017' => [
 			'outdoor' => [
 				'm' => [
+					/*****************/
+					/* TRACK RUNNING */
+					/*****************/
 					'100m' => [
 						'resultShift' => -17,
 						'conversionFactor' => 24.63,
@@ -159,9 +162,19 @@ Class IaafCalculator
 						'conversionFactor' => 5.08,
 						'pointShift' => 0,
 					],
+					'300m' => [
+						'resultShift' => -57.2,
+						'conversionFactor' => 1.83,
+						'pointShift' => 0,
+					],
 					'400m' => [
 						'resultShift' => -79,
 						'conversionFactor' => 1.021,
+						'pointShift' => 0,
+					],
+					'600m' => [
+						'resultShift' => -131,
+						'conversionFactor' => 0.367,
 						'pointShift' => 0,
 					],
 					'800m' => [
@@ -169,9 +182,24 @@ Class IaafCalculator
 						'conversionFactor' => 0.198,
 						'pointShift' => 0,
 					],
+					'1000m' => [
+						'resultShift' => -240,
+						'conversionFactor' => 0.1074,
+						'pointShift' => 0,
+					],
 					'1500m' => [
 						'resultShift' => -385,
 						'conversionFactor' => 0.04066,
+						'pointShift' => 0,
+					],
+					'1mile' => [
+						'resultShift' => -415,
+						'conversionFactor' => 0.0351,
+						'pointShift' => 0,
+					],
+					'2000m' => [
+						'resultShift' => -528,
+						'conversionFactor' => 0.02181,
 						'pointShift' => 0,
 					],
 					'3000m' => [
@@ -179,11 +207,24 @@ Class IaafCalculator
 						'conversionFactor' => 0.00815,
 						'pointShift' => 0,
 					],
+					'2miles' => [
+						'resultShift' => -904.8,
+						'conversionFactor' => 0.00703,
+						'pointShift' => 0,
+					],
 					'5000m' => [
 						'resultShift' => -1440,
 						'conversionFactor' => 0.002778,
 						'pointShift' => 0,
 					],
+					'10000m' => [
+						'resultShift' => -3150,
+						'conversionFactor' => 0.000524,
+						'pointShift' => 0,
+					],
+					/***********/
+					/* HURDLES */
+					/***********/
 					'110mh' => [
 						'resultShift' => -25.8,
 						'conversionFactor' => 7.66,
@@ -194,11 +235,82 @@ Class IaafCalculator
 						'conversionFactor' => 0.546,
 						'pointShift' => 0,
 					],
+					'4x100m' => [
+						'resultShift' => -69.5
+						'conversionFactor' =>, 1.236,
+						'pointShift' => 0,
+					],
+					'4x200m' => [
+						'resultShift' => -144,
+						'conversionFactor' => 0.2977,
+						'pointShift' => 0,
+					],
+					'4x400m' => [
+						'resultShift' => -334,
+						'conversionFactor' => 0.05026,
+						'pointShift' => 0,
+					],
+					'2000mSt' => [
+						'resultShift' => -660,
+						'conversionFactor' => 0.01023,
+						'pointShift' => 0,
+					],
 					'3000mSt' => [
 						'resultShift' => -1020,
 						'conversionFactor' => 0.004316,
 						'pointShift' => 0,
 					],
+					/****************/
+					/* ROAD RUNNING */
+					/****************/
+					'10km' => [
+						'resultShift' => -3150,
+						'conversionFactor' => 0.0005285,
+						'pointShift' => 0,
+					],
+					'15km' => [
+						'resultShift' => -4868,
+						'conversionFactor' => 0.0002162,
+						'pointShift' => 0,
+					],
+					'10miles' => [
+						'resultShift' => -5250,
+						'conversionFactor' => 0.0001852,
+						'pointShift' => 0,
+					],
+					'20km' => [
+						'resultShift' => -6629,
+						'conversionFactor' => 0.0001147,
+						'pointShift' => 0,
+					],
+					'half_marathon' => [
+						'resultShift' => -7020,
+						'conversionFactor' => 0.000102,
+						'pointShift' => 0,
+					],
+					'25km' => [
+						'resultShift' => -8536,
+						'conversionFactor' => 0.00006765,
+						'pointShift' => 0,
+					],
+					'30km' => [
+						'resultShift' => -10531,
+						'conversionFactor' => 0.00004352,
+						'pointShift' => 0,
+					],
+					'marathon' => [
+						'resultShift' => -15600,
+						'conversionFactor' => 0.0000191,
+						'pointShift' => 0,
+					],
+					'100km' => [
+						'resultShift' => -48600,
+						'conversionFactor' => 0.000001765,
+						'pointShift' => 0,
+					],
+					/*********/
+					/* FIELD */
+					/*********/
 					'high_jump' => [
 						'resultShift' => 11.534,
 						'conversionFactor' => 32.29,
@@ -239,6 +351,9 @@ Class IaafCalculator
 						'conversionFactor' => 0.0023974,
 						'pointShift' => -20000,
 					],
+					/************/
+					/* COMBINED */
+					/************/
 				],
 				'f' => [
 					'100m' => [
@@ -336,143 +451,277 @@ Class IaafCalculator
 			'indoor' => [
 				'm' => [
 					'50m' => [
-					'resultShift' => -9.2,
-					'conversionFactor' => 95.8,
-					'pointShift' => 0,
-				],
-				'55m' => [
-					'resultShift' => -10,
-					'conversionFactor' => 78.9,
-					'pointShift' => 0,
-				],
-				'60m' => [
-					'resultShift' => -10.7,
-					'conversionFactor' => 68.6,
-					'pointShift' => 0,
-				],
-				'200m' => [
-					'resultShift' => -36,
-					'conversionFactor' => 5.04,
-					'pointShift' => 0,
-				],
-				'300m' => [
-					'resultShift' => -58,
-					'conversionFactor' => 1.803,
-					'pointShift' => 0,
-				],
-				'400m' => [
-					'resultShift' => -80.6,
-					'conversionFactor' => 0.981,
-					'pointShift' => 0,
-				],
-				'500m' => [
-					'resultShift' => -106,
-					'conversionFactor' => 0.565,
-					'pointShift' => 0,
-				],
-				'600m' => [
-					'resultShift' => -131,
-					'conversionFactor' => 0.39,
-					'pointShift' => 0,
-				],
-				'800m' => [
-					'resultShift' => -184,
-					'conversionFactor' => 0.1975,
-					'pointShift' => 0,
-				],
-				'1000m' => [
-					'resultShift' => -240,
-					'conversionFactor' => 0.1139,
-					'pointShift' => 0,
-				],
-				'1500m' => [
-					'resultShift' => -386,
-					'conversionFactor' => 0.042,
-					'pointShift' => 0,
-				],
-				'1mile' => [
-					'resultShift' => -415,
-					'conversionFactor' => 0.0369,
-					'pointShift' => 0,
-				],
-				'2000m' => [
-					'resultShift' => -528,
-					'conversionFactor' => 0.0226,
-					'pointShift' => 0,
-				],
-				'3000m' => [
-					'resultShift' => -840,
-					'conversionFactor' => 0.008322,
-					'pointShift' => 0,
-				],
-				'2miles' => [
-					'resultShift' => -907,
-					'conversionFactor' => 0.007211,
-					'pointShift' => 0,
-				],
-				'5000m' => [
-					'resultShift' => -1440,
-					'conversionFactor' => 0.0029,
-					'pointShift' => 0,
-				],
-				'50mh' => [
-					'resultShift' => -12.35,
-					'conversionFactor' => 34.2,
-					'pointShift' => 0,
-				],
-				'55mh' => [
-					'resultShift' => -13.35,
-					'conversionFactor' => 30.07,
-					'pointShift' => 0,
-				],
-				'60mh' => [
-					'resultShift' => -14.6,
-					'conversionFactor' => 23.9,
-					'pointShift' => 0,
-				],
-				'4x200m' => [
-					'resultShift' => -144,
-					'conversionFactor' => 0.312,
-					'pointShift' => 0,
-				],
-				'4x400m' => [
-					'resultShift' => -340,
-					'conversionFactor' => 0.0489,
-					'pointShift' => 0,
-				],
-				'high_jump' => [
-					'resultShift' => 11.534,
-					'conversionFactor' => 32.29,
-					'pointShift' => -5000,
-				],
-				'pole_vault' => [
-					'resultShift' => 39.39,
-					'conversionFactor' => 3.042,
-					'pointShift' => -5000,
-				],
-				'long_jump' => [
-					'resultShift' => 48.41,
-					'conversionFactor' => 1.929,
-					'pointShift' => -5000,
-				],
-				'triple_jump' => [
-					'resultShift' => 98.63,
-					'conversionFactor' => 0.4611,
-					'pointShift' => -5000,
-				],
-				'shot_put' => [
-					'resultShift' => 687.7,
-					'conversionFactor' => 0.042172,
-					'pointShift' => -20000,
-				],
-				'heptathlon' => [
-					'resultShift' => 53209,
-					'conversionFactor' => 0.00000175,
-					'pointShift' => -5000,
-				],
+						'resultShift' => -9.2,
+						'conversionFactor' => 95.8,
+						'pointShift' => 0,
+					],
+					'55m' => [
+						'resultShift' => -10,
+						'conversionFactor' => 78.9,
+						'pointShift' => 0,
+					],
+					'60m' => [
+						'resultShift' => -10.7,
+						'conversionFactor' => 68.6,
+						'pointShift' => 0,
+					],
+					'200m' => [
+						'resultShift' => -36,
+						'conversionFactor' => 5.04,
+						'pointShift' => 0,
+					],
+					'300m' => [
+						'resultShift' => -58,
+						'conversionFactor' => 1.803,
+						'pointShift' => 0,
+					],
+					'400m' => [
+						'resultShift' => -80.6,
+						'conversionFactor' => 0.981,
+						'pointShift' => 0,
+					],
+					'500m' => [
+						'resultShift' => -106,
+						'conversionFactor' => 0.565,
+						'pointShift' => 0,
+					],
+					'600m' => [
+						'resultShift' => -131,
+						'conversionFactor' => 0.39,
+						'pointShift' => 0,
+					],
+					'800m' => [
+						'resultShift' => -184,
+						'conversionFactor' => 0.1975,
+						'pointShift' => 0,
+					],
+					'1000m' => [
+						'resultShift' => -240,
+						'conversionFactor' => 0.1139,
+						'pointShift' => 0,
+					],
+					'1500m' => [
+						'resultShift' => -386,
+						'conversionFactor' => 0.042,
+						'pointShift' => 0,
+					],
+					'1mile' => [
+						'resultShift' => -415,
+						'conversionFactor' => 0.0369,
+						'pointShift' => 0,
+					],
+					'2000m' => [
+						'resultShift' => -528,
+						'conversionFactor' => 0.0226,
+						'pointShift' => 0,
+					],
+					'3000m' => [
+						'resultShift' => -840,
+						'conversionFactor' => 0.008322,
+						'pointShift' => 0,
+					],
+					'2miles' => [
+						'resultShift' => -907,
+						'conversionFactor' => 0.007211,
+						'pointShift' => 0,
+					],
+					'5000m' => [
+						'resultShift' => -1440,
+						'conversionFactor' => 0.0029,
+						'pointShift' => 0,
+					],
+					'50mh' => [
+						'resultShift' => -12.35,
+						'conversionFactor' => 34.2,
+						'pointShift' => 0,
+					],
+					'55mh' => [
+						'resultShift' => -13.35,
+						'conversionFactor' => 30.07,
+						'pointShift' => 0,
+					],
+					'60mh' => [
+						'resultShift' => -14.6,
+						'conversionFactor' => 23.9,
+						'pointShift' => 0,
+					],
+					'4x200m' => [
+						'resultShift' => -144,
+						'conversionFactor' => 0.312,
+						'pointShift' => 0,
+					],
+					'4x400m' => [
+						'resultShift' => -340,
+						'conversionFactor' => 0.0489,
+						'pointShift' => 0,
+					],
+					'high_jump' => [
+						'resultShift' => 11.534,
+						'conversionFactor' => 32.29,
+						'pointShift' => -5000,
+					],
+					'pole_vault' => [
+						'resultShift' => 39.39,
+						'conversionFactor' => 3.042,
+						'pointShift' => -5000,
+					],
+					'long_jump' => [
+						'resultShift' => 48.41,
+						'conversionFactor' => 1.929,
+						'pointShift' => -5000,
+					],
+					'triple_jump' => [
+						'resultShift' => 98.63,
+						'conversionFactor' => 0.4611,
+						'pointShift' => -5000,
+					],
+					'shot_put' => [
+						'resultShift' => 687.7,
+						'conversionFactor' => 0.042172,
+						'pointShift' => -20000,
+					],
+					'heptathlon' => [  // might be off
+						'resultShift' => 53209,
+						'conversionFactor' => 0.00000175,
+						'pointShift' => -5000,
+					],
 				],
 				'f' => [
-					
+					'50m' => [
+						'resultShift' => -12.1,
+						'conversionFactor' => 33.03,
+						'pointShift' => 0,
+					],
+					'55m' => [
+						'resultShift' => -13.15,
+						'conversionFactor' => 27.68,
+						'pointShift' => 0,
+					],
+					'60m' => [
+						'resultShift' => -14,
+						'conversionFactor' => 24.9,
+						'pointShift' => 0,
+					],
+					'200m' => [
+						'resultShift' => -47.5,
+						'conversionFactor' => 1.962,
+						'pointShift' => 0,
+					],
+					'300m' => [
+						'resultShift' => -79,
+						'conversionFactor' => 0.6595,
+						'pointShift' => 0,
+					],
+					'400m' => [
+						'resultShift' => -112,
+						'conversionFactor' => 0.3225,
+						'pointShift' => 0,
+					],
+					'500m' => [
+						'resultShift' => -150.5,
+						'conversionFactor' => 0.1715,
+						'pointShift' => 0,
+					],
+					'600m' => [
+						'resultShift' => -190.35,
+						'conversionFactor' => 0.1063,
+						'pointShift' => 0,
+					],
+					'800m' => [
+						'resultShift' => -264,
+						'conversionFactor' => 0.0572,
+						'pointShift' => 0,
+					],
+					'1000m' => [
+						'resultShift' => -340.4,
+						'conversionFactor' => 0.03473,
+						'pointShift' => 0,
+					],
+					'1500m' => [
+						'resultShift' => -540,
+						'conversionFactor' => 0.01365,
+						'pointShift' => 0,
+					],
+					'1mile' => [
+						'resultShift' => -585.5,
+						'conversionFactor' => 0.01154,
+						'pointShift' => 0,
+					],
+					'2000m' => [
+						'resultShift' => -752.2,
+						'conversionFactor' => 0.00685,
+						'pointShift' => 0,
+					],
+					'3000m' => [
+						'resultShift' => -1200,
+						'conversionFactor' => 0.00259,
+						'pointShift' => 0,
+					],
+					'2miles' => [
+						'resultShift' => -1296.3,
+						'conversionFactor' => 0.002202,
+						'pointShift' => 0,
+					],
+					'5000m' => [
+						'resultShift' => -2100,
+						'conversionFactor' => 0.000825,
+						'pointShift' => 0,
+					],
+					'50mh' => [
+						'resultShift' => -15.3,
+						'conversionFactor' => 16.2,
+						'pointShift' => 0,
+					],
+					'55mh' => [
+						'resultShift' => -16.8,
+						'conversionFactor' => 13.19,
+						'pointShift' => 0,
+					],
+					'60mh' => [
+						'resultShift' => -18.19,
+						'conversionFactor' => 11.16,
+						'pointShift' => 0,
+					],
+					'4x200m' => [
+						'resultShift' => -212,
+						'conversionFactor' => 0.0826,
+						'pointShift' => 0,
+					],
+					'4x400m' => [
+						'resultShift' => -484,
+						'conversionFactor' => 0.0155,
+						'pointShift' => 0,
+					],
+					'high_jump' => [
+						'resultShift' => 10.574,
+						'conversionFactor' => 39.34,
+						'pointShift' => -5000,
+					],
+					'pole_vault' => [
+						'resultShift' => 34.83,
+						'conversionFactor' => 3.953,
+						'pointShift' => -5000,
+					],
+					'long_jump' => [
+						'resultShift' => 49.24,
+						'conversionFactor' => 1.966,
+						'pointShift' => -5000,
+					],
+					'triple_jump' => [
+						'resultShift' => 105.53,
+						'conversionFactor' => 0.4282,
+						'pointShift' => -5000,
+					],
+					'shot_put' => [
+						'resultShift' => 657.53,
+						'conversionFactor' => 0.0462,
+						'pointShift' => -20000,
+					],
+					'pentathlon' => [  // might be off
+						'resultShift' => 41025,
+						'conversionFactor' => 0.00000294565,
+						'pointShift' => -5000,
+					],
 				],
 			],
 		],

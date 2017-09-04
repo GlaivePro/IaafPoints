@@ -117,7 +117,8 @@ $disciplines = $calculator->getSupportedDisciplineKeys();
 ```
 
 Generally the keys are strings constructed like this:
- - `60m`, `100m`, `5km`, `10km`, `1mile`, `2miles` etc. for running distances; also `marathon` and `half_marathon`
+ - `60m`, `100m` up to `10000m`, `1mile`, `2miles` etc. for track running; 
+ - `10km`, `10miles`, `marathon` and `half_marathon` for road running
  - `4x100m`, `4x200m` etc. for relays
  - `60mh`, `110mh` etc. for hurdles
  - `2000mSt`, `3000mSt` for steeplechase
