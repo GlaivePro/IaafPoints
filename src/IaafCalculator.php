@@ -141,8 +141,8 @@ Class IaafCalculator
 	 * @param array $constants
 	 *   Array containing coefficients to calculate points.
 	 *   
-	 *   @type array $constants['edition']['venueType']['gender']['discipline']['resultShift']
-	 *   @type array $constants['edition']['venueType']['gender']['discipline']['conversionFactor']
+	 *   @type float $constants['edition']['venueType']['gender']['discipline']['resultShift']
+	 *   @type float $constants['edition']['venueType']['gender']['discipline']['conversionFactor']
 	 *   @type float $constants['edition']['venueType']['gender']['discipline']['pointShift']
 	 */
 	private $constants = [
@@ -249,8 +249,8 @@ Class IaafCalculator
 					/* RELAYS */
 					/**********/
 					'4x100m' => [
-						'resultShift' => -69.5
-						'conversionFactor' =>, 1.236,
+						'resultShift' => -69.5,
+						'conversionFactor' => 1.236,
 						'pointShift' => 0,
 					],
 					'4x200m' => [
@@ -415,9 +415,19 @@ Class IaafCalculator
 						'conversionFactor' => 2.242,
 						'pointShift' => 0,
 					],
+					'300m' => [
+						'resultShift' => -57.2,
+						'conversionFactor' => 1.83,
+						'pointShift' => 0,
+					],
 					'400m' => [
 						'resultShift' => -110,
 						'conversionFactor' => 0.335,
+						'pointShift' => 0,
+					],
+					'600m' => [
+						'resultShift' => -184,
+						'conversionFactor' => 0.1192,
 						'pointShift' => 0,
 					],
 					'800m' => [
@@ -425,9 +435,24 @@ Class IaafCalculator
 						'conversionFactor' => 0.0688,
 						'pointShift' => 0,
 					],
+					'1000m' => [
+						'resultShift' => -330,
+						'conversionFactor' => 0.0382,
+						'pointShift' => 0,
+					],
 					'1500m' => [
 						'resultShift' => -540,
 						'conversionFactor' => 0.0134,
+						'pointShift' => 0,
+					],
+					'1mile' => [
+						'resultShift' => -580,
+						'conversionFactor' => 0.01165,
+						'pointShift' => 0,
+					],
+					'2000m' => [
+						'resultShift' => -750,
+						'conversionFactor' => 0.00677,
 						'pointShift' => 0,
 					],
 					'3000m' => [
@@ -435,9 +460,19 @@ Class IaafCalculator
 						'conversionFactor' => 0.002539,
 						'pointShift' => 0,
 					],
+					'2miles' => [
+						'resultShift' => -1296.3,
+						'conversionFactor' => 0.002157,
+						'pointShift' => 0,
+					],
 					'5000m' => [
 						'resultShift' => -2100,
 						'conversionFactor' => 0.000808,
+						'pointShift' => 0,
+					],
+					'10000m' => [
+						'resultShift' => -4500,
+						'conversionFactor' => 0.0001712,
 						'pointShift' => 0,
 					],
 					/***********/
@@ -453,6 +488,11 @@ Class IaafCalculator
 						'conversionFactor' => 0.208567,
 						'pointShift' => 0,
 					],
+					'2000mSt' => [
+						'resultShift' => -880,
+						'conversionFactor' => 0.0045,
+						'pointShift' => 0,
+					],
 					'3000mSt' => [
 						'resultShift' => -1510,
 						'conversionFactor' => 0.001323,
@@ -461,21 +501,102 @@ Class IaafCalculator
 					/**********/
 					/* RELAYS */
 					/**********/
-					
-					//
-					
+					'4x100m' => [
+						'resultShift' => -77,
+						'conversionFactor' => 0.7,
+						'pointShift' => 0,
+					],
+					'4x200m' => [
+						'resultShift' => -98,
+						'conversionFactor' => 0.3895,
+						'pointShift' => 0,
+					],
+					'4x400m' => [
+						'resultShift' => -212,
+						'conversionFactor' => 0.0795,
+						'pointShift' => 0,
+					],
 					/****************/
 					/* ROAD RUNNING */
 					/****************/
-					
-					//
-					
+					'10km' => [
+						'resultShift' => -4500,
+						'conversionFactor' => 0.0001,
+						'pointShift' => 0,
+					],
+					'15km' => [
+						'resultShift' => -6905,
+						'conversionFactor' => 0.0000732,
+						'pointShift' => 0,
+					],
+					'10miles' => [
+						'resultShift' => -7438,
+						'conversionFactor' => 0.000063,
+						'pointShift' => 0,
+					],
+					'20km' => [
+						'resultShift' => -9357,
+						'conversionFactor' => 0.0000396,
+						'pointShift' => 0,
+					],
+					'half_marathon' => [
+						'resultShift' => -9900,
+						'conversionFactor' => 0.000353,
+						'pointShift' => 0,
+					],
+					'25km' => [
+						'resultShift' => -12144,
+						'conversionFactor' => 0.0000228,
+						'pointShift' => 0,
+					],
+					'30km' => [
+						'resultShift' => -15122,
+						'conversionFactor' => 0.000014264,
+						'pointShift' => 0,
+					],
+					'marathon' => [
+						'resultShift' => -22800,
+						'conversionFactor' => 0.00000595,
+						'pointShift' => 0,
+					],
+					'100km' => [
+						'resultShift' => -61200,
+						'conversionFactor' => 0.000000874,
+						'pointShift' => 0,
+					],
 					/****************/
 					/* RACE WALKING */
 					/****************/
-					
-					//
-					
+					'3kmW' => [
+						'resultShift' => -1871,
+						'conversionFactor' => 0.000881,
+						'pointShift' => 0,
+					],
+					'5kmW' => [
+						'resultShift' => -3140,
+						'conversionFactor' => 0.0003246,
+						'pointShift' => 0,
+					],
+					'10kmW' => [
+						'resultShift' => -6437,
+						'conversionFactor' => 0.0000779,
+						'pointShift' => 0,
+					],
+					'20kmW' => [
+						'resultShift' => -13200,
+						'conversionFactor' => 0.0000187,
+						'pointShift' => 0,
+					],
+					'30kmW' => [
+						'resultShift' => -21545,
+						'conversionFactor' => 0.0000069,
+						'pointShift' => 0,
+					],
+					'50kmW' => [
+						'resultShift' => -39552,
+						'conversionFactor' => 0.00000196,
+						'pointShift' => 0,
+					],
 					/*********/
 					/* FIELD */
 					/*********/
@@ -522,8 +643,11 @@ Class IaafCalculator
 					/************/
 					/* COMBINED */
 					/************/
-					
-					//
+					'heptathlon' => [
+						'resultShift' => 55990,
+						'conversionFactor' => 0.000001581,
+						'pointShift' => -5000,
+					],
 				],
 			],
 			'indoor' => [
