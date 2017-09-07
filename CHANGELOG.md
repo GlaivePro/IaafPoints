@@ -1,3 +1,6 @@
+### 0.5.0
+ - Added classifier.
+ 
 ### 0.4.0
  - Added calculator for combined events.
 

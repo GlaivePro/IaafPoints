@@ -160,6 +160,51 @@ See the previous chapter on details about disciplines.
 
 Currently only the 2001 edition of combined events scoring is implemented and no other editions are planned for now.
  
+## How do I use classifier?
+
+In general it's very similar to the main IAAF scores calculator but it returns classes (like grandmaster) instead of points.
+
+```php
+// Start by creating a classifier
+
+$options = [
+	'venueType' => 'outdoor',
+	'gender' => 'm',
+	'discipline' => '100m',
+];
+
+$classifier = new \GlaivePro\IaafPoints\Classifier($options);
+
+// Use your calculator
+
+$results = [
+	[	'athlete' => 'john',
+		'time' => 12.77,],
+	[	'athlete' => 'peter',
+		'time' => 11.63,],
+];
+
+foreach ($results as $result)
+{
+	$time = $result['time'];
+	
+	// for track pass seconds, for field pass meters, for combined pass points
+	$class = $classifier->getPoints($time);
+	
+	$result['class'] => $class;
+}
+```
+
+One important difference is that the classes in field disciplines are not differentiated by venue type therefore they have their own venue type that you have to set explicitly.
+
+```php
+$classifier->setOptions(['venueType' => 'field', 'discipline' => 'shot_put']);
+
+$class = $classifier->getClass(16.32);
+```
+
+The classification system is not a part of IAAF scores, it is nation specific (and only some nations have such at all). Therefore the editions are marked in `latvian2013` style.
+
 ## How are the IAAF points calculated?
 
 ### Track events

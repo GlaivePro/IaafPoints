@@ -19,6 +19,11 @@ Class CombinedCalculator
 		'electronicMeasurement' => true,
 		'edition' => '2001',
 	];
+	
+	private function loadData()
+	{
+		//
+	}
 
 	public function __construct($options = []) 
 	{
@@ -44,9 +49,10 @@ Class CombinedCalculator
 	/**
 	 * Calculate points for given result
 	 *
-	 * @param mixed $results
+	 * @param float $result
+	 * @param string $discipline
 	 *
-	 * @return array
+	 * @return int
 	 */
 	private function calculatePoints($result, $discipline)
 	{

@@ -30,7 +30,7 @@ class CombinedCalculatorTest extends TestCase
 		$options =  $this->calculator->getOptions();
 		$this->assertEquals($options['discipline'], '100m');
 		
-        $this->calculator->setOptions(['discipline' => '110mh','edition' => '2001']);
+        $this->calculator->setOptions(['discipline' => '110mh', 'edition' => '2001']);
 		$options =  $this->calculator->getOptions();
 		$this->assertEquals($options['discipline'], '110mh');
 		

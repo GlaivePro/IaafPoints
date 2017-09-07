@@ -31,7 +31,7 @@ class IaafCalculatorTest extends TestCase
 		$options =  $this->calculator->getOptions();
 		$this->assertEquals($options['venueType'], 'indoor');
 		
-        $this->calculator->setOptions(['venueType' => 'outdoor','edition' => '2017']);
+        $this->calculator->setOptions(['venueType' => 'outdoor', 'edition' => '2017']);
 		$options =  $this->calculator->getOptions();
 		$this->assertEquals($options['venueType'], 'outdoor');
 		

@@ -24,6 +24,8 @@ trait OptionsTrait
 		foreach ($options as $option => $value)
 			if (array_key_exists($option, $this->options))
 				$this->options[$option] = $value;
+			
+		$this->loadData();
 	}
 	
 	/**

@@ -26,7 +26,7 @@ Class IaafCalculator
 	private $conversionFactor = null;
 	private $pointShift = null;
 	
-	private function loadConstants()
+	private function loadData()
 	{
 		$this->resultShift = $this->conversionFactor = $this->pointShift = null;
 		
