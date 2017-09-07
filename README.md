@@ -1,16 +1,17 @@
 # IaafPoints
 
-PHP library to calculate IAAF points.
+PHP library to calculate IAAF scoring points of athletics and IAAF scoring points for combined events.
 
 ## Table of Contents
 
 - [How do I get this?](#how-do-i-get-this)
     - [Composer](#composer)
     - [Getting files manually](#getting-files-manually)
-- [How do I use it?](#how-do-i-use-it)
+- [How do I use IAAF points calculator?](#how-do-i-use-iaaf-points-calculator)
     - [What is the edition?](#what-is-the-edition)
     - [How to pass disciplines?](#how-to-pass-disciplines)
-- [How are the points calculated?](#how-are-the-points-calculated)
+- [How do I use combined events calculator?](#how-do-i-use-combined-events-calculator)
+- [How are the IAAF points calculated?](#how-are-the-points-calculated)
     - [Track events](#track-events)
     - [General formula](#general-formula)
 - [Changelog](#changelog)
@@ -26,7 +27,7 @@ Execute `composer require glaivepro/iaafpoints`.
 
 If, for some reason you can't or don't want to use composer, the code that does the actual job resides inside `src/` directory.
 
-## How do I use it?
+## How do I use IAAF points calculator?
 
 Basic example:
 
@@ -126,7 +127,40 @@ Generally the keys are strings constructed like this:
  - `pentathlon`, `heptathlon`, `decathlon`
  - `5kmW`, `20kmw` etc. for race walks
 
-## How are the points calculated?
+## How do I use combined events calculator?
+
+Basic example:
+
+```php
+// Start by creating a calculator
+
+$options = [
+	'gender' => 'm',
+	'discipline' => '200m',
+];
+
+$calculator = new \GlaivePro\IaafPoints\CombinedCalculator($options);
+
+// Pass result and receive points
+$points = $calculator->getPoints(21.61);  //get 922
+
+// Or pass array of results in different events to receive scores and total
+$results = [
+	'200m' => 21.61, 
+	'long_jump' => 7.35, 
+	'shot_put' => 16.55,
+];
+
+$points = $calculator->getPoints($results);
+
+// $points = ['200m' => 922, 'long_jump' => 898, 'shot_put' => 885, 'total' => 2705];
+```
+
+See the previous chapter on details about disciplines. 
+
+Currently only the 2001 edition of combined events scoring is implemented and no other editions are planned for now.
+ 
+## How are the IAAF points calculated?
 
 ### Track events
 

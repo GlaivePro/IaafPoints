@@ -1,6 +1,6 @@
 {
     "name": "glaivepro/iaafpoints",
-    "description": "PHP library to calculate IAAF points.",
+    "description": "PHP library to calculate IAAF scoring points of athletics and IAAF scoring points for combined events.",
     "keywords": [
         "iaaf",
         "track and field",
