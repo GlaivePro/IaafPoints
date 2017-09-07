@@ -11,6 +11,7 @@ PHP library to calculate IAAF scoring points of athletics and IAAF scoring point
     - [What is the edition?](#what-is-the-edition)
     - [How to pass disciplines?](#how-to-pass-disciplines)
 - [How do I use combined events calculator?](#how-do-i-use-combined-events-calculator)
+- [How do I use classifier?](#how-do-i-use-classifier)
 - [How are the IAAF points calculated?](#how-are-the-points-calculated)
     - [Track events](#track-events)
     - [General formula](#general-formula)
