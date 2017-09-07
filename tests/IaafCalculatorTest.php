@@ -8,6 +8,7 @@ class IaafCalculatorTest extends TestCase
 	{
 		$this->calculator = new \GlaivePro\IaafPoints\IaafCalculator;
 	}
+	
     public function testOptionsCanBeRetrieved()
     {
 		$options = $this->calculator->getOptions();

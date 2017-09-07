@@ -1,3 +1,6 @@
+### 0.4.0
+ - Added calculator for combined events.
+
 ### 0.3.0
  - The 2017 edition of IAAF scoring tables of athletics is fully included.
  - Some of the points for combined events might be wrong by one point, take care.

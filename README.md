@@ -1,4 +1,4 @@
-# CachePage
+# IaafPoints
 
 PHP library to calculate IAAF points.
 

@@ -4,6 +4,16 @@ namespace GlaivePro\IaafPoints;
 
 Class IaafCalculator
 {
+	use OptionsTrait;
+	 
+	/**
+	 * @param array $options Allowed keys: 
+	 *  + edition - string - use getSupportedEditionKeys() method for array of available options
+	 *  + gender - 'f' or 'm'
+	 *  + electronicMeasurement = true or false
+	 *  + venueType - 'indoor' or 'outdoor'
+	 *	+ discipline - string - after setting other options use getSupportedDisciplineKeys() method for array of available options
+	 */
 	private $options = [
 		'discipline' => null,
 		'gender' => 'm',
@@ -38,47 +48,6 @@ Class IaafCalculator
 	public function __construct($options = []) 
 	{
 		$this->setOptions($options);
-	}
-	
-	/**
-	 * Get current options
-	 *
-	 * @return array
-	 */
-	public function getOptions()
-	{
-		return $this->options;
-	}
-	
-	/**
-	 * Set options. You can also pass options to constructor.
-	 *
-	 * @param array $options Allowed keys: 
-	 *  + edition - string - use getSupportedEditionKeys() method for array of available options
-	 *  + gender - 'f' or 'm'
-	 *  + electronicMeasurement = true or false
-	 *  + venueType - 'indoor' or 'outdoor'
-	 *	+ discipline - string - after setting other options use getSupportedDisciplineKeys() method for array of available options
-	 */
-	public function setOptions(array $options)
-	{	
-		foreach ($options as $option => $value)
-			if (array_key_exists($option, $this->options))
-				$this->options[$option] = $value;
-			
-		$this->loadConstants();
-	}
-	
-	/**
-	 * Get supported IAAF Scoring table editions. Sorted starting with the most recent.
-	 *
-	 * @return array 
-	 */
-	public function getSupportedEditionKeys()
-	{
-		$editions = array_keys($this->constants);
-		natsort($editions);
-		return array_reverse($editions);
 	}
 	
 	/**

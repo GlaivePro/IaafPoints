@@ -1,4 +1,4 @@
-<phpunit bootstrap="src/IaafCalculator.php">
+<phpunit bootstrap="bootstrapForTesting.php">
 	<testsuites>
 		<testsuite name="iaafpoints">
 			<directory>tests</directory>
