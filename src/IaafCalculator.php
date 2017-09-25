@@ -385,8 +385,8 @@ Class IaafCalculator
 						'pointShift' => 0,
 					],
 					'300m' => [
-						'resultShift' => -57.2,
-						'conversionFactor' => 1.83,
+						'resultShift' => -77,
+						'conversionFactor' => 0.7,
 						'pointShift' => 0,
 					],
 					'400m' => [
