@@ -1,3 +1,7 @@
+### 0.6.0
+ - Added full latvian2013 classifier.
+ - Some error fixing.
+
 ### 0.5.0
  - Added classifier.
  
