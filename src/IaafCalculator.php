@@ -224,7 +224,7 @@ Class IaafCalculator
 					],
 					'4x200m' => [
 						'resultShift' => -144,
-						'conversionFactor' => 0.2977,
+						'conversionFactor' => 0.29767,
 						'pointShift' => 0,
 					],
 					'4x400m' => [
@@ -237,7 +237,7 @@ Class IaafCalculator
 					/****************/
 					'10km' => [
 						'resultShift' => -3150,
-						'conversionFactor' => 0.0005285,
+						'conversionFactor' => 0.00052841,
 						'pointShift' => 0,
 					],
 					'15km' => [
@@ -267,7 +267,7 @@ Class IaafCalculator
 					],
 					'30km' => [
 						'resultShift' => -10531,
-						'conversionFactor' => 0.00004352,
+						'conversionFactor' => 0.00004353,
 						'pointShift' => 0,
 					],
 					'marathon' => [
@@ -315,7 +315,7 @@ Class IaafCalculator
 					],
 					'50kmW' => [
 						'resultShift' => -37200,
-						'conversionFactor' => 0.000002125,
+						'conversionFactor' => 0.000002124,
 						'pointShift' => 0,
 					],
 					/*********/
@@ -421,7 +421,7 @@ Class IaafCalculator
 					],
 					'2000m' => [
 						'resultShift' => -750,
-						'conversionFactor' => 0.00677,
+						'conversionFactor' => 0.006766,
 						'pointShift' => 0,
 					],
 					'3000m' => [
@@ -471,18 +471,18 @@ Class IaafCalculator
 					/* RELAYS */
 					/**********/
 					'4x100m' => [
-						'resultShift' => -77,
-						'conversionFactor' => 0.7,
-						'pointShift' => 0,
-					],
-					'4x200m' => [
 						'resultShift' => -98,
 						'conversionFactor' => 0.3895,
 						'pointShift' => 0,
 					],
-					'4x400m' => [
+					'4x200m' => [
 						'resultShift' => -212,
 						'conversionFactor' => 0.0795,
+						'pointShift' => 0,
+					],
+					'4x400m' => [
+						'resultShift' => -480,
+						'conversionFactor' => 0.01562,
 						'pointShift' => 0,
 					],
 					/****************/
@@ -490,7 +490,7 @@ Class IaafCalculator
 					/****************/
 					'10km' => [
 						'resultShift' => -4500,
-						'conversionFactor' => 0.0001,
+						'conversionFactor' => 0.0001742,
 						'pointShift' => 0,
 					],
 					'15km' => [
@@ -519,8 +519,8 @@ Class IaafCalculator
 						'pointShift' => 0,
 					],
 					'30km' => [
-						'resultShift' => -15122,
-						'conversionFactor' => 0.000014264,
+						'resultShift' => -15123,
+						'conversionFactor' => 0.00001426,
 						'pointShift' => 0,
 					],
 					'marathon' => [
@@ -562,7 +562,7 @@ Class IaafCalculator
 						'pointShift' => 0,
 					],
 					'50kmW' => [
-						'resultShift' => -39552,
+						'resultShift' => -39952,
 						'conversionFactor' => 0.00000196,
 						'pointShift' => 0,
 					],
@@ -666,7 +666,7 @@ Class IaafCalculator
 					],
 					'800m' => [
 						'resultShift' => -184,
-						'conversionFactor' => 0.1975,
+						'conversionFactor' => 0.1974,
 						'pointShift' => 0,
 					],
 					'1000m' => [
@@ -696,7 +696,7 @@ Class IaafCalculator
 					],
 					'2miles' => [
 						'resultShift' => -907,
-						'conversionFactor' => 0.007211,
+						'conversionFactor' => 0.00721,
 						'pointShift' => 0,
 					],
 					'5000m' => [
@@ -767,8 +767,8 @@ Class IaafCalculator
 					/* COMBINED */
 					/************/
 					'heptathlon' => [
-						'resultShift' => 53209,
-						'conversionFactor' => 0.00000175,
+						'resultShift' => 53175,
+						'conversionFactor' => 0.000001752,
 						'pointShift' => -5000,
 					],
 				],
@@ -803,12 +803,12 @@ Class IaafCalculator
 					],
 					'400m' => [
 						'resultShift' => -112,
-						'conversionFactor' => 0.3225,
+						'conversionFactor' => 0.3224,
 						'pointShift' => 0,
 					],
 					'500m' => [
 						'resultShift' => -150.5,
-						'conversionFactor' => 0.1715,
+						'conversionFactor' => 0.1714,
 						'pointShift' => 0,
 					],
 					'600m' => [
@@ -870,7 +870,7 @@ Class IaafCalculator
 						'pointShift' => 0,
 					],
 					'60mh' => [
-						'resultShift' => -18.19,
+						'resultShift' => -18.2,
 						'conversionFactor' => 11.16,
 						'pointShift' => 0,
 					],
@@ -919,8 +919,8 @@ Class IaafCalculator
 					/* COMBINED */
 					/************/
 					'pentathlon' => [
-						'resultShift' => 41025,
-						'conversionFactor' => 0.00000294565,
+						'resultShift' => 41033,
+						'conversionFactor' => 0.0000029445,
 						'pointShift' => -5000,
 					],
 				],
