@@ -1,3 +1,9 @@
+### 0.6.2
+ - Error fixed for women half marathon.
+
+### 0.6.1
+ - Some error fixing.
+
 ### 0.6.0
  - Added full latvian2013 classifier.
  - Some error fixing.
