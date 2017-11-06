@@ -510,7 +510,7 @@ Class IaafCalculator
 					],
 					'half_marathon' => [
 						'resultShift' => -9900,
-						'conversionFactor' => 0.000353,
+						'conversionFactor' => 0.0000353,
 						'pointShift' => 0,
 					],
 					'25km' => [
