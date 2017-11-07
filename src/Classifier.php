@@ -151,7 +151,7 @@ Class Classifier
 						'II j.' => 10.50,
 						'III j.' => 10.00,
 					],
-					'discus_throw_2.00kg' => [
+					'discus_throw_2' => [		//weight of tool in kg
 						'LM' => 61.00,
 						'SM' => 54.50,
 						'SMK' => 49.00,
@@ -159,14 +159,14 @@ Class Classifier
 						'II' => 37.00,
 						'III' => 30.00,
 					],
-					'discus_throw_1.75kg' => [
+					'discus_throw_1.75' => [	//weight of tool in kg
 						'SMK' => 53.00,
 						'I' => 45.50,
 						'II' => 37.50,
 						'III' => 32.00,
 						'I j.' => 28.00,
 					],
-					'discus_throw_1.50kg' => [
+					'discus_throw_1.5' => [		//weight of tool in kg
 						'SMK' => 58.00,
 						'I' => 52.00,
 						'II' => 43.00,
@@ -174,7 +174,7 @@ Class Classifier
 						'I j.' => 30.00,
 						'II j.' => 25.00,
 					],
-					'discus_throw_1.00kg' => [
+					'discus_throw_1' => [		//weight of tool in kg
 						'I' => 58.00,
 						'II' => 50.00,
 						'III' => 43.00,
@@ -182,7 +182,7 @@ Class Classifier
 						'II j.' => 32.00,
 						'III j.' => 28.00,
 					],
-					'hammer_throw_7.257kg' => [
+					'hammer_throw_7.257' => [	//weight of tool in kg
 						'LM' => 74.00,
 						'SM' => 67.00,
 						'SMK' => 60.00,
@@ -190,7 +190,7 @@ Class Classifier
 						'II' => 47.00,
 						'III' => 38.00,
 					],
-					'hammer_throw_6kg' => [
+					'hammer_throw_6' => [		//weight of tool in kg
 						'SM' => 72.00,
 						'SMK' => 64.00,
 						'I' => 59.00,
@@ -199,7 +199,7 @@ Class Classifier
 						'I j.' => 36.00,
 						'II j.' => 31.00,
 					],
-					'hammer_throw_5kg' => [
+					'hammer_throw_5' => [		//weight of tool in kg
 						'SMK' => 68.00,
 						'I' => 64.00,
 						'II' => 57.00,
@@ -208,7 +208,7 @@ Class Classifier
 						'II j.' => 32.00,
 						'III j.' => 28.00,
 					],
-					'hammer_throw_4kg' => [
+					'hammer_throw_4' => [		//weight of tool in kg
 						'I' => 68.00,
 						'II' => 60.00,
 						'III' => 53.00,
@@ -216,14 +216,14 @@ Class Classifier
 						'II j.' => 37.00,
 						'III j.' => 30.00,
 					],
-					'hammer_throw_3kg' => [
+					'hammer_throw_3' => [		//weight of tool in kg
 						'II' => 65.00,
 						'III' => 60.00,
 						'I j.' => 50.00,
 						'II j.' => 40.00,
 						'III j.' => 32.00,
 					],
-					'javelin_throw_800g' => [
+					'javelin_throw_800' => [	//weight of tool in grams
 						'LM' => 82.00,
 						'SM' => 73.00,
 						'SMK' => 68.00,
@@ -231,7 +231,7 @@ Class Classifier
 						'II' => 54.00,
 						'III' => 48.00,
 					],
-					'javelin_throw_700g' => [
+					'javelin_throw_700' => [	//weight of tool in grams
 						'SMK' => 67.00,
 						'I' => 61.00,
 						'II' => 55.00,
@@ -239,7 +239,7 @@ Class Classifier
 						'I j.' => 40.00,
 						'II j.' => 35.00,
 					],
-					'javelin_throw_600g' => [
+					'javelin_throw_600' => [	//weight of tool in grams
 						'I' => 64.00,
 						'II' => 56.00,
 						'III' => 48.00,
@@ -247,12 +247,12 @@ Class Classifier
 						'II j.' => 41.00,
 						'III j.' => 35.00,
 					],
-					'javelin_throw_400g' => [
+					'javelin_throw_400' => [	//weight of tool in grams
 						'I j.' => 47.00,
 						'II j.' => 40.00,
 						'III j.' => 30.00,
 					],
-					'shot_put_7.257kg' => [
+					'shot_put_7.257' => [		//weight of tool in kg
 						'LM' => 19.00,
 						'SM' => 17.20,
 						'SMK' => 15.60,
@@ -260,7 +260,7 @@ Class Classifier
 						'II' => 12.00,
 						'III' => 10.00,
 					],
-					'shot_put_6kg' => [
+					'shot_put_6' => [		//weight of tool in kg
 						'SMK' => 17.20,
 						'I' => 15.50,
 						'II' => 13.00,
@@ -268,7 +268,7 @@ Class Classifier
 						'I j.' => 9.60,
 						'II j.' => 8.60,
 					],
-					'shot_put_5kg' => [
+					'shot_put_5' => [		//weight of tool in kg
 						'SMK' => 17.50,
 						'I' => 16.50,
 						'II' => 15.00,
@@ -277,14 +277,14 @@ Class Classifier
 						'II j.' => 9.00,
 						'III j.' => 8.00,
 					],
-					'shot_put_4kg' => [
+					'shot_put_4' => [		//weight of tool in kg
 						'II' => 14.50,
 						'III' => 13.00,
 						'I j.' => 11.00,
 						'II j.' => 10.00,
 						'III j.' => 9.00,
 					],
-					'shot_put_3kg' => [
+					'shot_put_3' => [		//weight of tool in kg
 						'III' => 12.00,
 						'I j.' => 10.00,
 						'II j.' => 9.00,
@@ -424,7 +424,7 @@ Class Classifier
 						'II j.' => 9.20,
 						'III j.' => 8.50,
 					],
-					'discus_throw_1kg' => [
+					'discus_throw_1' => [		//weight of tool in kg
 						'LM' => 58.00,
 						'SM' => 53.00,
 						'SMK' => 46.00,
@@ -434,7 +434,7 @@ Class Classifier
 						'I j.' => 24.00,
 						'II j.' => 20.00,
 					],
-					'discus_throw_0.75kg' => [
+					'discus_throw_0.75' => [	//weight of tool in kg
 						'SMK' => 49.00,
 						'I' => 44.00,
 						'II' => 38.00,
@@ -443,7 +443,7 @@ Class Classifier
 						'II j.' => 23.00,
 						'III j.' => 20.00,
 					],
-					'hammer_throw_4kg' => [
+					'hammer_throw_4' => [		//weight of tool in kg
 						'LM' => 68.00,
 						'SM' => 57.00,
 						'SMK' => 47.00,
@@ -453,7 +453,7 @@ Class Classifier
 						'I j.' => 25.00,
 						'II j.' => 20.00,
 					],
-					'hammer_throw_3kg' => [
+					'hammer_throw_3' => [		//weight of tool in kg
 						'SM' => 62.00,
 						'SMK' => 53.00,
 						'I' => 47.00,
@@ -463,7 +463,7 @@ Class Classifier
 						'II j.' => 25.00,
 						'III j.' => 20.00,
 					],
-					'hammer_throw_2kg' => [
+					'hammer_throw_2' => [		//weight of tool in kg
 						'I' => 52.00,
 						'II' => 44.00,
 						'III' => 39.00,
@@ -471,7 +471,7 @@ Class Classifier
 						'II j.' => 29.00,
 						'III j.' => 25.00,
 					],
-					'javelin_throw_600g' => [
+					'javelin_throw_600' => [	//weight of tool in grams
 						'LM' => 60.00,
 						'SM' => 54.00,
 						'SMK' => 48.00,
@@ -480,7 +480,7 @@ Class Classifier
 						'III' => 30.00,
 						'I j.' => 25.00,
 					],
-					'javelin_throw_500g' => [
+					'javelin_throw_500' => [	//weight of tool in grams
 						'SM' => 50.00,
 						'SMK' => 44.00,
 						'I' => 38.00,
@@ -488,7 +488,7 @@ Class Classifier
 						'III' => 22.00,
 						'I j.' => 18.00,
 					],
-					'javelin_throw_400g' => [
+					'javelin_throw_400' => [	//weight of tool in grams
 						'I' => 45.00,
 						'II' => 38.00,
 						'III' => 35.00,
@@ -496,7 +496,7 @@ Class Classifier
 						'II j.' => 25.00,
 						'III j.' => 20.00,
 					],
-					'shot_put_4kg' => [
+					'shot_put_4' => [		//weight of tool in kg
 						'LM' => 17.50,
 						'SM' => 15.00,
 						'SMK' => 14.00,
@@ -506,7 +506,7 @@ Class Classifier
 						'I j.' => 7.20,
 						'II j.' => 6.50,
 					],
-					'shot_put_3kg' => [
+					'shot_put_3' => [		//weight of tool in kg
 						'SMK' => 15.20,
 						'I' => 14.00,
 						'II' => 12.00,
@@ -515,7 +515,7 @@ Class Classifier
 						'II j.' => 7.00,
 						'III j.' => 6.00,
 					],
-					'shot_put_2kg' => [
+					'shot_put_2' => [		//weight of tool in kg
 						'II' => 12.50,
 						'III' => 11.00,
 						'I j.' => 9.50,
@@ -750,7 +750,7 @@ Class Classifier
 						'II j.' => 145.0,
 						'III j.' => 150.0,
 					],
-					'60mh_1067' => [
+					'60mh_106.7' => [		//height of hurdles in cm
 						'LM' => 7.75,
 						'SM' => 8.10,
 						'SMK' => 8.44,
@@ -758,13 +758,13 @@ Class Classifier
 						'II' => 9.44,
 						'III' => 10.14,
 					],
-					'60mh_991' => [
+					'60mh_99.1' => [		//height of hurdles in cm
 						'SMK' => 8.34,
 						'I' => 8.74,
 						'II' => 9.24,
 						'III' => 9.94,
 					],
-					'60mh_914' => [
+					'60mh_91.4' => [		//height of hurdles in cm
 						'SMK' => 8.24,
 						'I' => 8.44,
 						'II' => 8.94,
@@ -772,7 +772,7 @@ Class Classifier
 						'I j.' => 10.2,
 						'II j.' => 10.8,
 					],
-					'60mh_838' => [
+					'60mh_83.8' => [		//height of hurdles in cm
 						'I' => 8.64,
 						'II' => 8.94,
 						'III' => 9.84,
@@ -780,7 +780,7 @@ Class Classifier
 						'II j.' => 11.0,
 						'III j.' => 12.0,
 					],
-					'110mh_1067' => [
+					'110mh_106.7' => [		//height of hurdles in cm
 						'LM' => 13.70,
 						'SM' => 14.34,
 						'SMK' => 15.14,
@@ -788,13 +788,13 @@ Class Classifier
 						'II' => 17.04,
 						'III' => 18.54,
 					],
-					'110mh_991' => [
+					'110mh_99.1' => [		//height of hurdles in cm
 						'SMK' => 14.84,
 						'I' => 15.54,
 						'II' => 16.54,
 						'III' => 18.14,
 					],
-					'110mh_914' => [
+					'110mh_91.4' => [		//height of hurdles in cm
 						'SMK' => 14.64,
 						'I' => 15.14,
 						'II' => 16.04,
@@ -802,7 +802,7 @@ Class Classifier
 						'I j.' => 18.8,
 						'II j.' => 20.0,
 					],
-					'110mh_838' => [
+					'110mh_83.8' => [		//height of hurdles in cm
 						'I' => 15.44,
 						'II' => 16.14,
 						'III' => 17.64,
@@ -810,7 +810,7 @@ Class Classifier
 						'II j.' => 21.5,
 						'III j.' => 22.5,
 					],
-					'300mh' => [
+					'300mh' => [		//height of hurdles in cm
 						'SMK' => 38.74,
 						'I' => 40.74,
 						'II' => 43.24,
@@ -818,7 +818,7 @@ Class Classifier
 						'I j.' => 50.0,
 						'II j.' => 52.0,
 					],
-					'400mh' => [
+					'400mh' => [		//height of hurdles in cm
 						'LM' => 49.50,
 						'SM' => 52.64,
 						'SMK' => 55.14,
@@ -828,7 +828,25 @@ Class Classifier
 						'I j.' => 71.0,
 						'II j.' => 76.0,
 					],
-					'1500mSt' => [
+					'300mh_91.4' => [	//height of hurdles in cm
+						'SMK' => 38.74,
+						'I' => 40.74,
+						'II' => 43.24,
+						'III' => 47.24,
+						'I j.' => 50.0,
+						'II j.' => 52.0,
+					],
+					'400mh_91.4' => [	//height of hurdles in cm
+						'LM' => 49.50,
+						'SM' => 52.64,
+						'SMK' => 55.14,
+						'I' => 58.64,
+						'II' => 62.64,
+						'III' => 68.14,
+						'I j.' => 71.0,
+						'II j.' => 76.0,
+					],
+					'1500mSt' => [		//height of hurdles in cm
 						'SMK' => 252.00,
 						'I' => 276.00,
 						'II' => 294.00,
@@ -837,7 +855,7 @@ Class Classifier
 						'II j.' => 357.0,
 						'III j.' => 383.0,
 					],
-					'2000mSt' => [
+					'2000mSt' => [		//height of hurdles in cm
 						'SM' => 345.00,
 						'SMK' => 360.00,
 						'I' => 380.00,
@@ -846,7 +864,33 @@ Class Classifier
 						'I j.' => 460.0,
 						'II j.' => 520.0,
 					],
-					'3000mSt' => [
+					'3000mSt' => [		//height of hurdles in cm
+						'LM' => 510.00,
+						'SM' => 530.00,
+						'SMK' => 560.00,
+						'I' => 590.00,
+						'II' => 630.00,
+						'III' => 685.00,
+					],
+					'1500mSt_91.4' => [	//height of hurdles in cm
+						'SMK' => 252.00,
+						'I' => 276.00,
+						'II' => 294.00,
+						'III' => 320.00,
+						'I j.' => 336.0,
+						'II j.' => 357.0,
+						'III j.' => 383.0,
+					],
+					'2000mSt_91.4' => [	//height of hurdles in cm
+						'SM' => 345.00,
+						'SMK' => 360.00,
+						'I' => 380.00,
+						'II' => 406.00,
+						'III' => 443.00,
+						'I j.' => 460.0,
+						'II j.' => 520.0,
+					],
+					'3000mSt_91.4' => [	//height of hurdles in cm
 						'LM' => 510.00,
 						'SM' => 530.00,
 						'SMK' => 560.00,
@@ -1013,7 +1057,7 @@ Class Classifier
 						'II j.' => 170.0,
 						'III j.' => 190.0,
 					],
-					'60mh_838' => [
+					'60mh_83.8' => [		//height of hurdles in cm
 						'LM' => 8.10,
 						'SM' => 8.54,
 						'SMK' => 8.94,
@@ -1021,7 +1065,7 @@ Class Classifier
 						'II' => 10.34,
 						'III' => 11.34,
 					],
-					'60mh_762' => [
+					'60mh_76.2' => [		//height of hurdles in cm
 						'SMK' => 9.04,
 						'I' => 9.34,
 						'II' => 9.74,
@@ -1030,7 +1074,7 @@ Class Classifier
 						'II j.' => 12.5,
 						'III j.' => 13.0,
 					],
-					'100mh_838' => [
+					'100mh_83.8' => [		//height of hurdles in cm
 						'LM' => 13.20,
 						'SM' => 14.00,
 						'SMK' => 15.04,
@@ -1038,7 +1082,7 @@ Class Classifier
 						'II' => 17.64,
 						'III' => 19.54,
 					],
-					'100mh_762' => [
+					'100mh_76.2' => [		//height of hurdles in cm
 						'SMK' => 14.64,
 						'I' => 15.24,
 						'II' => 16.24,
@@ -1055,6 +1099,23 @@ Class Classifier
 						'II j.' => 65.0,
 					],
 					'400mh' => [
+						'LM' => 56.30,
+						'SM' => 60.14,
+						'SMK' => 63.64,
+						'I' => 67.64,
+						'II' => 73.14,
+						'III' => 80.14,
+						'I j.' => 85.0,
+						'II j.' => 100.0,
+					],
+					'300mh_76.2' => [		//height of hurdles in cm
+						'I' => 46.64,
+						'II' => 50.14,
+						'III' => 55.14,
+						'I j.' => 59.0,
+						'II j.' => 65.0,
+					],
+					'400mh_76.2' => [		//height of hurdles in cm
 						'LM' => 56.30,
 						'SM' => 60.14,
 						'SMK' => 63.64,
@@ -1082,6 +1143,31 @@ Class Classifier
 						'I j.' => 510.0,
 					],
 					'3000mSt' => [
+						'LM' => 600.00,
+						'SM' => 630.00,
+						'SMK' => 660.00,
+						'I' => 690.00,
+						'II' => 730.00,
+						'III' => 800.00,
+					],
+					'1500mSt_76.2' => [		//height of hurdles in cm
+						'SMK' => 290.00,
+						'I' => 315.00,
+						'II' => 332.00,
+						'III' => 355.00,
+						'I j.' => 380.0,
+						'II j.' => 397.0,
+						'III j.' => 417.0,
+					],
+					'2000mSt_76.2' => [		//height of hurdles in cm
+						'SM' => 400.00,
+						'SMK' => 420.00,
+						'I' => 435.00,
+						'II' => 456.00,
+						'III' => 480.00,
+						'I j.' => 510.0,
+					],
+					'3000mSt_76.2' => [		//height of hurdles in cm
 						'LM' => 600.00,
 						'SM' => 630.00,
 						'SMK' => 660.00,
@@ -1219,6 +1305,29 @@ Class Classifier
 						'II' => 615.00,
 						'III' => 670.00,
 					],
+					'1500mSt_76.2' => [		//height of hurdles in cm
+						'I' => 270.00,
+						'II' => 288.00,
+						'III' => 314.00,
+						'I j.' => 330.0,
+						'II j.' => 350.0,
+						'III j.' => 385.0,
+					],
+					'2000mSt_76.2' => [		//height of hurdles in cm
+						'SM' => 335.00,
+						'SMK' => 350.00,
+						'I' => 370.00,
+						'II' => 395.00,
+						'III' => 435.00,
+						'I j.' => 450.0,
+					],
+					'3000mSt_76.2' => [		//height of hurdles in cm
+						'SM' => 518.00,
+						'SMK' => 547.00,
+						'I' => 575.00,
+						'II' => 615.00,
+						'III' => 670.00,
+					],
 				],
 				'f' => [
 					'200m' => [
@@ -1341,6 +1450,29 @@ Class Classifier
 						'II j.' => 500.0,
 					],
 					'3000mSt' => [
+						'SM' => 610.00,
+						'SMK' => 640.00,
+						'I' => 680.00,
+						'II' => 735.00,
+						'III' => 790.00,
+					],
+					'1500mSt_76.2' => [		//height of hurdles in cm
+						'I' => 313.00,
+						'II' => 331.00,
+						'III' => 347.00,
+						'I j.' => 370.0,
+						'II j.' => 390.0,
+					],
+					'2000mSt_76.2' => [		//height of hurdles in cm
+						'SM' => 378.00,
+						'SMK' => 400.00,
+						'I' => 420.00,
+						'II' => 440.00,
+						'III' => 455.00,
+						'I j.' => 470.0,
+						'II j.' => 500.0,
+					],
+					'3000mSt_76.2' => [		//height of hurdles in cm
 						'SM' => 610.00,
 						'SMK' => 640.00,
 						'I' => 680.00,
