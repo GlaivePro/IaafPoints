@@ -1,3 +1,6 @@
+### 0.6.3
+ - Adjusted classifier 'latvian2013'.
+
 ### 0.6.2
  - Error fixed for women half marathon.
 
