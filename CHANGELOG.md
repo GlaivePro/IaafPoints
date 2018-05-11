@@ -1,4 +1,7 @@
-### 0.7.0
+### 0.7.1
+ - Improved youthguard calculator.
+ 
+ ### 0.7.0
  - Added calculator for the youthguard combined event.
  - Added classifier 'latvian2018'.
  

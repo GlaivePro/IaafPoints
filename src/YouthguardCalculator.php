@@ -130,14 +130,14 @@ Class YouthguardCalculator
 				],
 				'u16' => [
 					'60m' => [
-						'resultShift' => -11.5,
-						'conversionFactor' => 58.015,
-						'exponent' => 1.81,
+						'resultShift' => -10.7,
+						'conversionFactor' => 68.6,
+						'exponent' => 2,
 					],
 					'1000m' => [
-						'resultShift' => -305.5,
-						'conversionFactor' => 0.08713,
-						'exponent' => 1.85,
+						'resultShift' => -240,
+						'conversionFactor' => 0.1139,
+						'exponent' => 2,
 					],
 					'long_jump' => [
 						'resultShift' => 2.2,
@@ -152,14 +152,14 @@ Class YouthguardCalculator
 				],
 				'u18' => [
 					'60m' => [
-						'resultShift' => -11.5,
-						'conversionFactor' => 58.015,
-						'exponent' => 1.81,
+						'resultShift' => -10.7,
+						'conversionFactor' => 68.6,
+						'exponent' => 2,
 					],
 					'1500m' => [
-						'resultShift' => -480,
-						'conversionFactor' => 0.03768,
-						'exponent' => 1.85,
+						'resultShift' => -386,
+						'conversionFactor' => 0.042,
+						'exponent' => 2,
 					],
 					'long_jump' => [
 						'resultShift' => 2.2,
@@ -179,9 +179,9 @@ Class YouthguardCalculator
 				],
 				'u16' => [
 					'800m' => [
-						'resultShift' => -305.5,
-						'conversionFactor' => 0.08713,
-						'exponent' => 1.85,
+						'resultShift' => -264,
+						'conversionFactor' => 0.0572,
+						'exponent' => 2,
 					],
 					'long_jump' => [
 						'resultShift' => 2.1,
@@ -192,9 +192,19 @@ Class YouthguardCalculator
 						'resultShift' => 3.8,
 						'conversionFactor' => 15.9803,
 						'exponent' => 1.04,
+					],
+					'60m' => [
+						'resultShift' => -14,
+						'conversionFactor' => 24.9,
+						'exponent' => 2,
 					],
 				],
 				'u18' => [
+					'1000m' => [
+						'resultShift' => -340.4,
+						'conversionFactor' => 0.03473,
+						'exponent' => 2,
+					],
 					'long_jump' => [
 						'resultShift' => 2.1,
 						'conversionFactor' => 0.188807*(100**1.41),
@@ -204,6 +214,11 @@ Class YouthguardCalculator
 						'resultShift' => 3.8,
 						'conversionFactor' => 15.9803,
 						'exponent' => 1.04,
+					],
+					'60m' => [
+						'resultShift' => -14,
+						'conversionFactor' => 24.9,
+						'exponent' => 2,
 					],
 				],
 			],
