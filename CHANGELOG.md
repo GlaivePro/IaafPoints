@@ -1,4 +1,8 @@
-### 0.6.3
+### 0.7.0
+ - Added calculator for the youthguard combined event.
+ - Added classifier 'latvian2018'.
+ 
+ ### 0.6.3
  - Adjusted classifier 'latvian2013'.
 
 ### 0.6.2
