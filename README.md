@@ -59,7 +59,7 @@ foreach ($results as $result)
 	// for track pass seconds, for field pass meters, for combined pass points
 	$points = $calculator->getPoints($time);
 	
-	$result['time'] => $points;
+	$result['iaaf_points'] => $points;
 }
 ```
 
