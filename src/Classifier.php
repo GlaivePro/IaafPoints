@@ -182,7 +182,7 @@ Class Classifier
 						'II j.' => 32.00,
 						'III j.' => 28.00,
 					],
-					'hammer_throw_7.257' => [	//weight of tool in kg
+					'hammer_throw_7.26' => [	//weight of tool in kg
 						'LM' => 74.00,
 						'SM' => 67.00,
 						'SMK' => 60.00,
@@ -252,7 +252,7 @@ Class Classifier
 						'II j.' => 40.00,
 						'III j.' => 30.00,
 					],
-					'shot_put_7.257' => [		//weight of tool in kg
+					'shot_put_7.26' => [		//weight of tool in kg
 						'LM' => 19.00,
 						'SM' => 17.20,
 						'SMK' => 15.60,
@@ -1999,7 +1999,7 @@ Class Classifier
 						'II j.' => 32.00,
 						'III j.' => 28.00,
 					],
-					'hammer_throw_7.257' => [	//weight of tool in kg
+					'hammer_throw_7.26' => [	//weight of tool in kg
 						'LM' => 74.00,
 						'SM' => 67.00,
 						'SMK' => 60.00,
@@ -2069,7 +2069,7 @@ Class Classifier
 						'II j.' => 40.00,
 						'III j.' => 30.00,
 					],
-					'shot_put_7.257' => [		//weight of tool in kg
+					'shot_put_7.26' => [		//weight of tool in kg
 						'LM' => 19.00,
 						'SM' => 17.20,
 						'SMK' => 15.60,
