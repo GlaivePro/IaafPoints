@@ -226,7 +226,7 @@ The other events have one more event-dependant coefficient.
 
 First, the result is shifted by a number (similar to comparing with reference in track events).
 
-The shifted result is then squared and multiplied by a factor. And this is then shited by another number.
+The shifted result is then squared and multiplied by a factor. And this is then shifted by another number.
 
 The formula can be expressed like this: `points = floor(conversionFactor * (result + resultShift)^2 + pointShift)`.
 
