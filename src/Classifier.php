@@ -17,7 +17,7 @@ class Classifier extends Support\Calculator
 		'discipline' => null,
 		'gender' => 'm',
 		'venueType' => 'outdoor',
-		'edition' => 'latvian2013',
+		'edition' => 'latvian2018',
 	];
 
 	protected $table = null;
