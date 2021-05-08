@@ -1,10 +1,13 @@
+### Unreleased
+- Removed support for PHP <7.2
+
 ### 0.7.1
  - Improved youthguard calculator.
- 
+
  ### 0.7.0
  - Added calculator for the youthguard combined event.
  - Added classifier 'latvian2018'.
- 
+
  ### 0.6.3
  - Adjusted classifier 'latvian2013'.
 
@@ -20,14 +23,14 @@
 
 ### 0.5.0
  - Added classifier.
- 
+
 ### 0.4.0
  - Added calculator for combined events.
 
 ### 0.3.0
  - The 2017 edition of IAAF scoring tables of athletics is fully included.
  - Some of the points for combined events might be wrong by one point, take care.
- 
+
 ### 0.2.0
  - Fixed errors.
  - Added some numeric tests.
