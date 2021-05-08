@@ -17,6 +17,10 @@ And we keep a [changelog](../CHANGELOG.md).
     - [Edition](#edition)
     - [Interface](#interface)
 - [Calculators](#calculators)
+	- [IAAF points](#glaiveproiaafpointsiaafcalculator)
+	- [Combined events](#glaiveproiaafpointscombinedcalculator)
+	- [Classification](#glaiveproiaafpointsclassifier)
+	- [Youthguard combined](#glaiveproiaafpointsyouthguardcalculator)
 
 ## Installation
 
@@ -168,7 +172,7 @@ following options with the defaults as set here:
 ];
 ```
 
-### GlaivePro\IaafPoints\Combined
+### GlaivePro\IaafPoints\CombinedCalculator
 
 This calculator produces IAAF scoring points for combined events. It accepts
 the following options with the defaults as set here:
@@ -225,7 +229,7 @@ accepts the following options with the defaults as set here:
 ];
 ```
 
-### GlaivePro\IaafPoints\YouthguardClassifier
+### GlaivePro\IaafPoints\YouthguardCalculator
 
 This calculator is a variantion of combined event calculator for some specific
 youth competitions in Latvia. It accepts the following options with the
