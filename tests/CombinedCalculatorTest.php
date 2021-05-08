@@ -44,6 +44,14 @@ class CombinedCalculatorTest extends TestCase
 		$this->assertContains('100m', $disciplines);
 	}
 
+	public function testListsEditions()
+	{
+		$editions = $this->calculator->getSupportedEditionKeys();
+
+		// PHP converts string keys to integers
+		$this->assertContains(2001, $editions);
+	}
+
     public function testAllConstantsAreValid()
     {
 		$editions = $this->calculator->getSupportedEditionKeys();

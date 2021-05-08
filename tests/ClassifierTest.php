@@ -36,6 +36,13 @@ class ClassifierTest extends TestCase
 		$this->assertEquals($options['edition'], 'latvian2018');
 	}
 
+	public function testListsEditions()
+	{
+		$editions = $this->classifier->getSupportedEditionKeys();
+
+		$this->assertContains('latvian2018', $editions);
+	}
+
 	public function testListsDisciplines()
 	{
 		$disciplines = $this->classifier->getSupportedDisciplineKeys();

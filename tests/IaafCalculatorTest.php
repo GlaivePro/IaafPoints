@@ -37,6 +37,14 @@ class IaafCalculatorTest extends TestCase
 		$this->assertEquals($options['edition'], '2017');
 	}
 
+	public function testListsEditions()
+	{
+		$editions = $this->calculator->getSupportedEditionKeys();
+
+		// PHP converts string keys to integers
+		$this->assertContains(2017, $editions);
+	}
+
 	public function testListsDisciplines()
 	{
 		$disciplines = $this->calculator->getSupportedDisciplineKeys();

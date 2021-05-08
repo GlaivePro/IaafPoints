@@ -36,6 +36,14 @@ class YouthguardCalculatorTest extends TestCase
 		$this->assertEquals($options['edition'], '2018');
 	}
 
+	public function testListsEditions()
+	{
+		$editions = $this->calculator->getSupportedEditionKeys();
+
+		// PHP converts string keys to integers
+		$this->assertContains(2018, $editions);
+	}
+
 	public function testListsDisciplines()
 	{
 		$disciplines = $this->calculator->getSupportedDisciplineKeys();
