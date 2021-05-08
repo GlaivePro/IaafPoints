@@ -8,9 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Travis integration for testing.
+- Tests for new constant loading.
 
 ### Changed
 - Changelog format.
+- Moved constants into resource files.
+- Tests to
 
 ### Removed
 - Support for PHP < 8.0.

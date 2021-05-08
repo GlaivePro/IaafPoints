@@ -21,9 +21,6 @@ class ClassifierTest extends TestCase
 		$this->assertArrayHasKey('edition', $options);
 	}
 
-	/**
-     * @depends testOptionsCanBeRetrieved
-     */
     public function testOptionsCanBeSet()
     {
         $this->classifier->setOptions(['venueType' => 'indoor']);
@@ -34,9 +31,9 @@ class ClassifierTest extends TestCase
 		$options =  $this->classifier->getOptions();
 		$this->assertEquals($options['venueType'], 'outdoor');
 
-		$constructorTest = new \GlaivePro\IaafPoints\IaafCalculator(['gender' => 'f', 'edition' => '2055']);
+		$constructorTest = new \GlaivePro\IaafPoints\Classifier(['gender' => 'f', 'edition' => 'latvian2018']);
 		$options = $constructorTest->getOptions();
-		$this->assertEquals($options['edition'], '2055');
+		$this->assertEquals($options['edition'], 'latvian2018');
 	}
 
     public function testAllConstantsAreValid()
