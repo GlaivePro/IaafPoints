@@ -1,5 +1,24 @@
-### Unreleased
-- Removed support for PHP <7.2
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+### Added
+- Travis integration for testing.
+
+### Changed
+- Changelog format.
+
+### Removed
+- Support for PHP < 8.0.
+
+### Fixed
+- Improper test case for classifier.
+
+## Old log
 
 ### 0.7.1
  - Improved youthguard calculator.
