@@ -4,7 +4,7 @@
 			<directory>tests</directory>
 		</testsuite>
 	</testsuites>
-	<coverage pathCoverage="true">
+	<coverage>
 		<include>
 			<directory>src</directory>
 			<directory>resources</directory>
