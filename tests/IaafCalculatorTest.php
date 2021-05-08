@@ -95,11 +95,11 @@ class IaafCalculatorTest extends TestCase
 		$points = $this->calculator->evaluate($result);
 		$this->assertEquals(980, $points);
 
+		// Trigger +.24 correction
 		$this->calculator->setOptions(['electronicMeasurement' => false]);
 		$points = $this->calculator->evaluate($result);
 		$this->assertEquals(946, $points);
 
-		// Trigger +.24 correction
 		$this->calculator->setOptions(['gender' => 'f', 'electronicMeasurement' => true]);
 		$points = $this->calculator->evaluate($result);
 		$this->assertEquals(1279, $points);
@@ -116,7 +116,7 @@ class IaafCalculatorTest extends TestCase
 
 		// Result worse than reference result
 		$result = 59.0;
-		$this->calculator->setOptions(['discipline' => '300m', 'electronicMeasurement' => false]);
+		$this->calculator->setOptions(['discipline' => '300m']);
 		$points = $this->calculator->evaluate($result);
 		$this->assertEquals(0, $points);
 	}
