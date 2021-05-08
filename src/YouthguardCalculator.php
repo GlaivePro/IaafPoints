@@ -2,7 +2,7 @@
 
 namespace GlaivePro\IaafPoints;
 
-Class YouthguardCalculator extends Support\Calculator
+class YouthguardCalculator extends Support\Calculator
 {
 	protected const RESOURCES = 'youthguard';
 
@@ -55,19 +55,30 @@ Class YouthguardCalculator extends Support\Calculator
 	}
 
 	/**
-	 * Calculate points for result or array of results
-	 *
-	 * @param mixed $results
-	 *
-	 * @return array
+	 * @deprecated
 	 */
 	public function getPoints($results = null)
 	{
-		if (!$results)
+		if (!is_array($results))
+			return $this->evaluate($results);
+
+		return $this->evaluateMany($results);
+	}
+
+	/** Calculate points for result */
+	public function evaluate($result = null)
+	{
+		if (!$result)
 			return null;
 
-		if (!is_array($results))
-			return $this->calculatePoints($results, $this->options['discipline']);
+		return $this->calculatePoints($result, $this->options['discipline']);
+	}
+
+	/** Calculate points for many results keyed by discipline. */
+	public function evaluateMany(array $results)
+	{
+		if (!$results)
+			return null;
 
 		$total = 0;
 		foreach ($results as $discipline => $result)

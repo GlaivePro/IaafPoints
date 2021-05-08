@@ -2,7 +2,7 @@
 
 namespace GlaivePro\IaafPoints\Services;
 
-Class Files
+class Files
 {
 	protected const BASE = __DIR__.'/../../resources/';
 

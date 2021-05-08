@@ -68,22 +68,57 @@ class IaafCalculatorTest extends TestCase
 
 	public function testPointsAreCorrect()
 	{
+		// No result
+		$points = $this->calculator->evaluate(null);
+		$this->assertNull($points);
+
+		// No result
+		$points = $this->calculator->evaluate(0);
+		$this->assertNull($points);
+
+		$result = 21.61;
+
+		// Params not set
+		$points = $this->calculator->evaluate($result);
+		$this->assertNull($points);
+
+		// Good cases
+		$this->calculator->setOptions(['edition' => '2017', 'venueType' => 'outdoor', 'gender' => 'm', 'discipline' => '200m']);
+		$points = $this->calculator->evaluate($result);
+		$this->assertEquals(980, $points);
+
+		$this->calculator->setOptions(['electronicMeasurement' => false]);
+		$points = $this->calculator->evaluate($result);
+		$this->assertEquals(946, $points);
+
+		// Trigger +.24 correction
+		$this->calculator->setOptions(['gender' => 'f', 'electronicMeasurement' => true]);
+		$points = $this->calculator->evaluate($result);
+		$this->assertEquals(1279, $points);
+
+		$this->calculator->setOptions(['venueType' => 'indoor', 'gender' => 'm']);
+		$points = $this->calculator->evaluate($result);
+		$this->assertEquals(1043, $points);
+
+		// Trigger .14 correction
+		$result = 44.0;
+		$this->calculator->setOptions(['discipline' => '300m', 'electronicMeasurement' => false]);
+		$points = $this->calculator->evaluate($result);
+		$this->assertEquals(346, $points);
+
+		// Result worse than reference result
+		$result = 59.0;
+		$this->calculator->setOptions(['discipline' => '300m', 'electronicMeasurement' => false]);
+		$points = $this->calculator->evaluate($result);
+		$this->assertEquals(0, $points);
+	}
+
+	public function testLegacyInterface()
+	{
 		$result = 21.61;
 
 		$this->calculator->setOptions(['edition' => '2017', 'venueType' => 'outdoor', 'gender' => 'm', 'discipline' => '200m']);
 		$points = $this->calculator->getPoints($result);
 		$this->assertEquals(980, $points);
-
-		$this->calculator->setOptions(['electronicMeasurement' => false]);
-		$points = $this->calculator->getPoints($result);
-		$this->assertEquals(946, $points);
-
-		$this->calculator->setOptions(['gender' => 'f', 'electronicMeasurement' => true]);
-		$points = $this->calculator->getPoints($result);
-		$this->assertEquals(1279, $points);
-
-		$this->calculator->setOptions(['venueType' => 'indoor', 'gender' => 'm']);
-		$points = $this->calculator->getPoints($result);
-		$this->assertEquals(1043, $points);
 	}
 }

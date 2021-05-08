@@ -49,7 +49,7 @@ class IaafCalculator extends Support\Calculator
 	 *
 	 * @return int
 	 */
-	public function getPoints($result)
+	public function evaluate($result)
 	{
 		if (!$result)
 			return null;
@@ -80,6 +80,14 @@ class IaafCalculator extends Support\Calculator
 			return 0;
 
 		return floor($points);
+	}
+
+	/**
+	 * @deprecated
+	 */
+	public function getPoints($result)
+	{
+		return $this->evaluate($result);
 	}
 
 	protected function constants(): array

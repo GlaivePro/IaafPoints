@@ -15,4 +15,7 @@ interface CalculatorInterface
 
 	/** Set options. You can also pass options to constructor. */
 	public function setOptions(array $options): void;
+
+	/** Assign a score (points) or class (string) for given result. */
+	public function evaluate($result);
 }

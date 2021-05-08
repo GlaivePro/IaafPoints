@@ -36,6 +36,14 @@ class ClassifierTest extends TestCase
 		$this->assertEquals($options['edition'], 'latvian2018');
 	}
 
+	public function testListsDisciplines()
+	{
+		$disciplines = $this->classifier->getSupportedDisciplineKeys();
+
+		$this->assertGreaterThan(0, count($disciplines));
+		$this->assertContains('100m', $disciplines);
+	}
+
     public function testAllConstantsAreValid()
     {
 		$editions = $this->classifier->getSupportedEditionKeys();
@@ -59,22 +67,39 @@ class ClassifierTest extends TestCase
 
 	public function testClassificationLatvian2013IsCorrect()
 	{
+		// Empty
+		$classification = $this->classifier->evaluate(null);
+		$this->assertNull($classification);
+
+		$result = 29;
+
+		// No config
+		$classification = $this->classifier->evaluate($result);
+		$this->assertNull($classification);
+
+		$this->classifier->setOptions(['edition' => 'latvian2013', 'venueType' => 'outdoor', 'gender' => 'm', 'discipline' => '200m']);
+		$classification = $this->classifier->evaluate($result);
+		$this->assertEquals('II j.', $classification);
+
+		$this->classifier->setOptions(['gender' => 'f']);
+		$classification = $this->classifier->evaluate($result);
+		$this->assertEquals('III', $classification);
+
+		$this->classifier->setOptions(['venueType' => 'indoor', 'gender' => 'm']);
+		$classification = $this->classifier->evaluate($result);
+		$this->assertEquals('III j.', $classification);
+
+		$this->classifier->setOptions(['venueType' => 'field', 'discipline' => 'discus_throw_1.75']);
+		$classification = $this->classifier->evaluate($result);
+		$this->assertEquals('I j.', $classification);
+	}
+
+	public function testLegacyInterface()
+	{
 		$result = 29;
 
 		$this->classifier->setOptions(['edition' => 'latvian2013', 'venueType' => 'outdoor', 'gender' => 'm', 'discipline' => '200m']);
 		$classification = $this->classifier->getClassification($result);
 		$this->assertEquals('II j.', $classification);
-
-		$this->classifier->setOptions(['gender' => 'f']);
-		$classification = $this->classifier->getClassification($result);
-		$this->assertEquals('III', $classification);
-
-		$this->classifier->setOptions(['venueType' => 'indoor', 'gender' => 'm']);
-		$classification = $this->classifier->getClassification($result);
-		$this->assertEquals('III j.', $classification);
-
-		$this->classifier->setOptions(['venueType' => 'field', 'discipline' => 'discus_throw_1.75']);
-		$classification = $this->classifier->getClassification($result);
-		$this->assertEquals('I j.', $classification);
 	}
 }

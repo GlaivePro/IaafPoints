@@ -2,7 +2,7 @@
 
 namespace GlaivePro\IaafPoints\Services;
 
-Class Constants
+class Constants
 {
 	protected Files $files;
 	protected array $editions;

@@ -2,7 +2,7 @@
 
 namespace GlaivePro\IaafPoints;
 
-Class Classifier extends Support\Calculator
+class Classifier extends Support\Calculator
 {
 	protected const RESOURCES = 'classifier';
 
@@ -48,7 +48,7 @@ Class Classifier extends Support\Calculator
 	 *
 	 * @return string
 	 */
-	public function getClassification($result)
+	public function evaluate($result)
 	{
 		if (!$result)
 			return null;
@@ -68,6 +68,14 @@ Class Classifier extends Support\Calculator
 					return $class;
 
 		return 'none';
+	}
+
+	/**
+	 * @deprecated
+	 */
+	public function getClassification($result)
+	{
+		return $this->evaluate($result);
 	}
 
 	protected function constants(): array

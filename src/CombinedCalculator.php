@@ -2,7 +2,7 @@
 
 namespace GlaivePro\IaafPoints;
 
-Class CombinedCalculator extends Support\Calculator
+class CombinedCalculator extends Support\Calculator
 {
 	protected const RESOURCES = 'combined';
 
@@ -44,7 +44,6 @@ Class CombinedCalculator extends Support\Calculator
 				$result += 0.14;
 		}
 
-
 		$constants = $this->constants()[$discipline] ?? null;
 
 		if (!$constants)
@@ -67,19 +66,30 @@ Class CombinedCalculator extends Support\Calculator
 	}
 
 	/**
-	 * Calculate points for result or array of results
-	 *
-	 * @param mixed $results
-	 *
-	 * @return array
+	 * @deprecated
 	 */
 	public function getPoints($results = null)
 	{
-		if (!$results)
+		if (!is_array($results))
+			return $this->evaluate($results);
+
+		return $this->evaluateMany($results);
+	}
+
+	/** Calculate points for result */
+	public function evaluate($result)
+	{
+		if (!$result)
 			return null;
 
-		if (!is_array($results))
-			return $this->calculatePoints($results, $this->options['discipline']);
+		return $this->calculatePoints($result, $this->options['discipline']);
+	}
+
+	/** Calculate points for many results keyed by discipline. */
+	public function evaluateMany(array $results = null)
+	{
+		if (!$results)
+			return null;
 
 		$total = 0;
 		foreach ($results as $discipline => $result)
