@@ -2,9 +2,9 @@
 
 namespace GlaivePro\IaafPoints;
 
-Class YouthguardCalculator
+Class YouthguardCalculator extends Support\Calculator
 {
-	use OptionsTrait;
+	protected const RESOURCES = 'youthguard';
 
 	/**
 	 * @param array $options Allowed keys:
@@ -13,36 +13,12 @@ Class YouthguardCalculator
 	 *  + ageGroup = 'u14', 'u16' or 'u18'
 	 *	+ discipline - string - after setting other options use getSupportedDisciplineKeys() method for array of available options
 	 */
-	private $options = [
+	protected $options = [
 		'discipline' => null,
 		'gender' => 'm',
 		'ageGroup' => 'u18',
 		'edition' => '2018',
 	];
-
-	protected Services\Constants $constants;
-
-	private function loadData()
-	{
-		//
-	}
-
-	public function __construct($options = [])
-	{
-		$this->constants = new Services\Constants('youthguard');
-
-		$this->setOptions($options);
-	}
-
-	/**
-	 * Get supported discipline keys for the currently selected options (edition, ageGroup and gender).
-	 *
-	 * @return array
-	 */
-	public function getSupportedDisciplineKeys()
-	{
-		return array_keys($this->constants() ?? []);
-	}
 
 	/**
 	 * Calculate points for given result
@@ -52,7 +28,7 @@ Class YouthguardCalculator
 	 *
 	 * @return int
 	 */
-	private function calculatePoints($result, $discipline)
+	protected function calculatePoints($result, $discipline)
 	{
 		if (!$result)
 			return null;
@@ -106,7 +82,7 @@ Class YouthguardCalculator
 		return $results;
 	}
 
-	protected function constants()
+	protected function constants(): array
 	{
 		$edition = $this->options['edition'];
 		$gender = $this->options['gender'];

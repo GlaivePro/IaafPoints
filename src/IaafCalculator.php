@@ -2,9 +2,9 @@
 
 namespace GlaivePro\IaafPoints;
 
-class IaafCalculator
+class IaafCalculator extends Support\Calculator
 {
-	use OptionsTrait;
+	protected const RESOURCES = 'iaaf';
 
 	/**
 	 * @param array $options Allowed keys:
@@ -14,7 +14,7 @@ class IaafCalculator
 	 *  + venueType - 'indoor' or 'outdoor'
 	 *	+ discipline - string - after setting other options use getSupportedDisciplineKeys() method for array of available options
 	 */
-	private $options = [
+	protected $options = [
 		'discipline' => null,
 		'gender' => 'm',
 		'electronicMeasurement' => true,
@@ -22,13 +22,11 @@ class IaafCalculator
 		'edition' => '2017',
 	];
 
-	protected Services\Constants $constants;
+	protected $resultShift;
+	protected $conversionFactor;
+	protected $pointShift;
 
-	private $resultShift;
-	private $conversionFactor;
-	private $pointShift;
-
-	private function loadData()
+	protected function loadData(): void
 	{
 		$this->resultShift = $this->conversionFactor = $this->pointShift = null;
 
@@ -42,23 +40,6 @@ class IaafCalculator
 		$this->resultShift = $constants['resultShift'];
 		$this->conversionFactor = $constants['conversionFactor'];
 		$this->pointShift = $constants['pointShift'];
-	}
-
-	public function __construct($options = [])
-	{
-		$this->constants = new Services\Constants('iaaf');
-
-		$this->setOptions($options);
-	}
-
-	/**
-	 * Get supported discipline keys for the currently selected options (edition, venueType and gender).
-	 *
-	 * @return array
-	 */
-	public function getSupportedDisciplineKeys()
-	{
-		return array_keys($this->constants() ?? []);
 	}
 
 	/**
@@ -101,7 +82,7 @@ class IaafCalculator
 		return floor($points);
 	}
 
-	protected function constants()
+	protected function constants(): array
 	{
 		$edition = $this->options['edition'];
 		$venueType = $this->options['venueType'];

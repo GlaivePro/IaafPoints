@@ -2,9 +2,9 @@
 
 namespace GlaivePro\IaafPoints;
 
-Class CombinedCalculator
+Class CombinedCalculator extends Support\Calculator
 {
-	use OptionsTrait;
+	protected const RESOURCES = 'combined';
 
 	/**
 	 * @param array $options Allowed keys:
@@ -13,36 +13,12 @@ Class CombinedCalculator
 	 *  + electronicMeasurement = true or false
 	 *	+ discipline - string - after setting other options use getSupportedDisciplineKeys() method for array of available options
 	 */
-	private $options = [
+	protected $options = [
 		'discipline' => null,
 		'gender' => 'm',
 		'electronicMeasurement' => true,
 		'edition' => '2001',
 	];
-
-	protected Services\Constants $constants;
-
-	private function loadData()
-	{
-		//
-	}
-
-	public function __construct($options = [])
-	{
-		$this->constants = new Services\Constants('combined');
-
-		$this->setOptions($options);
-	}
-
-	/**
-	 * Get supported discipline keys for the currently selected options (edition and gender).
-	 *
-	 * @return array
-	 */
-	public function getSupportedDisciplineKeys()
-	{
-		return array_keys($this->constants() ?? []);
-	}
 
 	/**
 	 * Calculate points for given result
@@ -52,7 +28,7 @@ Class CombinedCalculator
 	 *
 	 * @return int
 	 */
-	private function calculatePoints($result, $discipline)
+	protected function calculatePoints($result, $discipline)
 	{
 		if (!$result)
 			return null;
@@ -118,7 +94,7 @@ Class CombinedCalculator
 		return $results;
 	}
 
-	protected function constants()
+	protected function constants(): array
 	{
 		$edition = $this->options['edition'];
 		$gender = $this->options['gender'];

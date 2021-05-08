@@ -2,9 +2,9 @@
 
 namespace GlaivePro\IaafPoints;
 
-Class Classifier
+Class Classifier extends Support\Calculator
 {
-	use OptionsTrait;
+	protected const RESOURCES = 'classifier';
 
 	/**
 	 * @param array $options Allowed keys:
@@ -13,18 +13,16 @@ Class Classifier
 	 *  + venueType - 'outdoor', 'indoor', 'road' or 'trail'; 'field' for any field events
 	 *	+ discipline - string - after setting other options use getSupportedDisciplineKeys() method for array of available options
 	 */
-	private $options = [
+	protected $options = [
 		'discipline' => null,
 		'gender' => 'm',
 		'venueType' => 'outdoor',
 		'edition' => 'latvian2013',
 	];
 
-	protected Services\Constants $constants;
+	protected $table = null;
 
-	private $table = null;
-
-	private function loadData()
+	protected function loadData(): void
 	{
 		$this->table = null;
 
@@ -41,23 +39,6 @@ Class Classifier
 			arsort($table);
 
 		$this->table = $table;
-	}
-
-	public function __construct($options = [])
-	{
-		$this->constants = new Services\Constants('classifier');
-
-		$this->setOptions($options);
-	}
-
-	/**
-	 * Get supported discipline keys for the currently selected options (edition, venueType and gender).
-	 *
-	 * @return array
-	 */
-	public function getSupportedDisciplineKeys()
-	{
-		return array_keys($this->constants() ?? []);
 	}
 
 	/**
@@ -89,7 +70,7 @@ Class Classifier
 		return 'none';
 	}
 
-	protected function constants()
+	protected function constants(): array
 	{
 		$edition = $this->options['edition'];
 		$venueType = $this->options['venueType'];
