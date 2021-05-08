@@ -3,3 +3,7 @@ language: php
 matrix:
   include:
     - php: 8.0
+
+install: composer install
+
+script: composer test

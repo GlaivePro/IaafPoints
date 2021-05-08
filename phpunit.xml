@@ -1,7 +1,13 @@
-<phpunit bootstrap="bootstrapForTesting.php">
+<phpunit bootstrap="vendor/autoload.php" colors="true" testdox="true">
 	<testsuites>
 		<testsuite name="iaafpoints">
 			<directory>tests</directory>
 		</testsuite>
 	</testsuites>
+	<coverage pathCoverage="true">
+		<include>
+			<directory>src</directory>
+			<directory>resources</directory>
+		</include>
+	</coverage>
 </phpunit>
