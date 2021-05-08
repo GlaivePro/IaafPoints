@@ -4,7 +4,7 @@ use PHPUnit\Framework\TestCase;
 
 class ClassifierTest extends TestCase
 {	
-	public function setUp()
+	public function setUp(): void
 	{
 		$this->classifier = new \GlaivePro\IaafPoints\Classifier;
 	}
@@ -13,7 +13,7 @@ class ClassifierTest extends TestCase
     {
 		$options = $this->classifier->getOptions();
 		
-		$this->assertInternalType('array', $options);
+		$this->assertIsArray($options);
 		
 		$this->assertArrayHasKey('discipline', $options);
 		$this->assertArrayHasKey('gender', $options);
@@ -60,7 +60,7 @@ class ClassifierTest extends TestCase
 				}
     }
 	
-	public function testClassificationIsCorrect()
+	public function testClassificationLatvian2013IsCorrect()
 	{
 		$result = 29;
 		

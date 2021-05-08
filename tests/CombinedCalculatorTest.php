@@ -4,7 +4,7 @@ use PHPUnit\Framework\TestCase;
 
 class CombinedCalculatorTest extends TestCase
 {	
-	public function setUp()
+	public function setUp(): void
 	{
 		$this->calculator = new \GlaivePro\IaafPoints\CombinedCalculator;
 	}
@@ -13,7 +13,7 @@ class CombinedCalculatorTest extends TestCase
     {
 		$options = $this->calculator->getOptions();
 		
-		$this->assertInternalType('array', $options);
+		$this->assertIsArray($options);
 		
 		$this->assertArrayHasKey('discipline', $options);
 		$this->assertArrayHasKey('gender', $options);
