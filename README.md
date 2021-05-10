@@ -1,7 +1,14 @@
 # IaafPoints
 
-PHP library to calculate IAAF scoring points of athletics and IAAF scoring
-points for combined events. And some other evaluations of athletics results.
+PHP library to calculate World Athletics (IAAF) scoring points of athletics and
+WA (IAAF) scoring points for combined events. And some other evaluations of
+track and field results.
+
+> IAAF is rolling a rebrand to WA, but we currently have no plans to rename the
+> package or any of classes.
+
+The WA scoring tables that we reproduce are these ones:
+https://www.worldathletics.org/about-iaaf/documents/technical-information#collapsescoring-tables
 
 This package is used for the stats system of [Latvian Athletics Association](https://athletics.lv).
 

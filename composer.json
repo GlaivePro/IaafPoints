@@ -1,8 +1,9 @@
 {
     "name": "glaivepro/iaafpoints",
-    "description": "PHP library to calculate IAAF scoring points of athletics and IAAF scoring points for combined events.",
+    "description": "PHP library to calculate World Athletics (IAAF) scoring points of athletics and World Athletics (IAAF) scoring points for combined events.",
     "keywords": [
         "iaaf",
+		"world athletics",
         "track and field",
 		"athletics",
 		"scoring tables"
