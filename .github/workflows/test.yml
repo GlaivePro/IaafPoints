@@ -10,20 +10,31 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    name: Test on ${{matrix.php}}
+
+    strategy:
+      matrix:
+        php: [8.0]
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Cache Composer dependencies
-        uses: actions/cache@v2
+      - name: Install PHP
+        uses: shivammathur/setup-php@v2
         with:
-          path: /tmp/composer-cache
-          key: composer-${{ hashFiles('**/composer.json') }}
+          php-version: ${{matrix.php}}
+
+      #- name: Cache Composer dependencies
+      #  uses: actions/cache@v2
+      #  with:
+      #    path: /tmp/composer-cache
+      #    key: composer-${{ hashFiles('**/composer.json') }}
 
       - name: Install dependencies
         uses: php-actions/composer@v6
         with:
-          php_version: 8.0
+          php_version: ${{matrix.php}}
 
       - name: Run tests
         run: composer test
