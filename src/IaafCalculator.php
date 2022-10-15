@@ -19,7 +19,7 @@ class IaafCalculator extends Support\Calculator
 		'gender' => 'm',
 		'electronicMeasurement' => true,
 		'venueType' => 'outdoor',
-		'edition' => '2017',
+		'edition' => '2022',
 	];
 
 	protected $resultShift;

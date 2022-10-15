@@ -43,6 +43,7 @@ class IaafCalculatorTest extends TestCase
 
 		// PHP converts string keys to integers
 		$this->assertContains(2017, $editions);
+		$this->assertContains(2022, $editions);
 	}
 
 	public function testListsDisciplines()
@@ -119,6 +120,16 @@ class IaafCalculatorTest extends TestCase
 		$this->calculator->setOptions(['discipline' => '300m']);
 		$points = $this->calculator->evaluate($result);
 		$this->assertEquals(0, $points);
+
+		// 2017 points
+		$this->calculator->setOptions(['edition' => '2017', 'venueType' => 'outdoor', 'gender' => 'm', 'discipline' => '600m']);
+		$points = $this->calculator->evaluate(79.09);
+		$this->assertEquals(988, $points);
+
+		// 2022 points
+		$this->calculator->setOptions(['edition' => '2022', 'venueType' => 'outdoor', 'gender' => 'm', 'discipline' => '600m']);
+		$points = $this->calculator->evaluate(79.09);
+		$this->assertEquals(1980, $points);
 	}
 
 	public function testLegacyInterface()
