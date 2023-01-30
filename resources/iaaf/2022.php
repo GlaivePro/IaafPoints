@@ -122,7 +122,7 @@ return [
 			],
 			'4x400m' => [
 				'resultShift' => -334,
-				'conversionFactor' => 0.05026,
+				'conversionFactor' => 0.0505,
 				'pointShift' => 0,
 			],
 			/****************/
