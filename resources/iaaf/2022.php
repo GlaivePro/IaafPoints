@@ -35,7 +35,7 @@ return [
 				'pointShift' => 0,
 			],
 			'600m' => [
-				'resultShift' => -131,
+				'resultShift' => -129.5,
 				'conversionFactor' => 0.367,
 				'pointShift' => 0,
 			],
@@ -45,8 +45,8 @@ return [
 				'pointShift' => 0,
 			],
 			'1000m' => [
-				'resultShift' => -240,
-				'conversionFactor' => 0.1074,
+				'resultShift' => -237.5,
+				'conversionFactor' => 0.1123,
 				'pointShift' => 0,
 			],
 			'1500m' => [
@@ -130,7 +130,7 @@ return [
 			/****************/
 			'10km' => [
 				'resultShift' => -3150,
-				'conversionFactor' => 0.00052841,
+				'conversionFactor' => 0.000524,
 				'pointShift' => 0,
 			],
 			'15km' => [
@@ -144,28 +144,28 @@ return [
 				'pointShift' => 0,
 			],
 			'20km' => [
-				'resultShift' => -6629,
-				'conversionFactor' => 0.0001147,
+				'resultShift' => -6702,
+				'conversionFactor' => 0.00010856,
 				'pointShift' => 0,
 			],
 			'half_marathon' => [
-				'resultShift' => -7020,
-				'conversionFactor' => 0.000102,
+				'resultShift' => -7140,
+				'conversionFactor' => 0.0000947,
 				'pointShift' => 0,
 			],
 			'25km' => [
-				'resultShift' => -8536,
-				'conversionFactor' => 0.00006765,
+				'resultShift' => -8726,
+				'conversionFactor' => 0.0000616,
 				'pointShift' => 0,
 			],
 			'30km' => [
-				'resultShift' => -10531,
-				'conversionFactor' => 0.00004353,
+				'resultShift' => -10824,
+				'conversionFactor' => 0.0000389,
 				'pointShift' => 0,
 			],
 			'marathon' => [
-				'resultShift' => -15600,
-				'conversionFactor' => 0.0000191,
+				'resultShift' => -16200,
+				'conversionFactor' => 0.00001645,
 				'pointShift' => 0,
 			],
 			'100km' => [
@@ -177,18 +177,18 @@ return [
 			/* RACE WALKING */
 			/****************/
 			'3kmW' => [
-				'resultShift' => -1650,
-				'conversionFactor' => 0.001209,
+				'resultShift' => -1605,
+				'conversionFactor' => 0.001318,
 				'pointShift' => 0,
 			],
 			'5kmW' => [
-				'resultShift' => -2760,
-				'conversionFactor' => 0.000436,
+				'resultShift' => -2700,
+				'conversionFactor' => 0.000467,
 				'pointShift' => 0,
 			],
 			'10kmW' => [
-				'resultShift' => -5580,
-				'conversionFactor' => 0.0001118,
+				'resultShift' => -5550,
+				'conversionFactor' => 0.0001137,
 				'pointShift' => 0,
 			],
 			'20kmW' => [
@@ -202,8 +202,8 @@ return [
 				'pointShift' => 0,
 			],
 			'35kmW' => [
-				'resultShift' => -23400,
-				'conversionFactor' => 0.00000576,
+				'resultShift' => -22800,
+				'conversionFactor' => 0.00000614,
 				'pointShift' => 0,
 			],
 			'50kmW' => [
@@ -245,8 +245,8 @@ return [
 				'pointShift' => -20000,
 			],
 			'hammer_throw' => [
-				'resultShift' => 2669.4,
-				'conversionFactor' => 0.0028038,
+				'resultShift' => 2649.4,
+				'conversionFactor' => 0.0028462,
 				'pointShift' => -20000,
 			],
 			'javelin_throw' => [
