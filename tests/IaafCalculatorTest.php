@@ -129,7 +129,7 @@ class IaafCalculatorTest extends TestCase
 		// 2022 points
 		$this->calculator->setOptions(['edition' => '2022', 'venueType' => 'outdoor', 'gender' => 'm', 'discipline' => '600m']);
 		$points = $this->calculator->evaluate(79.09);
-		$this->assertEquals(1980, $points);
+		$this->assertEquals(980, $points);
 	}
 
 	public function testLegacyInterface()
