@@ -191,6 +191,11 @@ return [
 				'conversionFactor' => 0.0001137,
 				'pointShift' => 0,
 			],
+			'15kmW' => [
+				'resultShift' => -8430,
+				'conversionFactor' => 0.0000498,
+				'pointShift' => 0,
+			],
 			'20kmW' => [
 				'resultShift' => -11400,
 				'conversionFactor' => 0.00002735,
