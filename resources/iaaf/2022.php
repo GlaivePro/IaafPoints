@@ -346,8 +346,8 @@ return [
 				'pointShift' => 0,
 			],
 			'600m' => [
-				'resultShift' => -184,
-				'conversionFactor' => 0.1192,
+				'resultShift' => -180,
+				'conversionFactor' => 0.129,
 				'pointShift' => 0,
 			],
 			'800m' => [
@@ -409,8 +409,8 @@ return [
 				'pointShift' => 0,
 			],
 			'2000mSt' => [
-				'resultShift' => -880,
-				'conversionFactor' => 0.0045,
+				'resultShift' => -932,
+				'conversionFactor' => 0.003636,
 				'pointShift' => 0,
 			],
 			'3000mSt' => [
