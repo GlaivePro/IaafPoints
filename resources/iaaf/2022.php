@@ -441,22 +441,22 @@ return [
 			/****************/
 			'10km' => [
 				'resultShift' => -4500,
-				'conversionFactor' => 0.0001742,
+				'conversionFactor' => 0.0001712,
 				'pointShift' => 0,
 			],
 			'15km' => [
-				'resultShift' => -6905,
-				'conversionFactor' => 0.0000732,
+				'resultShift' => -7289,
+				'conversionFactor' => 0.0000595,
 				'pointShift' => 0,
 			],
 			'10miles' => [
-				'resultShift' => -7438,
-				'conversionFactor' => 0.000063,
+				'resultShift' => -7904,
+				'conversionFactor' => 0.00005016,
 				'pointShift' => 0,
 			],
 			'20km' => [
-				'resultShift' => -9357,
-				'conversionFactor' => 0.0000396,
+				'resultShift' => -10154,
+				'conversionFactor' => 0.00002956,
 				'pointShift' => 0,
 			],
 			'half_marathon' => [
