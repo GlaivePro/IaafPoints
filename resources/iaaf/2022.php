@@ -460,18 +460,18 @@ return [
 				'pointShift' => 0,
 			],
 			'half_marathon' => [
-				'resultShift' => -9900,
-				'conversionFactor' => 0.0000353,
+				'resultShift' => -10798,
+				'conversionFactor' => 0.00002596,
 				'pointShift' => 0,
 			],
 			'25km' => [
-				'resultShift' => -12144,
-				'conversionFactor' => 0.0000228,
+				'resultShift' => -12966,
+				'conversionFactor' => 0.0000181,
 				'pointShift' => 0,
 			],
 			'30km' => [
-				'resultShift' => -15123,
-				'conversionFactor' => 0.00001426,
+				'resultShift' => -15783,
+				'conversionFactor' => 0.00001229,
 				'pointShift' => 0,
 			],
 			'marathon' => [
