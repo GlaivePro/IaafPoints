@@ -226,6 +226,29 @@ return [
 				'conversionFactor' => 0.000002124,
 				'pointShift' => 0,
 			],
+			/*************************/
+			/* RACE WALKING ON TRACK */
+			/*************************/
+			'3000mW' => [ // Identical to 3kmW
+				'resultShift' => -1605,
+				'conversionFactor' => 0.001318,
+				'pointShift' => 0,
+			],
+			'5000mW' => [ // Identical to 5kmW
+				'resultShift' => -2700,
+				'conversionFactor' => 0.000467,
+				'pointShift' => 0,
+			],
+			'10000mW' => [ // Identical to 10kmW
+				'resultShift' => -5550,
+				'conversionFactor' => 0.0001137,
+				'pointShift' => 0,
+			],
+			'15000mW' => [ // Identical to 15kmW
+				'resultShift' => -8430,
+				'conversionFactor' => 0.0000498,
+				'pointShift' => 0,
+			],
 			/*********/
 			/* FIELD */
 			/*********/
