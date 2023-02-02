@@ -133,6 +133,11 @@ return [
 			/****************/
 			/* ROAD RUNNING */
 			/****************/
+			'5km' => [
+				'resultShift' => -1440,
+				'conversionFactor' => 0.002778,
+				'pointShift' => 0,
+			],
 			'10km' => [
 				'resultShift' => -3150,
 				'conversionFactor' => 0.000524,
