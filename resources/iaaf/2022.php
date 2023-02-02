@@ -249,6 +249,26 @@ return [
 				'conversionFactor' => 0.0000498,
 				'pointShift' => 0,
 			],
+			'20000mW' => [ // Identical to 20kmW
+				'resultShift' => -11400,
+				'conversionFactor' => 0.00002735,
+				'pointShift' => 0,
+			],
+			'30000mW' => [ // Identical to 30kmW
+				'resultShift' => -19110,
+				'conversionFactor' => 0.00000893,
+				'pointShift' => 0,
+			],
+			'35000mW' => [ // Identical to 35kmW
+				'resultShift' => -22800,
+				'conversionFactor' => 0.00000614,
+				'pointShift' => 0,
+			],
+			'50000mW' => [ // Identical to 50kmW
+				'resultShift' => -37200,
+				'conversionFactor' => 0.000002124,
+				'pointShift' => 0,
+			],
 			/*********/
 			/* FIELD */
 			/*********/
