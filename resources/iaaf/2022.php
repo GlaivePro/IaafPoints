@@ -887,7 +887,7 @@ return [
 				'resultShift' => -2100,
 				'conversionFactor' => 0.000825,
 				'pointShift' => 0,
-			]
+			],
 			/*************************/
 			/* RACE WALKING ON TRACK */
 			/*************************/
