@@ -79,12 +79,12 @@ return [
 				'conversionFactor' => 0.00703,
 				'pointShift' => 0,
 			],
-			'5000m' => [
+			'5000m' => [ // Identical to 5km
 				'resultShift' => -1440,
 				'conversionFactor' => 0.002778,
 				'pointShift' => 0,
 			],
-			'10000m' => [
+			'10000m' => [ // Identical to 10km
 				'resultShift' => -3150,
 				'conversionFactor' => 0.000524,
 				'pointShift' => 0,
@@ -133,12 +133,12 @@ return [
 			/****************/
 			/* ROAD RUNNING */
 			/****************/
-			'5km' => [
+			'5km' => [ // Identical 5000m
 				'resultShift' => -1440,
 				'conversionFactor' => 0.002778,
 				'pointShift' => 0,
 			],
-			'10km' => [
+			'10km' => [ // Identical to 10000m
 				'resultShift' => -3150,
 				'conversionFactor' => 0.000524,
 				'pointShift' => 0,
@@ -186,42 +186,42 @@ return [
 			/****************/
 			/* RACE WALKING */
 			/****************/
-			'3kmW' => [
+			'3kmW' => [ // Identical to 3000mW
 				'resultShift' => -1605,
 				'conversionFactor' => 0.001318,
 				'pointShift' => 0,
 			],
-			'5kmW' => [
+			'5kmW' => [ // Identical to 5000mW
 				'resultShift' => -2700,
 				'conversionFactor' => 0.000467,
 				'pointShift' => 0,
 			],
-			'10kmW' => [
+			'10kmW' => [ // Identical to 10000mW
 				'resultShift' => -5550,
 				'conversionFactor' => 0.0001137,
 				'pointShift' => 0,
 			],
-			'15kmW' => [
+			'15kmW' => [ // Identical to 15000mW
 				'resultShift' => -8430,
 				'conversionFactor' => 0.0000498,
 				'pointShift' => 0,
 			],
-			'20kmW' => [
+			'20kmW' => [ // Identical to 20000mW
 				'resultShift' => -11400,
 				'conversionFactor' => 0.00002735,
 				'pointShift' => 0,
 			],
-			'30kmW' => [
+			'30kmW' => [ // Identical to 30000mW
 				'resultShift' => -19110,
 				'conversionFactor' => 0.00000893,
 				'pointShift' => 0,
 			],
-			'35kmW' => [
+			'35kmW' => [ // Identical to 35000mW
 				'resultShift' => -22800,
 				'conversionFactor' => 0.00000614,
 				'pointShift' => 0,
 			],
-			'50kmW' => [
+			'50kmW' => [ // Identical to 50000mW
 				'resultShift' => -37200,
 				'conversionFactor' => 0.000002124,
 				'pointShift' => 0,
@@ -390,12 +390,12 @@ return [
 				'conversionFactor' => 0.002157,
 				'pointShift' => 0,
 			],
-			'5000m' => [
+			'5000m' => [ // Identical to 5km
 				'resultShift' => -2100,
 				'conversionFactor' => 0.000808,
 				'pointShift' => 0,
 			],
-			'10000m' => [
+			'10000m' => [ // Identical to 10km
 				'resultShift' => -4500,
 				'conversionFactor' => 0.0001712,
 				'pointShift' => 0,
@@ -444,7 +444,7 @@ return [
 			/****************/
 			/* ROAD RUNNING */
 			/****************/
-			'10km' => [
+			'10km' => [ // Identical to 10000m
 				'resultShift' => -4500,
 				'conversionFactor' => 0.0001712,
 				'pointShift' => 0,
