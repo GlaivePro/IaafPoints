@@ -512,6 +512,11 @@ return [
 				'conversionFactor' => 0.0000785,
 				'pointShift' => 0,
 			],
+			'15kmW' => [ // Identical to 15000mW
+				'resultShift' => -9784,
+				'conversionFactor' => 0.00003388,
+				'pointShift' => 0,
+			],
 			'20kmW' => [ // Identical to 20000mW
 				'resultShift' => -13200,
 				'conversionFactor' => 0.0000187,
@@ -548,6 +553,11 @@ return [
 			'10000mW' => [ // Identical to 10kmW
 				'resultShift' => -6420,
 				'conversionFactor' => 0.0000785,
+				'pointShift' => 0,
+			],
+			'15000mW' => [ // Identical to 15kmW
+				'resultShift' => -9784,
+				'conversionFactor' => 0.00003388,
 				'pointShift' => 0,
 			],
 			'20000mW' => [ // Identical to 20kmW
