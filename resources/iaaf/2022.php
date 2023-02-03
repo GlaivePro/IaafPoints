@@ -444,6 +444,11 @@ return [
 			/****************/
 			/* ROAD RUNNING */
 			/****************/
+			'5km' => [ // Identical to 5000m
+				'resultShift' => -2100,
+				'conversionFactor' => 0.000808,
+				'pointShift' => 0,
+			],
 			'10km' => [ // Identical to 10000m
 				'resultShift' => -4500,
 				'conversionFactor' => 0.0001712,
