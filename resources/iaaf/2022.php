@@ -497,37 +497,75 @@ return [
 			/****************/
 			/* RACE WALKING */
 			/****************/
-			'3kmW' => [
+			'3kmW' => [ // Identical to 3000mW
 				'resultShift' => -1842,
 				'conversionFactor' => 0.000923,
 				'pointShift' => 0,
 			],
-			'5kmW' => [
+			'5kmW' => [ // Identical to 5000mW
 				'resultShift' => -3140,
 				'conversionFactor' => 0.0003246,
 				'pointShift' => 0,
 			],
-			'10kmW' => [
+			'10kmW' => [ // Identical to 10000mW
 				'resultShift' => -6420,
 				'conversionFactor' => 0.0000785,
 				'pointShift' => 0,
 			],
-			'20kmW' => [
+			'20kmW' => [ // Identical to 20000mW
 				'resultShift' => -13200,
 				'conversionFactor' => 0.0000187,
 				'pointShift' => 0,
 			],
-			'30kmW' => [
+			'30kmW' => [ // Identical to 30000mW
 				'resultShift' => -21360,
 				'conversionFactor' => 0.00000689,
 				'pointShift' => 0,
 			],
-			'35kmW' => [
+			'35kmW' => [ // Identical to 35000mW
 				'resultShift' => -25440,
 				'conversionFactor' => 0.00000493,
 				'pointShift' => 0,
 			],
-			'50kmW' => [
+			'50kmW' => [ // Identical to 50000mW
+				'resultShift' => -39360,
+				'conversionFactor' => 0.00000199,
+				'pointShift' => 0,
+			],
+			/*************************/
+			/* RACE WALKING ON TRACK */
+			/*************************/
+			'3000mW' => [ // Identical to 3kmW
+				'resultShift' => -1842,
+				'conversionFactor' => 0.000923,
+				'pointShift' => 0,
+			],
+			'5000mW' => [ // Identical to 5kmW
+				'resultShift' => -3140,
+				'conversionFactor' => 0.0003246,
+				'pointShift' => 0,
+			],
+			'10000mW' => [ // Identical to 10kmW
+				'resultShift' => -6420,
+				'conversionFactor' => 0.0000785,
+				'pointShift' => 0,
+			],
+			'20000mW' => [ // Identical to 20kmW
+				'resultShift' => -13200,
+				'conversionFactor' => 0.0000187,
+				'pointShift' => 0,
+			],
+			'30000mW' => [ // Identical to 30kmW
+				'resultShift' => -21360,
+				'conversionFactor' => 0.00000689,
+				'pointShift' => 0,
+			],
+			'35000mW' => [ // Identical to 35kmW
+				'resultShift' => -25440,
+				'conversionFactor' => 0.00000493,
+				'pointShift' => 0,
+			],
+			'50000mW' => [ // Identical to 50kmW
 				'resultShift' => -39360,
 				'conversionFactor' => 0.00000199,
 				'pointShift' => 0,
