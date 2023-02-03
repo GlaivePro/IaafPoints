@@ -718,6 +718,24 @@ return [
 				'conversionFactor' => 0.0029,
 				'pointShift' => 0,
 			],
+			/*************************/
+			/* RACE WALKING ON TRACK */
+			/*************************/
+			'3000mW' => [ // Identical to 3kmW
+				'resultShift' => -1605,
+				'conversionFactor' => 0.001318,
+				'pointShift' => 0,
+			],
+			'5000mW' => [ // Identical to 5kmW
+				'resultShift' => -2700,
+				'conversionFactor' => 0.000467,
+				'pointShift' => 0,
+			],
+			'10000mW' => [ // Identical to 10kmW
+				'resultShift' => -5550,
+				'conversionFactor' => 0.0001137,
+				'pointShift' => 0,
+			],
 			/***********/
 			/* HURDLES */
 			/***********/
@@ -868,6 +886,24 @@ return [
 			'5000m' => [
 				'resultShift' => -2100,
 				'conversionFactor' => 0.000825,
+				'pointShift' => 0,
+			]
+			/*************************/
+			/* RACE WALKING ON TRACK */
+			/*************************/
+			'3000mW' => [ // Identical to outdoor
+				'resultShift' => -1842,
+				'conversionFactor' => 0.000923,
+				'pointShift' => 0,
+			],
+			'5000mW' => [ // Identical to outdoor
+				'resultShift' => -3140,
+				'conversionFactor' => 0.0003246,
+				'pointShift' => 0,
+			],
+			'10000mW' => [ // Identical to outdoor
+				'resultShift' => -6420,
+				'conversionFactor' => 0.0000785,
 				'pointShift' => 0,
 			],
 			/***********/
