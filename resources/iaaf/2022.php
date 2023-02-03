@@ -488,8 +488,8 @@ return [
 			/* RACE WALKING */
 			/****************/
 			'3kmW' => [
-				'resultShift' => -1871,
-				'conversionFactor' => 0.000881,
+				'resultShift' => -1842,
+				'conversionFactor' => 0.000923,
 				'pointShift' => 0,
 			],
 			'5kmW' => [
@@ -498,8 +498,8 @@ return [
 				'pointShift' => 0,
 			],
 			'10kmW' => [
-				'resultShift' => -6437,
-				'conversionFactor' => 0.0000779,
+				'resultShift' => -6420,
+				'conversionFactor' => 0.0000785,
 				'pointShift' => 0,
 			],
 			'20kmW' => [
@@ -508,13 +508,18 @@ return [
 				'pointShift' => 0,
 			],
 			'30kmW' => [
-				'resultShift' => -21545,
-				'conversionFactor' => 0.0000069,
+				'resultShift' => -21360,
+				'conversionFactor' => 0.00000689,
+				'pointShift' => 0,
+			],
+			'35kmW' => [
+				'resultShift' => -25440,
+				'conversionFactor' => 0.00000493,
 				'pointShift' => 0,
 			],
 			'50kmW' => [
-				'resultShift' => -39952,
-				'conversionFactor' => 0.00000196,
+				'resultShift' => -39360,
+				'conversionFactor' => 0.00000199,
 				'pointShift' => 0,
 			],
 			/*********/
