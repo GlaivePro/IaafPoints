@@ -345,6 +345,11 @@ return [
 				'conversionFactor' => 0.335,
 				'pointShift' => 0,
 			],
+			'500m' => [
+				'resultShift' => -145.5,
+				'conversionFactor' => 0.1876,
+				'pointShift' => 0,
+			],
 			'600m' => [
 				'resultShift' => -180,
 				'conversionFactor' => 0.129,
