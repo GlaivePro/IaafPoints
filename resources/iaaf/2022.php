@@ -114,6 +114,63 @@ $longDistanceRuns = [
 	],
 ];
 
+$fieldEvents = [
+	'm' => [
+		'high_jump' => [
+			'resultShift' => 11.534,
+			'conversionFactor' => 32.29,
+			'pointShift' => -5000,
+		],
+		'pole_vault' => [
+			'resultShift' => 39.39,
+			'conversionFactor' => 3.042,
+			'pointShift' => -5000,
+		],
+		'long_jump' => [
+			'resultShift' => 48.41,
+			'conversionFactor' => 1.929,
+			'pointShift' => -5000,
+		],
+		'triple_jump' => [
+			'resultShift' => 98.63,
+			'conversionFactor' => 0.4611,
+			'pointShift' => -5000,
+		],
+		'shot_put' => [
+			'resultShift' => 687.7,
+			'conversionFactor' => 0.042172,
+			'pointShift' => -20000,
+		],
+	],
+	'f' => [
+		'high_jump' => [
+			'resultShift' => 10.574,
+			'conversionFactor' => 39.34,
+			'pointShift' => -5000,
+		],
+		'pole_vault' => [
+			'resultShift' => 34.83,
+			'conversionFactor' => 3.953,
+			'pointShift' => -5000,
+		],
+		'long_jump' => [
+			'resultShift' => 49.24,
+			'conversionFactor' => 1.966,
+			'pointShift' => -5000,
+		],
+		'triple_jump' => [
+			'resultShift' => 105.53,
+			'conversionFactor' => 0.4282,
+			'pointShift' => -5000,
+		],
+		'shot_put' => [
+			'resultShift' => 657.53,
+			'conversionFactor' => 0.0462,
+			'pointShift' => -20000,
+		],
+	],
+];
+
 /**
  * @param array $constants
  *   Array containing coefficients to calculate points.
@@ -306,31 +363,11 @@ return [
 			/*********/
 			/* FIELD */
 			/*********/
-			'high_jump' => [ // Identical to indoor
-				'resultShift' => 11.534,
-				'conversionFactor' => 32.29,
-				'pointShift' => -5000,
-			],
-			'pole_vault' => [ // Identical to indoor
-				'resultShift' => 39.39,
-				'conversionFactor' => 3.042,
-				'pointShift' => -5000,
-			],
-			'long_jump' => [ // Identical to indoor
-				'resultShift' => 48.41,
-				'conversionFactor' => 1.929,
-				'pointShift' => -5000,
-			],
-			'triple_jump' => [ // Identical to indoor
-				'resultShift' => 98.63,
-				'conversionFactor' => 0.4611,
-				'pointShift' => -5000,
-			],
-			'shot_put' => [ // Identical to indoor
-				'resultShift' => 687.7,
-				'conversionFactor' => 0.042172,
-				'pointShift' => -20000,
-			],
+			'high_jump' => $fieldEvents['m']['high_jump'],
+			'pole_vault' => $fieldEvents['m']['pole_vault'],
+			'long_jump' => $fieldEvents['m']['long_jump'],
+			'triple_jump' => $fieldEvents['m']['triple_jump'],
+			'shot_put' => $fieldEvents['m']['shot_put'],
 			'discus_throw' => [
 				'resultShift' => 2232.6,
 				'conversionFactor' => 0.004007,
@@ -537,31 +574,11 @@ return [
 			/*********/
 			/* FIELD */
 			/*********/
-			'high_jump' => [ // Identical to indoor
-				'resultShift' => 10.574,
-				'conversionFactor' => 39.34,
-				'pointShift' => -5000,
-			],
-			'pole_vault' => [ // Identical to indoor
-				'resultShift' => 34.83,
-				'conversionFactor' => 3.953,
-				'pointShift' => -5000,
-			],
-			'long_jump' => [ // Identical to indoor
-				'resultShift' => 49.24,
-				'conversionFactor' => 1.966,
-				'pointShift' => -5000,
-			],
-			'triple_jump' => [ // Identical to indoor
-				'resultShift' => 105.53,
-				'conversionFactor' => 0.4282,
-				'pointShift' => -5000,
-			],
-			'shot_put' => [ // Identical to indoor
-				'resultShift' => 657.53,
-				'conversionFactor' => 0.0462,
-				'pointShift' => -20000,
-			],
+			'high_jump' => $fieldEvents['f']['high_jump'],
+			'pole_vault' => $fieldEvents['f']['pole_vault'],
+			'long_jump' => $fieldEvents['f']['long_jump'],
+			'triple_jump' => $fieldEvents['f']['triple_jump'],
+			'shot_put' => $fieldEvents['f']['shot_put'],
 			'discus_throw' => [
 				'resultShift' => 2227.3,
 				'conversionFactor' => 0.0040277,
@@ -712,31 +729,11 @@ return [
 			/*********/
 			/* FIELD */
 			/*********/
-			'high_jump' => [ // Identical to outdoor
-				'resultShift' => 11.534,
-				'conversionFactor' => 32.29,
-				'pointShift' => -5000,
-			],
-			'pole_vault' => [ // Identical to outdoor
-				'resultShift' => 39.39,
-				'conversionFactor' => 3.042,
-				'pointShift' => -5000,
-			],
-			'long_jump' => [ // Identical to outdoor
-				'resultShift' => 48.41,
-				'conversionFactor' => 1.929,
-				'pointShift' => -5000,
-			],
-			'triple_jump' => [ // Identical to outdoor
-				'resultShift' => 98.63,
-				'conversionFactor' => 0.4611,
-				'pointShift' => -5000,
-			],
-			'shot_put' => [ // Identical to outdoor
-				'resultShift' => 687.7,
-				'conversionFactor' => 0.042172,
-				'pointShift' => -20000,
-			],
+			'high_jump' => $fieldEvents['m']['high_jump'],
+			'pole_vault' => $fieldEvents['m']['pole_vault'],
+			'long_jump' => $fieldEvents['m']['long_jump'],
+			'triple_jump' => $fieldEvents['m']['triple_jump'],
+			'shot_put' => $fieldEvents['m']['shot_put'],
 			/************/
 			/* COMBINED */
 			/************/
@@ -870,31 +867,11 @@ return [
 			/*********/
 			/* FIELD */
 			/*********/
-			'high_jump' => [ // Identical to outdoor
-				'resultShift' => 10.574,
-				'conversionFactor' => 39.34,
-				'pointShift' => -5000,
-			],
-			'pole_vault' => [ // Identical to outdoor
-				'resultShift' => 34.83,
-				'conversionFactor' => 3.953,
-				'pointShift' => -5000,
-			],
-			'long_jump' => [ // Identical to outdoor
-				'resultShift' => 49.24,
-				'conversionFactor' => 1.966,
-				'pointShift' => -5000,
-			],
-			'triple_jump' => [ // Identical to outdoor
-				'resultShift' => 105.53,
-				'conversionFactor' => 0.4282,
-				'pointShift' => -5000,
-			],
-			'shot_put' => [ // Identical to outdoor
-				'resultShift' => 657.53,
-				'conversionFactor' => 0.0462,
-				'pointShift' => -20000,
-			],
+			'high_jump' => $fieldEvents['f']['high_jump'],
+			'pole_vault' => $fieldEvents['f']['pole_vault'],
+			'long_jump' => $fieldEvents['f']['long_jump'],
+			'triple_jump' => $fieldEvents['f']['triple_jump'],
+			'shot_put' => $fieldEvents['f']['shot_put'],
 			/************/
 			/* COMBINED */
 			/************/
