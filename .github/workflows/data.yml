@@ -1,0 +1,33 @@
+name: data
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'resources/**'
+
+jobs:
+  update:
+    runs-on: ubuntu-22.04
+
+    name: Generate coef exports in /data
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.2
+          coverage: none
+
+      - name: Run JSON generator
+        run: php bin/prepare_json.php
+
+      - name: Commit coef exports
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update coef exports
+          file_pattern: data/
