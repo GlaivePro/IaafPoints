@@ -4,7 +4,7 @@
  * @param array $constants
  *   Array containing coefficients to calculate points.
  *
- *   @type float $constants['edition']['type']['gender']['discipline']
+ *   @type float $constants['edition']['type']['gender']['discipline']['class']
  */
 return [
 	'field' =>[
