@@ -4,9 +4,9 @@
  * @param array $constants
  *   Array containing coefficients to calculate points.
  *
- *   @type float $constants['edition']['gender']['ageGroup']['discipline']['resultShift']
- *   @type float $constants['edition']['gender']['ageGroup']['discipline']['conversionFactor']
- *   @type float $constants['edition']['gender']['ageGroup']['discipline']['exponent']
+ *   @type float $constants[gender][ageGroup][discipline]['resultShift']
+ *   @type float $constants[gender][ageGroup][discipline]['conversionFactor']
+ *   @type float $constants[gender][ageGroup][discipline]['exponent']
  */
 return [
 	'm' => [

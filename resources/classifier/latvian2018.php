@@ -2,9 +2,9 @@
 
 /**
  * @param array $constants
- *   Array containing coefficients to calculate points.
+ *   Array containing thresholds for classes.
  *
- *   @type float $constants['edition']['type']['gender']['discipline']['class']
+ *   @type float $constants[type][gender][discipline][class]
  */
 return [
 	'field' =>[

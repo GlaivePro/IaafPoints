@@ -175,9 +175,9 @@ $fieldEvents = [
  * @param array $constants
  *   Array containing coefficients to calculate points.
  *
- *   @type float $constants['edition']['venueType']['gender']['discipline']['resultShift']
- *   @type float $constants['edition']['venueType']['gender']['discipline']['conversionFactor']
- *   @type float $constants['edition']['venueType']['gender']['discipline']['pointShift']
+ *   @type float $constants[venueType][gender][discipline]['resultShift']
+ *   @type float $constants[venueType][gender][discipline]['conversionFactor']
+ *   @type float $constants[venueType][gender][discipline]['pointShift']
  */
 return [
 	'outdoor' => [
