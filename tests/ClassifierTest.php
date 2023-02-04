@@ -1,12 +1,15 @@
 <?php
 
+use GlaivePro\IaafPoints\Classifier;
 use PHPUnit\Framework\TestCase;
 
 class ClassifierTest extends TestCase
 {
+	protected Classifier $classifier;
+
 	public function setUp(): void
 	{
-		$this->classifier = new \GlaivePro\IaafPoints\Classifier;
+		$this->classifier = new Classifier;
 	}
 
     public function testOptionsCanBeRetrieved()

@@ -1,12 +1,15 @@
 <?php
 
+use GlaivePro\IaafPoints\YouthguardCalculator;
 use PHPUnit\Framework\TestCase;
 
 class YouthguardCalculatorTest extends TestCase
 {
+	protected YouthguardCalculator $calculator;
+
 	public function setUp(): void
 	{
-		$this->calculator = new \GlaivePro\IaafPoints\YouthguardCalculator;
+		$this->calculator = new YouthguardCalculator;
 	}
 
     public function testOptionsCanBeRetrieved()

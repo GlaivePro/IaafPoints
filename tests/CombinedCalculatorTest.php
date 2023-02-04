@@ -1,12 +1,15 @@
 <?php
 
+use GlaivePro\IaafPoints\CombinedCalculator;
 use PHPUnit\Framework\TestCase;
 
 class CombinedCalculatorTest extends TestCase
 {
+	protected CombinedCalculator $calculator;
+
 	public function setUp(): void
 	{
-		$this->calculator = new \GlaivePro\IaafPoints\CombinedCalculator;
+		$this->calculator = new CombinedCalculator;
 	}
 
     public function testOptionsCanBeRetrieved()

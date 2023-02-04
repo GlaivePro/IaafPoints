@@ -1,12 +1,15 @@
 <?php
 
+use GlaivePro\IaafPoints\IaafCalculator;
 use PHPUnit\Framework\TestCase;
 
 class IaafCalculatorTest extends TestCase
 {
+	protected IaafCalculator $calculator;
+
 	public function setUp(): void
 	{
-		$this->calculator = new \GlaivePro\IaafPoints\IaafCalculator;
+		$this->calculator = new IaafCalculator;
 	}
 
     public function testOptionsCanBeRetrieved()
