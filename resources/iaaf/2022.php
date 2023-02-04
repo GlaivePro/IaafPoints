@@ -87,6 +87,33 @@ $walks = [
 	],
 ];
 
+$longDistanceRuns = [
+	'm' => [
+		'5km' => [
+			'resultShift' => -1440,
+			'conversionFactor' => 0.002778,
+			'pointShift' => 0,
+		],
+		'10km' => [
+			'resultShift' => -3150,
+			'conversionFactor' => 0.000524,
+			'pointShift' => 0,
+		],
+	],
+	'f' => [
+		'5km' => [
+			'resultShift' => -2100,
+			'conversionFactor' => 0.000808,
+			'pointShift' => 0,
+		],
+		'10km' => [
+			'resultShift' => -4500,
+			'conversionFactor' => 0.0001712,
+			'pointShift' => 0,
+		],
+	],
+];
+
 /**
  * @param array $constants
  *   Array containing coefficients to calculate points.
@@ -166,16 +193,8 @@ return [
 				'conversionFactor' => 0.00703,
 				'pointShift' => 0,
 			],
-			'5000m' => [ // Identical to 5km
-				'resultShift' => -1440,
-				'conversionFactor' => 0.002778,
-				'pointShift' => 0,
-			],
-			'10000m' => [ // Identical to 10km
-				'resultShift' => -3150,
-				'conversionFactor' => 0.000524,
-				'pointShift' => 0,
-			],
+			'5000m' => $longDistanceRuns['m']['5km'],
+			'10000m' => $longDistanceRuns['m']['10km'],
 			/***********/
 			/* HURDLES */
 			/***********/
@@ -220,16 +239,8 @@ return [
 			/****************/
 			/* ROAD RUNNING */
 			/****************/
-			'5km' => [ // Identical 5000m
-				'resultShift' => -1440,
-				'conversionFactor' => 0.002778,
-				'pointShift' => 0,
-			],
-			'10km' => [ // Identical to 10000m
-				'resultShift' => -3150,
-				'conversionFactor' => 0.000524,
-				'pointShift' => 0,
-			],
+			'5km' => $longDistanceRuns['m']['5km'],
+			'10km' => $longDistanceRuns['m']['10km'],
 			'15km' => [
 				'resultShift' => -4868,
 				'conversionFactor' => 0.0002162,
@@ -413,16 +424,8 @@ return [
 				'conversionFactor' => 0.002157,
 				'pointShift' => 0,
 			],
-			'5000m' => [ // Identical to 5km
-				'resultShift' => -2100,
-				'conversionFactor' => 0.000808,
-				'pointShift' => 0,
-			],
-			'10000m' => [ // Identical to 10km
-				'resultShift' => -4500,
-				'conversionFactor' => 0.0001712,
-				'pointShift' => 0,
-			],
+			'5000m' => $longDistanceRuns['f']['5km'],
+			'10000m' => $longDistanceRuns['f']['10km'],
 			/***********/
 			/* HURDLES */
 			/***********/
@@ -467,16 +470,8 @@ return [
 			/****************/
 			/* ROAD RUNNING */
 			/****************/
-			'5km' => [ // Identical to 5000m
-				'resultShift' => -2100,
-				'conversionFactor' => 0.000808,
-				'pointShift' => 0,
-			],
-			'10km' => [ // Identical to 10000m
-				'resultShift' => -4500,
-				'conversionFactor' => 0.0001712,
-				'pointShift' => 0,
-			],
+			'5km' => $longDistanceRuns['f']['5km'],
+			'10km' => $longDistanceRuns['f']['10km'],
 			'15km' => [
 				'resultShift' => -7289,
 				'conversionFactor' => 0.0000595,
