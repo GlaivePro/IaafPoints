@@ -16,17 +16,20 @@ foreach ($files->index() as $name => $input) {
 		'Type',
 		'Gender',
 		'Discipline',
+		'Classification',
 		'Threshold',
 	]);
 
 	$data = include $input;
 	foreach ($data as $type => $genders)
 		foreach ($genders as $gender => $disciplines)
-			foreach ($disciplines as $discipline => $threshold)
-				fputcsv($output, [
-					$type,
-					$gender,
-					$discipline,
-					$threshold,
-				]);
+			foreach ($disciplines as $discipline => $classes)
+				foreach ($classes as $class => $threshold)
+					fputcsv($output, [
+						$type,
+						$gender,
+						$discipline,
+						$class,
+						$threshold,
+					]);
 }
