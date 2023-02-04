@@ -1,5 +1,92 @@
 <?php
 
+$walks = [
+	'm' => [
+		'3km' => [
+			'resultShift' => -1605,
+			'conversionFactor' => 0.001318,
+			'pointShift' => 0,
+		],
+		'5km' => [
+			'resultShift' => -2700,
+			'conversionFactor' => 0.000467,
+			'pointShift' => 0,
+		],
+		'10km' => [
+			'resultShift' => -5550,
+			'conversionFactor' => 0.0001137,
+			'pointShift' => 0,
+		],
+		'15km' => [
+			'resultShift' => -8430,
+			'conversionFactor' => 0.0000498,
+			'pointShift' => 0,
+		],
+		'20km' => [
+			'resultShift' => -11400,
+			'conversionFactor' => 0.00002735,
+			'pointShift' => 0,
+		],
+		'30km' => [
+			'resultShift' => -19110,
+			'conversionFactor' => 0.00000893,
+			'pointShift' => 0,
+		],
+		'35km' => [
+			'resultShift' => -22800,
+			'conversionFactor' => 0.00000614,
+			'pointShift' => 0,
+		],
+		'50km' => [
+			'resultShift' => -37200,
+			'conversionFactor' => 0.000002124,
+			'pointShift' => 0,
+		],
+	],
+	'f' => [
+		'3km' => [
+			'resultShift' => -1842,
+			'conversionFactor' => 0.000923,
+			'pointShift' => 0,
+		],
+		'5km' => [
+			'resultShift' => -3140,
+			'conversionFactor' => 0.0003246,
+			'pointShift' => 0,
+		],
+		'10km' => [
+			'resultShift' => -6420,
+			'conversionFactor' => 0.0000785,
+			'pointShift' => 0,
+		],
+		'15km' => [
+			'resultShift' => -9784,
+			'conversionFactor' => 0.00003388,
+			'pointShift' => 0,
+		],
+		'20km' => [
+			'resultShift' => -13200,
+			'conversionFactor' => 0.0000187,
+			'pointShift' => 0,
+		],
+		'30km' => [
+			'resultShift' => -21360,
+			'conversionFactor' => 0.00000689,
+			'pointShift' => 0,
+		],
+		'35km' => [
+			'resultShift' => -25440,
+			'conversionFactor' => 0.00000493,
+			'pointShift' => 0,
+		],
+		'50km' => [
+			'resultShift' => -39360,
+			'conversionFactor' => 0.00000199,
+			'pointShift' => 0,
+		],
+	],
+];
+
 /**
  * @param array $constants
  *   Array containing coefficients to calculate points.
@@ -186,89 +273,25 @@ return [
 			/****************/
 			/* RACE WALKING */
 			/****************/
-			'3kmW' => [ // Identical to 3000mW
-				'resultShift' => -1605,
-				'conversionFactor' => 0.001318,
-				'pointShift' => 0,
-			],
-			'5kmW' => [ // Identical to 5000mW
-				'resultShift' => -2700,
-				'conversionFactor' => 0.000467,
-				'pointShift' => 0,
-			],
-			'10kmW' => [ // Identical to 10000mW
-				'resultShift' => -5550,
-				'conversionFactor' => 0.0001137,
-				'pointShift' => 0,
-			],
-			'15kmW' => [ // Identical to 15000mW
-				'resultShift' => -8430,
-				'conversionFactor' => 0.0000498,
-				'pointShift' => 0,
-			],
-			'20kmW' => [ // Identical to 20000mW
-				'resultShift' => -11400,
-				'conversionFactor' => 0.00002735,
-				'pointShift' => 0,
-			],
-			'30kmW' => [ // Identical to 30000mW
-				'resultShift' => -19110,
-				'conversionFactor' => 0.00000893,
-				'pointShift' => 0,
-			],
-			'35kmW' => [ // Identical to 35000mW
-				'resultShift' => -22800,
-				'conversionFactor' => 0.00000614,
-				'pointShift' => 0,
-			],
-			'50kmW' => [ // Identical to 50000mW
-				'resultShift' => -37200,
-				'conversionFactor' => 0.000002124,
-				'pointShift' => 0,
-			],
+			'3kmW' => $walks['m']['3km'],
+			'5kmW' => $walks['m']['5km'],
+			'10kmW' =>  $walks['m']['10km'],
+			'15kmW' =>  $walks['m']['15km'],
+			'20kmW' =>  $walks['m']['20km'],
+			'30kmW' =>  $walks['m']['30km'],
+			'35kmW' =>  $walks['m']['35km'],
+			'50kmW' =>  $walks['m']['50km'],
 			/*************************/
 			/* RACE WALKING ON TRACK */
 			/*************************/
-			'3000mW' => [ // Identical to 3kmW
-				'resultShift' => -1605,
-				'conversionFactor' => 0.001318,
-				'pointShift' => 0,
-			],
-			'5000mW' => [ // Identical to 5kmW
-				'resultShift' => -2700,
-				'conversionFactor' => 0.000467,
-				'pointShift' => 0,
-			],
-			'10000mW' => [ // Identical to 10kmW
-				'resultShift' => -5550,
-				'conversionFactor' => 0.0001137,
-				'pointShift' => 0,
-			],
-			'15000mW' => [ // Identical to 15kmW
-				'resultShift' => -8430,
-				'conversionFactor' => 0.0000498,
-				'pointShift' => 0,
-			],
-			'20000mW' => [ // Identical to 20kmW
-				'resultShift' => -11400,
-				'conversionFactor' => 0.00002735,
-				'pointShift' => 0,
-			],
-			'30000mW' => [ // Identical to 30kmW
-				'resultShift' => -19110,
-				'conversionFactor' => 0.00000893,
-				'pointShift' => 0,
-			],
-			'35000mW' => [ // Identical to 35kmW
-				'resultShift' => -22800,
-				'conversionFactor' => 0.00000614,
-				'pointShift' => 0,
-			],
-			'50000mW' => [ // Identical to 50kmW
-				'resultShift' => -37200,
-				'conversionFactor' => 0.000002124,
-				'pointShift' => 0,
-			],
+			'3000mW' => $walks['m']['3km'],
+			'5000mW' => $walks['m']['5km'],
+			'10000mW' =>  $walks['m']['10km'],
+			'15000mW' =>  $walks['m']['15km'],
+			'20000mW' =>  $walks['m']['20km'],
+			'30000mW' =>  $walks['m']['30km'],
+			'35000mW' =>  $walks['m']['35km'],
+			'50000mW' =>  $walks['m']['50km'],
 			/*********/
 			/* FIELD */
 			/*********/
@@ -497,89 +520,25 @@ return [
 			/****************/
 			/* RACE WALKING */
 			/****************/
-			'3kmW' => [ // Identical to 3000mW
-				'resultShift' => -1842,
-				'conversionFactor' => 0.000923,
-				'pointShift' => 0,
-			],
-			'5kmW' => [ // Identical to 5000mW
-				'resultShift' => -3140,
-				'conversionFactor' => 0.0003246,
-				'pointShift' => 0,
-			],
-			'10kmW' => [ // Identical to 10000mW
-				'resultShift' => -6420,
-				'conversionFactor' => 0.0000785,
-				'pointShift' => 0,
-			],
-			'15kmW' => [ // Identical to 15000mW
-				'resultShift' => -9784,
-				'conversionFactor' => 0.00003388,
-				'pointShift' => 0,
-			],
-			'20kmW' => [ // Identical to 20000mW
-				'resultShift' => -13200,
-				'conversionFactor' => 0.0000187,
-				'pointShift' => 0,
-			],
-			'30kmW' => [ // Identical to 30000mW
-				'resultShift' => -21360,
-				'conversionFactor' => 0.00000689,
-				'pointShift' => 0,
-			],
-			'35kmW' => [ // Identical to 35000mW
-				'resultShift' => -25440,
-				'conversionFactor' => 0.00000493,
-				'pointShift' => 0,
-			],
-			'50kmW' => [ // Identical to 50000mW
-				'resultShift' => -39360,
-				'conversionFactor' => 0.00000199,
-				'pointShift' => 0,
-			],
+			'3kmW' => $walks['f']['3km'],
+			'5kmW' => $walks['f']['5km'],
+			'10kmW' =>  $walks['f']['10km'],
+			'15kmW' =>  $walks['f']['15km'],
+			'20kmW' =>  $walks['f']['20km'],
+			'30kmW' =>  $walks['f']['30km'],
+			'35kmW' =>  $walks['f']['35km'],
+			'50kmW' =>  $walks['f']['50km'],
 			/*************************/
 			/* RACE WALKING ON TRACK */
 			/*************************/
-			'3000mW' => [ // Identical to 3kmW
-				'resultShift' => -1842,
-				'conversionFactor' => 0.000923,
-				'pointShift' => 0,
-			],
-			'5000mW' => [ // Identical to 5kmW
-				'resultShift' => -3140,
-				'conversionFactor' => 0.0003246,
-				'pointShift' => 0,
-			],
-			'10000mW' => [ // Identical to 10kmW
-				'resultShift' => -6420,
-				'conversionFactor' => 0.0000785,
-				'pointShift' => 0,
-			],
-			'15000mW' => [ // Identical to 15kmW
-				'resultShift' => -9784,
-				'conversionFactor' => 0.00003388,
-				'pointShift' => 0,
-			],
-			'20000mW' => [ // Identical to 20kmW
-				'resultShift' => -13200,
-				'conversionFactor' => 0.0000187,
-				'pointShift' => 0,
-			],
-			'30000mW' => [ // Identical to 30kmW
-				'resultShift' => -21360,
-				'conversionFactor' => 0.00000689,
-				'pointShift' => 0,
-			],
-			'35000mW' => [ // Identical to 35kmW
-				'resultShift' => -25440,
-				'conversionFactor' => 0.00000493,
-				'pointShift' => 0,
-			],
-			'50000mW' => [ // Identical to 50kmW
-				'resultShift' => -39360,
-				'conversionFactor' => 0.00000199,
-				'pointShift' => 0,
-			],
+			'3000mW' => $walks['f']['3km'],
+			'5000mW' => $walks['f']['5km'],
+			'10000mW' =>  $walks['f']['10km'],
+			'15000mW' =>  $walks['f']['15km'],
+			'20000mW' =>  $walks['f']['20km'],
+			'30000mW' =>  $walks['f']['30km'],
+			'35000mW' =>  $walks['f']['35km'],
+			'50000mW' =>  $walks['f']['50km'],
 			/*********/
 			/* FIELD */
 			/*********/
@@ -721,21 +680,9 @@ return [
 			/*************************/
 			/* RACE WALKING ON TRACK */
 			/*************************/
-			'3000mW' => [ // Identical to 3kmW
-				'resultShift' => -1605,
-				'conversionFactor' => 0.001318,
-				'pointShift' => 0,
-			],
-			'5000mW' => [ // Identical to 5kmW
-				'resultShift' => -2700,
-				'conversionFactor' => 0.000467,
-				'pointShift' => 0,
-			],
-			'10000mW' => [ // Identical to 10kmW
-				'resultShift' => -5550,
-				'conversionFactor' => 0.0001137,
-				'pointShift' => 0,
-			],
+			'3000mW' => $walks['m']['3km'],
+			'5000mW' => $walks['m']['5km'],
+			'10000mW' =>  $walks['m']['10km'],
 			/***********/
 			/* HURDLES */
 			/***********/
@@ -891,21 +838,9 @@ return [
 			/*************************/
 			/* RACE WALKING ON TRACK */
 			/*************************/
-			'3000mW' => [ // Identical to outdoor
-				'resultShift' => -1842,
-				'conversionFactor' => 0.000923,
-				'pointShift' => 0,
-			],
-			'5000mW' => [ // Identical to outdoor
-				'resultShift' => -3140,
-				'conversionFactor' => 0.0003246,
-				'pointShift' => 0,
-			],
-			'10000mW' => [ // Identical to outdoor
-				'resultShift' => -6420,
-				'conversionFactor' => 0.0000785,
-				'pointShift' => 0,
-			],
+			'3000mW' => $walks['f']['3km'],
+			'5000mW' => $walks['f']['5km'],
+			'10000mW' =>  $walks['f']['10km'],
 			/***********/
 			/* HURDLES */
 			/***********/
