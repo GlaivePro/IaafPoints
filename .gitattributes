@@ -4,3 +4,5 @@
 /.gitignore                  export-ignore
 /phpunit.xml                 export-ignore
 /tests                       export-ignore
+/bin                         export-ignore
+/data                        export-ignore
