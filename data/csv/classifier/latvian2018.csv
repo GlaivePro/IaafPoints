@@ -1,0 +1,1441 @@
+Type,Gender,Discipline,Classification,Threshold
+field,m,high_jump,LM,2.25
+field,m,high_jump,SM,2.15
+field,m,high_jump,SMK,2.02
+field,m,high_jump,I,1.9
+field,m,high_jump,II,1.75
+field,m,high_jump,III,1.65
+field,m,high_jump,"I j.",1.55
+field,m,high_jump,"II j.",1.45
+field,m,high_jump,"III j.",1.3
+field,m,pole_vault,LM,5.5
+field,m,pole_vault,SM,5
+field,m,pole_vault,SMK,4.5
+field,m,pole_vault,I,4.1
+field,m,pole_vault,II,3.5
+field,m,pole_vault,III,3
+field,m,pole_vault,"I j.",2.6
+field,m,pole_vault,"II j.",2
+field,m,pole_vault,"III j.",1.8
+field,m,long_jump,LM,8
+field,m,long_jump,SM,7.6
+field,m,long_jump,SMK,7.1
+field,m,long_jump,I,6.6
+field,m,long_jump,II,6.1
+field,m,long_jump,III,5.55
+field,m,long_jump,"I j.",5
+field,m,long_jump,"II j.",4.6
+field,m,long_jump,"III j.",4
+field,m,triple_jump,LM,16.85
+field,m,triple_jump,SM,16.2
+field,m,triple_jump,SMK,15.3
+field,m,triple_jump,I,14.2
+field,m,triple_jump,II,13.2
+field,m,triple_jump,III,12
+field,m,triple_jump,"I j.",11.5
+field,m,triple_jump,"II j.",10.5
+field,m,triple_jump,"III j.",10
+field,m,discus_throw_2,LM,61
+field,m,discus_throw_2,SM,54.5
+field,m,discus_throw_2,SMK,49
+field,m,discus_throw_2,I,44
+field,m,discus_throw_2,II,37
+field,m,discus_throw_2,III,30
+field,m,discus_throw_1.75,SMK,53
+field,m,discus_throw_1.75,I,45.5
+field,m,discus_throw_1.75,II,37.5
+field,m,discus_throw_1.75,III,32
+field,m,discus_throw_1.75,"I j.",28
+field,m,discus_throw_1.5,SMK,58
+field,m,discus_throw_1.5,I,52
+field,m,discus_throw_1.5,II,43
+field,m,discus_throw_1.5,III,37
+field,m,discus_throw_1.5,"I j.",30
+field,m,discus_throw_1.5,"II j.",25
+field,m,discus_throw_1,I,58
+field,m,discus_throw_1,II,50
+field,m,discus_throw_1,III,43
+field,m,discus_throw_1,"I j.",35
+field,m,discus_throw_1,"II j.",32
+field,m,discus_throw_1,"III j.",28
+field,m,hammer_throw_7.26,LM,74
+field,m,hammer_throw_7.26,SM,67
+field,m,hammer_throw_7.26,SMK,60
+field,m,hammer_throw_7.26,I,54
+field,m,hammer_throw_7.26,II,47
+field,m,hammer_throw_7.26,III,38
+field,m,hammer_throw_6,SM,72
+field,m,hammer_throw_6,SMK,64
+field,m,hammer_throw_6,I,59
+field,m,hammer_throw_6,II,52
+field,m,hammer_throw_6,III,43
+field,m,hammer_throw_6,"I j.",36
+field,m,hammer_throw_6,"II j.",31
+field,m,hammer_throw_5,SMK,68
+field,m,hammer_throw_5,I,64
+field,m,hammer_throw_5,II,57
+field,m,hammer_throw_5,III,47
+field,m,hammer_throw_5,"I j.",38
+field,m,hammer_throw_5,"II j.",32
+field,m,hammer_throw_5,"III j.",28
+field,m,hammer_throw_4,I,68
+field,m,hammer_throw_4,II,60
+field,m,hammer_throw_4,III,53
+field,m,hammer_throw_4,"I j.",43
+field,m,hammer_throw_4,"II j.",37
+field,m,hammer_throw_4,"III j.",30
+field,m,hammer_throw_3,II,65
+field,m,hammer_throw_3,III,60
+field,m,hammer_throw_3,"I j.",50
+field,m,hammer_throw_3,"II j.",40
+field,m,hammer_throw_3,"III j.",32
+field,m,javelin_throw_800,LM,82
+field,m,javelin_throw_800,SM,73
+field,m,javelin_throw_800,SMK,68
+field,m,javelin_throw_800,I,62
+field,m,javelin_throw_800,II,54
+field,m,javelin_throw_800,III,48
+field,m,javelin_throw_700,SMK,67
+field,m,javelin_throw_700,I,61
+field,m,javelin_throw_700,II,55
+field,m,javelin_throw_700,III,45
+field,m,javelin_throw_700,"I j.",40
+field,m,javelin_throw_700,"II j.",35
+field,m,javelin_throw_600,I,64
+field,m,javelin_throw_600,II,56
+field,m,javelin_throw_600,III,48
+field,m,javelin_throw_600,"I j.",45
+field,m,javelin_throw_600,"II j.",41
+field,m,javelin_throw_600,"III j.",35
+field,m,javelin_throw_400,"I j.",47
+field,m,javelin_throw_400,"II j.",40
+field,m,javelin_throw_400,"III j.",30
+field,m,shot_put_7.26,LM,19
+field,m,shot_put_7.26,SM,17.2
+field,m,shot_put_7.26,SMK,15.6
+field,m,shot_put_7.26,I,14
+field,m,shot_put_7.26,II,12
+field,m,shot_put_7.26,III,10
+field,m,shot_put_6,SMK,17.2
+field,m,shot_put_6,I,15.5
+field,m,shot_put_6,II,13
+field,m,shot_put_6,III,11.5
+field,m,shot_put_6,"I j.",9.6
+field,m,shot_put_6,"II j.",8.6
+field,m,shot_put_5,SMK,17.5
+field,m,shot_put_5,I,16.5
+field,m,shot_put_5,II,15
+field,m,shot_put_5,III,12.8
+field,m,shot_put_5,"I j.",10
+field,m,shot_put_5,"II j.",9
+field,m,shot_put_5,"III j.",8
+field,m,shot_put_4,II,14.5
+field,m,shot_put_4,III,13
+field,m,shot_put_4,"I j.",11
+field,m,shot_put_4,"II j.",10
+field,m,shot_put_4,"III j.",9
+field,m,shot_put_3,III,12
+field,m,shot_put_3,"I j.",10
+field,m,shot_put_3,"II j.",9
+field,m,shot_put_3,"III j.",8
+field,m,decathlon,LM,7950
+field,m,decathlon,SM,7300
+field,m,decathlon,SMK,6600
+field,m,decathlon,I,6000
+field,m,decathlon,II,5000
+field,m,decathlon,III,4100
+field,m,decathlon_u20,SM,7300
+field,m,decathlon_u20,SMK,6500
+field,m,decathlon_u20,I,6000
+field,m,decathlon_u20,II,5000
+field,m,decathlon_u20,III,4000
+field,m,decathlon_u18,SMK,6700
+field,m,decathlon_u18,I,6200
+field,m,decathlon_u18,II,5300
+field,m,decathlon_u18,III,4300
+field,m,decathlon_u18,"I j.",3300
+field,m,decathlon_u18,"II j.",2600
+field,m,decathlon_u18,"III j.",2400
+field,m,nonathlon_u16,SMK,6000
+field,m,nonathlon_u16,I,5300
+field,m,nonathlon_u16,II,4700
+field,m,nonathlon_u16,III,3800
+field,m,nonathlon_u16,"I j.",3000
+field,m,nonathlon_u16,"II j.",2600
+field,m,nonathlon_u16,"III j.",2200
+field,m,octathlon_u16,SMK,5200
+field,m,octathlon_u16,I,4500
+field,m,octathlon_u16,II,3900
+field,m,octathlon_u16,III,3300
+field,m,octathlon_u16,"I j.",2800
+field,m,octathlon_u16,"II j.",2400
+field,m,octathlon_u16,"III j.",2200
+field,m,heptathlon,LM,5800
+field,m,heptathlon,SM,5200
+field,m,heptathlon,SMK,4750
+field,m,heptathlon,I,4000
+field,m,heptathlon,II,3400
+field,m,heptathlon,III,2800
+field,m,heptathlon,"I j.",2400
+field,m,heptathlon,"II j.",2100
+field,m,heptathlon,"III j.",2000
+field,m,heptathlon_u20,SMK,4050
+field,m,heptathlon_u20,I,3550
+field,m,heptathlon_u20,II,2950
+field,m,heptathlon_u20,III,2300
+field,m,heptathlon_u20,"I j.",2000
+field,m,heptathlon_u20,"II j.",1700
+field,m,heptathlon_u20,"III j.",1300
+field,m,heptathlon_u18,SMK,4050
+field,m,heptathlon_u18,I,3550
+field,m,heptathlon_u18,II,2950
+field,m,heptathlon_u18,III,2300
+field,m,heptathlon_u18,"I j.",2000
+field,m,heptathlon_u18,"II j.",1700
+field,m,heptathlon_u18,"III j.",1300
+field,m,heptathlon_u16,I,4300
+field,m,heptathlon_u16,II,3850
+field,m,heptathlon_u16,III,3350
+field,m,heptathlon_u16,"I j.",2850
+field,m,heptathlon_u16,"II j.",2400
+field,m,heptathlon_u16,"III j.",1800
+field,m,pentathlon,SMK,3600
+field,m,pentathlon,I,3200
+field,m,pentathlon,II,2700
+field,m,pentathlon,III,2200
+field,m,pentathlon,"I j.",1950
+field,m,pentathlon,"II j.",1650
+field,m,pentathlon,"III j.",1250
+field,f,high_jump,LM,1.9
+field,f,high_jump,SM,1.83
+field,f,high_jump,SMK,1.75
+field,f,high_jump,I,1.65
+field,f,high_jump,II,1.5
+field,f,high_jump,III,1.4
+field,f,high_jump,"I j.",1.3
+field,f,high_jump,"II j.",1.25
+field,f,high_jump,"III j.",1.2
+field,f,pole_vault,LM,4.1
+field,f,pole_vault,SM,3.7
+field,f,pole_vault,SMK,3.4
+field,f,pole_vault,I,3.15
+field,f,pole_vault,II,2.8
+field,f,pole_vault,III,2.4
+field,f,pole_vault,"I j.",2.2
+field,f,pole_vault,"II j.",2
+field,f,pole_vault,"III j.",1.8
+field,f,long_jump,LM,6.6
+field,f,long_jump,SM,6.25
+field,f,long_jump,SMK,5.8
+field,f,long_jump,I,5.5
+field,f,long_jump,II,5.2
+field,f,long_jump,III,4.7
+field,f,long_jump,"I j.",4.2
+field,f,long_jump,"II j.",3.9
+field,f,long_jump,"III j.",3.6
+field,f,triple_jump,LM,14
+field,f,triple_jump,SM,13.4
+field,f,triple_jump,SMK,12.8
+field,f,triple_jump,I,11.8
+field,f,triple_jump,II,11.2
+field,f,triple_jump,III,10.4
+field,f,triple_jump,"I j.",10
+field,f,triple_jump,"II j.",9.2
+field,f,triple_jump,"III j.",8.5
+field,f,discus_throw_1,LM,58
+field,f,discus_throw_1,SM,53
+field,f,discus_throw_1,SMK,46
+field,f,discus_throw_1,I,42
+field,f,discus_throw_1,II,36
+field,f,discus_throw_1,III,29.5
+field,f,discus_throw_1,"I j.",24
+field,f,discus_throw_1,"II j.",20
+field,f,discus_throw_0.75,SMK,49
+field,f,discus_throw_0.75,I,44
+field,f,discus_throw_0.75,II,38
+field,f,discus_throw_0.75,III,32
+field,f,discus_throw_0.75,"I j.",27
+field,f,discus_throw_0.75,"II j.",23
+field,f,discus_throw_0.75,"III j.",20
+field,f,hammer_throw_4,LM,68
+field,f,hammer_throw_4,SM,57
+field,f,hammer_throw_4,SMK,47
+field,f,hammer_throw_4,I,40
+field,f,hammer_throw_4,II,35
+field,f,hammer_throw_4,III,29
+field,f,hammer_throw_4,"I j.",25
+field,f,hammer_throw_4,"II j.",20
+field,f,hammer_throw_3,SM,62
+field,f,hammer_throw_3,SMK,53
+field,f,hammer_throw_3,I,47
+field,f,hammer_throw_3,II,39
+field,f,hammer_throw_3,III,34
+field,f,hammer_throw_3,"I j.",29
+field,f,hammer_throw_3,"II j.",25
+field,f,hammer_throw_3,"III j.",20
+field,f,hammer_throw_2,I,52
+field,f,hammer_throw_2,II,44
+field,f,hammer_throw_2,III,39
+field,f,hammer_throw_2,"I j.",34
+field,f,hammer_throw_2,"II j.",29
+field,f,hammer_throw_2,"III j.",25
+field,f,javelin_throw_600,LM,60
+field,f,javelin_throw_600,SM,54
+field,f,javelin_throw_600,SMK,48
+field,f,javelin_throw_600,I,43
+field,f,javelin_throw_600,II,35
+field,f,javelin_throw_600,III,30
+field,f,javelin_throw_600,"I j.",25
+field,f,javelin_throw_500,SM,50
+field,f,javelin_throw_500,SMK,44
+field,f,javelin_throw_500,I,38
+field,f,javelin_throw_500,II,27
+field,f,javelin_throw_500,III,22
+field,f,javelin_throw_500,"I j.",18
+field,f,javelin_throw_400,I,45
+field,f,javelin_throw_400,II,38
+field,f,javelin_throw_400,III,35
+field,f,javelin_throw_400,"I j.",30
+field,f,javelin_throw_400,"II j.",25
+field,f,javelin_throw_400,"III j.",20
+field,f,shot_put_4,LM,17.5
+field,f,shot_put_4,SM,15
+field,f,shot_put_4,SMK,14
+field,f,shot_put_4,I,12.5
+field,f,shot_put_4,II,10.5
+field,f,shot_put_4,III,8.5
+field,f,shot_put_4,"I j.",7.2
+field,f,shot_put_4,"II j.",6.5
+field,f,shot_put_3,SMK,15.2
+field,f,shot_put_3,I,14
+field,f,shot_put_3,II,12
+field,f,shot_put_3,III,9.7
+field,f,shot_put_3,"I j.",8
+field,f,shot_put_3,"II j.",7
+field,f,shot_put_3,"III j.",6
+field,f,shot_put_2,II,12.5
+field,f,shot_put_2,III,11
+field,f,shot_put_2,"I j.",9.5
+field,f,shot_put_2,"II j.",8
+field,f,shot_put_2,"III j.",7
+field,f,heptathlon,LM,5850
+field,f,heptathlon,SM,5250
+field,f,heptathlon,SMK,4600
+field,f,heptathlon,I,4000
+field,f,heptathlon,II,3200
+field,f,heptathlon,III,2400
+field,f,heptathlon,"I j.",2000
+field,f,heptathlon,"II j.",1600
+field,f,heptathlon_u18,SMK,4700
+field,f,heptathlon_u18,I,4250
+field,f,heptathlon_u18,II,3400
+field,f,heptathlon_u18,III,2700
+field,f,heptathlon_u18,"I j.",2200
+field,f,heptathlon_u18,"II j.",1800
+field,f,heptathlon_u18,"III j.",1600
+field,f,heptathlon_u16,I,4000
+field,f,heptathlon_u16,II,3300
+field,f,heptathlon_u16,III,2600
+field,f,heptathlon_u16,"I j.",2200
+field,f,heptathlon_u16,"II j.",2000
+field,f,heptathlon_u16,"III j.",1800
+field,f,pentathlon,LM,4500
+field,f,pentathlon,SM,3850
+field,f,pentathlon,SMK,3400
+field,f,pentathlon,I,3000
+field,f,pentathlon,II,2400
+field,f,pentathlon,III,2000
+field,f,pentathlon,"I j.",1600
+field,f,pentathlon,"II j.",1300
+field,f,pentathlon,"III j.",1000
+field,f,pentathlon_u20,SMK,3500
+field,f,pentathlon_u20,I,3200
+field,f,pentathlon_u20,II,2800
+field,f,pentathlon_u20,III,2600
+field,f,pentathlon_u20,"I j.",2000
+field,f,pentathlon_u20,"II j.",1800
+field,f,pentathlon_u20,"III j.",1600
+field,f,pentathlon_u18,SMK,3500
+field,f,pentathlon_u18,I,3200
+field,f,pentathlon_u18,II,2800
+field,f,pentathlon_u18,III,2600
+field,f,pentathlon_u18,"I j.",2000
+field,f,pentathlon_u18,"II j.",1800
+field,f,pentathlon_u18,"III j.",1600
+field,f,pentathlon_u16,I,2900
+field,f,pentathlon_u16,II,2400
+field,f,pentathlon_u16,III,1900
+field,f,pentathlon_u16,"I j.",1700
+field,f,pentathlon_u16,"II j.",1400
+field,f,pentathlon_u16,"III j.",1200
+outdoor,m,30m,III,4.54
+outdoor,m,30m,"I j.",4.5
+outdoor,m,30m,"II j.",4.7
+outdoor,m,30m,"III j.",5
+outdoor,m,60m,LM,6.7
+outdoor,m,60m,SM,6.84
+outdoor,m,60m,SMK,7.04
+outdoor,m,60m,I,7.24
+outdoor,m,60m,II,7.44
+outdoor,m,60m,III,7.84
+outdoor,m,60m,"I j.",7.9
+outdoor,m,60m,"II j.",8.5
+outdoor,m,60m,"III j.",8.9
+outdoor,m,100m,LM,10.34
+outdoor,m,100m,SM,10.64
+outdoor,m,100m,SMK,10.94
+outdoor,m,100m,I,11.34
+outdoor,m,100m,II,11.94
+outdoor,m,100m,III,12.64
+outdoor,m,100m,"I j.",13
+outdoor,m,100m,"II j.",13.6
+outdoor,m,100m,"III j.",14.2
+outdoor,m,200m,LM,20.74
+outdoor,m,200m,SM,21.34
+outdoor,m,200m,SMK,22.04
+outdoor,m,200m,I,23.14
+outdoor,m,200m,II,24.24
+outdoor,m,200m,III,25.94
+outdoor,m,200m,"I j.",28
+outdoor,m,200m,"II j.",29.2
+outdoor,m,200m,"III j.",30.5
+outdoor,m,300m,SMK,34.04
+outdoor,m,300m,I,35.54
+outdoor,m,300m,II,37.54
+outdoor,m,300m,III,40.24
+outdoor,m,300m,"I j.",43.4
+outdoor,m,300m,"II j.",46.2
+outdoor,m,300m,"III j.",49
+outdoor,m,400m,LM,45.9
+outdoor,m,400m,SM,47.5
+outdoor,m,400m,SMK,49.34
+outdoor,m,400m,I,50.94
+outdoor,m,400m,II,53.94
+outdoor,m,400m,III,57.94
+outdoor,m,400m,"I j.",60.2
+outdoor,m,400m,"II j.",64
+outdoor,m,400m,"III j.",66
+outdoor,m,600m,SMK,79
+outdoor,m,600m,I,82.5
+outdoor,m,600m,II,88
+outdoor,m,600m,III,96
+outdoor,m,600m,"I j.",102
+outdoor,m,600m,"II j.",110
+outdoor,m,600m,"III j.",118
+outdoor,m,800m,LM,106.5
+outdoor,m,800m,SM,109.5
+outdoor,m,800m,SMK,114
+outdoor,m,800m,I,118
+outdoor,m,800m,II,129
+outdoor,m,800m,III,140
+outdoor,m,800m,"I j.",150
+outdoor,m,800m,"II j.",165
+outdoor,m,800m,"III j.",175
+outdoor,m,1000m,LM,138
+outdoor,m,1000m,SM,141
+outdoor,m,1000m,SMK,147
+outdoor,m,1000m,I,155
+outdoor,m,1000m,II,167
+outdoor,m,1000m,III,180
+outdoor,m,1000m,"I j.",195
+outdoor,m,1000m,"II j.",210
+outdoor,m,1000m,"III j.",220
+outdoor,m,1500m,LM,218
+outdoor,m,1500m,SM,227
+outdoor,m,1500m,SMK,235
+outdoor,m,1500m,I,244
+outdoor,m,1500m,II,260
+outdoor,m,1500m,III,280
+outdoor,m,1500m,"I j.",300
+outdoor,m,1500m,"II j.",325
+outdoor,m,1500m,"III j.",340
+outdoor,m,3000m,LM,472
+outdoor,m,3000m,SM,485
+outdoor,m,3000m,SMK,506
+outdoor,m,3000m,I,535
+outdoor,m,3000m,II,570
+outdoor,m,3000m,III,620
+outdoor,m,3000m,"I j.",660
+outdoor,m,3000m,"II j.",720
+outdoor,m,3000m,"III j.",750
+outdoor,m,5000m,LM,810
+outdoor,m,5000m,SM,840
+outdoor,m,5000m,SMK,875
+outdoor,m,5000m,I,920
+outdoor,m,5000m,II,985
+outdoor,m,5000m,III,1070
+outdoor,m,5000m,"I j.",1130
+outdoor,m,5000m,"II j.",1230
+outdoor,m,10000m,LM,1700
+outdoor,m,10000m,SM,1770
+outdoor,m,10000m,SMK,1860
+outdoor,m,10000m,I,1950
+outdoor,m,10000m,II,2070
+outdoor,m,10000m,III,2250
+outdoor,m,4x100m,LM,39.1
+outdoor,m,4x100m,SM,41.24
+outdoor,m,4x100m,SMK,42.74
+outdoor,m,4x100m,I,44.24
+outdoor,m,4x100m,II,46.24
+outdoor,m,4x100m,III,49.24
+outdoor,m,4x100m,"I j.",50.9
+outdoor,m,4x100m,"II j.",53.2
+outdoor,m,4x100m,"III j.",56
+outdoor,m,4x400m,LM,184.3
+outdoor,m,4x400m,SM,189
+outdoor,m,4x400m,SMK,196
+outdoor,m,4x400m,I,204
+outdoor,m,4x400m,II,216
+outdoor,m,4x400m,III,232.14
+outdoor,m,4x400m,"I j.",240
+outdoor,m,4x400m,"II j.",252
+outdoor,m,4x400m,"III j.",264
+outdoor,m,400m+300m+200m+100m,I,120
+outdoor,m,400m+300m+200m+100m,II,125
+outdoor,m,400m+300m+200m+100m,III,130
+outdoor,m,400m+300m+200m+100m,"I j.",140
+outdoor,m,400m+300m+200m+100m,"II j.",145
+outdoor,m,400m+300m+200m+100m,"III j.",150
+outdoor,m,60mh_106.7,LM,7.75
+outdoor,m,60mh_106.7,SM,8.1
+outdoor,m,60mh_106.7,SMK,8.44
+outdoor,m,60mh_106.7,I,8.94
+outdoor,m,60mh_106.7,II,9.44
+outdoor,m,60mh_106.7,III,10.14
+outdoor,m,60mh_99.1,SMK,8.34
+outdoor,m,60mh_99.1,I,8.74
+outdoor,m,60mh_99.1,II,9.24
+outdoor,m,60mh_99.1,III,9.94
+outdoor,m,60mh_91.4,SMK,8.24
+outdoor,m,60mh_91.4,I,8.44
+outdoor,m,60mh_91.4,II,8.94
+outdoor,m,60mh_91.4,III,9.74
+outdoor,m,60mh_91.4,"I j.",10.2
+outdoor,m,60mh_91.4,"II j.",10.8
+outdoor,m,60mh_83.8,I,8.64
+outdoor,m,60mh_83.8,II,8.94
+outdoor,m,60mh_83.8,III,9.84
+outdoor,m,60mh_83.8,"I j.",10.3
+outdoor,m,60mh_83.8,"II j.",11
+outdoor,m,60mh_83.8,"III j.",12
+outdoor,m,110mh_106.7,LM,13.7
+outdoor,m,110mh_106.7,SM,14.34
+outdoor,m,110mh_106.7,SMK,15.14
+outdoor,m,110mh_106.7,I,16.04
+outdoor,m,110mh_106.7,II,17.04
+outdoor,m,110mh_106.7,III,18.54
+outdoor,m,110mh_99.1,SMK,14.84
+outdoor,m,110mh_99.1,I,15.54
+outdoor,m,110mh_99.1,II,16.54
+outdoor,m,110mh_99.1,III,18.14
+outdoor,m,110mh_91.4,SMK,14.64
+outdoor,m,110mh_91.4,I,15.14
+outdoor,m,110mh_91.4,II,16.04
+outdoor,m,110mh_91.4,III,17.74
+outdoor,m,110mh_91.4,"I j.",18.8
+outdoor,m,110mh_91.4,"II j.",20
+outdoor,m,110mh_83.8,I,15.44
+outdoor,m,110mh_83.8,II,16.14
+outdoor,m,110mh_83.8,III,17.64
+outdoor,m,110mh_83.8,"I j.",19.5
+outdoor,m,110mh_83.8,"II j.",21.5
+outdoor,m,110mh_83.8,"III j.",22.5
+outdoor,m,300mh,SMK,38.74
+outdoor,m,300mh,I,40.74
+outdoor,m,300mh,II,43.24
+outdoor,m,300mh,III,47.24
+outdoor,m,300mh,"I j.",50
+outdoor,m,300mh,"II j.",52
+outdoor,m,400mh,LM,49.5
+outdoor,m,400mh,SM,52.64
+outdoor,m,400mh,SMK,55.14
+outdoor,m,400mh,I,58.64
+outdoor,m,400mh,II,62.64
+outdoor,m,400mh,III,68.14
+outdoor,m,400mh,"I j.",71
+outdoor,m,400mh,"II j.",76
+outdoor,m,300mh_91.4,SMK,38.74
+outdoor,m,300mh_91.4,I,40.74
+outdoor,m,300mh_91.4,II,43.24
+outdoor,m,300mh_91.4,III,47.24
+outdoor,m,300mh_91.4,"I j.",50
+outdoor,m,300mh_91.4,"II j.",52
+outdoor,m,400mh_91.4,LM,49.5
+outdoor,m,400mh_91.4,SM,52.64
+outdoor,m,400mh_91.4,SMK,55.14
+outdoor,m,400mh_91.4,I,58.64
+outdoor,m,400mh_91.4,II,62.64
+outdoor,m,400mh_91.4,III,68.14
+outdoor,m,400mh_91.4,"I j.",71
+outdoor,m,400mh_91.4,"II j.",76
+outdoor,m,1500mSt,SMK,252
+outdoor,m,1500mSt,I,276
+outdoor,m,1500mSt,II,294
+outdoor,m,1500mSt,III,320
+outdoor,m,1500mSt,"I j.",336
+outdoor,m,1500mSt,"II j.",357
+outdoor,m,1500mSt,"III j.",383
+outdoor,m,2000mSt,SM,345
+outdoor,m,2000mSt,SMK,360
+outdoor,m,2000mSt,I,380
+outdoor,m,2000mSt,II,406
+outdoor,m,2000mSt,III,443
+outdoor,m,2000mSt,"I j.",460
+outdoor,m,2000mSt,"II j.",520
+outdoor,m,3000mSt,LM,510
+outdoor,m,3000mSt,SM,530
+outdoor,m,3000mSt,SMK,560
+outdoor,m,3000mSt,I,590
+outdoor,m,3000mSt,II,630
+outdoor,m,3000mSt,III,685
+outdoor,m,1500mSt_91.4,SMK,252
+outdoor,m,1500mSt_91.4,I,276
+outdoor,m,1500mSt_91.4,II,294
+outdoor,m,1500mSt_91.4,III,320
+outdoor,m,1500mSt_91.4,"I j.",336
+outdoor,m,1500mSt_91.4,"II j.",357
+outdoor,m,1500mSt_91.4,"III j.",383
+outdoor,m,2000mSt_91.4,SM,345
+outdoor,m,2000mSt_91.4,SMK,360
+outdoor,m,2000mSt_91.4,I,380
+outdoor,m,2000mSt_91.4,II,406
+outdoor,m,2000mSt_91.4,III,443
+outdoor,m,2000mSt_91.4,"I j.",460
+outdoor,m,2000mSt_91.4,"II j.",520
+outdoor,m,3000mSt_91.4,LM,510
+outdoor,m,3000mSt_91.4,SM,530
+outdoor,m,3000mSt_91.4,SMK,560
+outdoor,m,3000mSt_91.4,I,590
+outdoor,m,3000mSt_91.4,II,630
+outdoor,m,3000mSt_91.4,III,685
+outdoor,f,30m,III,5.14
+outdoor,f,30m,"I j.",5
+outdoor,f,30m,"II j.",5.2
+outdoor,f,30m,"III j.",5.5
+outdoor,f,60m,LM,7.25
+outdoor,f,60m,SM,7.5
+outdoor,f,60m,SMK,7.74
+outdoor,f,60m,I,8.04
+outdoor,f,60m,II,8.44
+outdoor,f,60m,III,9.04
+outdoor,f,60m,"I j.",9.1
+outdoor,f,60m,"II j.",9.4
+outdoor,f,60m,"III j.",9.8
+outdoor,f,100m,LM,11.34
+outdoor,f,100m,SM,11.84
+outdoor,f,100m,SMK,12.34
+outdoor,f,100m,I,12.84
+outdoor,f,100m,II,13.64
+outdoor,f,100m,III,14.84
+outdoor,f,100m,"I j.",15.2
+outdoor,f,100m,"II j.",16
+outdoor,f,100m,"III j.",17
+outdoor,f,200m,LM,22.95
+outdoor,f,200m,SM,24.24
+outdoor,f,200m,SMK,25.44
+outdoor,f,200m,I,26.84
+outdoor,f,200m,II,28.74
+outdoor,f,200m,III,31.24
+outdoor,f,200m,"I j.",32.4
+outdoor,f,200m,"II j.",34
+outdoor,f,200m,"III j.",36
+outdoor,f,300m,SMK,39.24
+outdoor,f,300m,I,41.24
+outdoor,f,300m,II,44.24
+outdoor,f,300m,III,48.24
+outdoor,f,300m,"I j.",50
+outdoor,f,300m,"II j.",53
+outdoor,f,300m,"III j.",56
+outdoor,f,400m,LM,52
+outdoor,f,400m,SM,54.14
+outdoor,f,400m,SMK,57.14
+outdoor,f,400m,I,59.64
+outdoor,f,400m,II,64.14
+outdoor,f,400m,III,70.14
+outdoor,f,400m,"I j.",75
+outdoor,f,400m,"II j.",80
+outdoor,f,400m,"III j.",82
+outdoor,f,600m,SMK,92
+outdoor,f,600m,I,97
+outdoor,f,600m,II,104.5
+outdoor,f,600m,III,115
+outdoor,f,600m,"I j.",130
+outdoor,f,600m,"II j.",140
+outdoor,f,600m,"III j.",145
+outdoor,f,800m,LM,122.14
+outdoor,f,800m,SM,127.64
+outdoor,f,800m,SMK,132.14
+outdoor,f,800m,I,142.14
+outdoor,f,800m,II,155.14
+outdoor,f,800m,III,175.14
+outdoor,f,800m,"I j.",185
+outdoor,f,800m,"II j.",198
+outdoor,f,800m,"III j.",215
+outdoor,f,1000m,LM,156.5
+outdoor,f,1000m,SM,164
+outdoor,f,1000m,SMK,174
+outdoor,f,1000m,I,185
+outdoor,f,1000m,II,200
+outdoor,f,1000m,III,220
+outdoor,f,1000m,"I j.",235
+outdoor,f,1000m,"II j.",250
+outdoor,f,1000m,"III j.",275
+outdoor,f,1500m,LM,250
+outdoor,f,1500m,SM,260
+outdoor,f,1500m,SMK,275
+outdoor,f,1500m,I,288
+outdoor,f,1500m,II,310
+outdoor,f,1500m,III,342
+outdoor,f,1500m,"I j.",363
+outdoor,f,1500m,"II j.",390
+outdoor,f,1500m,"III j.",405
+outdoor,f,3000m,LM,535
+outdoor,f,3000m,SM,560
+outdoor,f,3000m,SMK,585
+outdoor,f,3000m,I,625
+outdoor,f,3000m,II,680
+outdoor,f,3000m,III,750
+outdoor,f,3000m,"I j.",795
+outdoor,f,3000m,"II j.",870
+outdoor,f,5000m,LM,930
+outdoor,f,5000m,SM,970
+outdoor,f,5000m,SMK,1030
+outdoor,f,5000m,I,1095
+outdoor,f,5000m,II,1175
+outdoor,f,5000m,III,1290
+outdoor,f,10000m,LM,1960
+outdoor,f,10000m,SM,2040
+outdoor,f,10000m,SMK,2160
+outdoor,f,10000m,I,2280
+outdoor,f,10000m,II,2490
+outdoor,f,10000m,III,2700
+outdoor,f,4x100m,LM,43.35
+outdoor,f,4x100m,SM,45.24
+outdoor,f,4x100m,SMK,48.24
+outdoor,f,4x100m,I,51.04
+outdoor,f,4x100m,II,54.24
+outdoor,f,4x100m,III,58.74
+outdoor,f,4x100m,"I j.",61
+outdoor,f,4x100m,"II j.",64
+outdoor,f,4x100m,"III j.",68
+outdoor,f,4x400m,LM,206.14
+outdoor,f,4x400m,SM,218.14
+outdoor,f,4x400m,SMK,227.14
+outdoor,f,4x400m,I,240.14
+outdoor,f,4x400m,II,256.14
+outdoor,f,4x400m,III,280.14
+outdoor,f,4x400m,"I j.",292
+outdoor,f,4x400m,"II j.",305
+outdoor,f,4x400m,"III j.",320
+outdoor,f,400m+300m+200m+100m,I,135
+outdoor,f,400m+300m+200m+100m,II,142
+outdoor,f,400m+300m+200m+100m,III,150
+outdoor,f,400m+300m+200m+100m,"I j.",160
+outdoor,f,400m+300m+200m+100m,"II j.",170
+outdoor,f,400m+300m+200m+100m,"III j.",190
+outdoor,f,60mh_83.8,LM,8.1
+outdoor,f,60mh_83.8,SM,8.54
+outdoor,f,60mh_83.8,SMK,8.94
+outdoor,f,60mh_83.8,I,9.54
+outdoor,f,60mh_83.8,II,10.34
+outdoor,f,60mh_83.8,III,11.34
+outdoor,f,60mh_76.2,SMK,9.04
+outdoor,f,60mh_76.2,I,9.34
+outdoor,f,60mh_76.2,II,9.74
+outdoor,f,60mh_76.2,III,10.64
+outdoor,f,60mh_76.2,"I j.",11.2
+outdoor,f,60mh_76.2,"II j.",12.5
+outdoor,f,60mh_76.2,"III j.",13
+outdoor,f,100mh_83.8,LM,13.2
+outdoor,f,100mh_83.8,SM,14
+outdoor,f,100mh_83.8,SMK,15.04
+outdoor,f,100mh_83.8,I,16.14
+outdoor,f,100mh_83.8,II,17.64
+outdoor,f,100mh_83.8,III,19.54
+outdoor,f,100mh_76.2,SMK,14.64
+outdoor,f,100mh_76.2,I,15.24
+outdoor,f,100mh_76.2,II,16.24
+outdoor,f,100mh_76.2,III,18.24
+outdoor,f,100mh_76.2,"I j.",20
+outdoor,f,100mh_76.2,"II j.",22
+outdoor,f,100mh_76.2,"III j.",23.5
+outdoor,f,300mh,I,46.64
+outdoor,f,300mh,II,50.14
+outdoor,f,300mh,III,55.14
+outdoor,f,300mh,"I j.",59
+outdoor,f,300mh,"II j.",65
+outdoor,f,400mh,LM,56.3
+outdoor,f,400mh,SM,60.14
+outdoor,f,400mh,SMK,63.64
+outdoor,f,400mh,I,67.64
+outdoor,f,400mh,II,73.14
+outdoor,f,400mh,III,80.14
+outdoor,f,400mh,"I j.",85
+outdoor,f,400mh,"II j.",100
+outdoor,f,300mh_76.2,I,46.64
+outdoor,f,300mh_76.2,II,50.14
+outdoor,f,300mh_76.2,III,55.14
+outdoor,f,300mh_76.2,"I j.",59
+outdoor,f,300mh_76.2,"II j.",65
+outdoor,f,400mh_76.2,LM,56.3
+outdoor,f,400mh_76.2,SM,60.14
+outdoor,f,400mh_76.2,SMK,63.64
+outdoor,f,400mh_76.2,I,67.64
+outdoor,f,400mh_76.2,II,73.14
+outdoor,f,400mh_76.2,III,80.14
+outdoor,f,400mh_76.2,"I j.",85
+outdoor,f,400mh_76.2,"II j.",100
+outdoor,f,1500mSt,SMK,290
+outdoor,f,1500mSt,I,315
+outdoor,f,1500mSt,II,332
+outdoor,f,1500mSt,III,355
+outdoor,f,1500mSt,"I j.",380
+outdoor,f,1500mSt,"II j.",397
+outdoor,f,1500mSt,"III j.",417
+outdoor,f,2000mSt,SM,400
+outdoor,f,2000mSt,SMK,420
+outdoor,f,2000mSt,I,435
+outdoor,f,2000mSt,II,456
+outdoor,f,2000mSt,III,480
+outdoor,f,2000mSt,"I j.",510
+outdoor,f,3000mSt,LM,600
+outdoor,f,3000mSt,SM,630
+outdoor,f,3000mSt,SMK,660
+outdoor,f,3000mSt,I,690
+outdoor,f,3000mSt,II,730
+outdoor,f,3000mSt,III,800
+outdoor,f,1500mSt_76.2,SMK,290
+outdoor,f,1500mSt_76.2,I,315
+outdoor,f,1500mSt_76.2,II,332
+outdoor,f,1500mSt_76.2,III,355
+outdoor,f,1500mSt_76.2,"I j.",380
+outdoor,f,1500mSt_76.2,"II j.",397
+outdoor,f,1500mSt_76.2,"III j.",417
+outdoor,f,2000mSt_76.2,SM,400
+outdoor,f,2000mSt_76.2,SMK,420
+outdoor,f,2000mSt_76.2,I,435
+outdoor,f,2000mSt_76.2,II,456
+outdoor,f,2000mSt_76.2,III,480
+outdoor,f,2000mSt_76.2,"I j.",510
+outdoor,f,3000mSt_76.2,LM,600
+outdoor,f,3000mSt_76.2,SM,630
+outdoor,f,3000mSt_76.2,SMK,660
+outdoor,f,3000mSt_76.2,I,690
+outdoor,f,3000mSt_76.2,II,730
+outdoor,f,3000mSt_76.2,III,800
+indoor,m,30m,III,4.54
+indoor,m,30m,"I j.",4.5
+indoor,m,30m,"II j.",4.7
+indoor,m,30m,"III j.",5
+indoor,m,60m,LM,6.7
+indoor,m,60m,SM,6.84
+indoor,m,60m,SMK,7.04
+indoor,m,60m,I,7.24
+indoor,m,60m,II,7.44
+indoor,m,60m,III,7.84
+indoor,m,60m,"I j.",7.9
+indoor,m,60m,"II j.",8.5
+indoor,m,60m,"III j.",8.9
+indoor,m,200m,LM,21.1
+indoor,m,200m,SM,21.84
+indoor,m,200m,SMK,22.74
+indoor,m,200m,I,23.64
+indoor,m,200m,II,24.84
+indoor,m,200m,III,26.54
+indoor,m,200m,"I j.",27.3
+indoor,m,200m,"II j.",28.6
+indoor,m,200m,"III j.",30
+indoor,m,300m,SMK,34.74
+indoor,m,300m,I,36.24
+indoor,m,300m,II,38.24
+indoor,m,300m,III,40.84
+indoor,m,300m,"I j.",44
+indoor,m,300m,"II j.",46.5
+indoor,m,300m,"III j.",49
+indoor,m,400m,LM,46.8
+indoor,m,400m,SM,47.94
+indoor,m,400m,SMK,49.94
+indoor,m,400m,I,52.64
+indoor,m,400m,II,55.14
+indoor,m,400m,III,58.94
+indoor,m,400m,"I j.",61
+indoor,m,400m,"II j.",64
+indoor,m,400m,"III j.",67
+indoor,m,600m,SMK,82.64
+indoor,m,600m,I,86.64
+indoor,m,600m,II,91.14
+indoor,m,600m,III,97.64
+indoor,m,600m,"I j.",101.5
+indoor,m,600m,"II j.",106.5
+indoor,m,600m,"III j.",115
+indoor,m,800m,LM,108.5
+indoor,m,800m,SM,111.14
+indoor,m,800m,SMK,116.64
+indoor,m,800m,I,122.14
+indoor,m,800m,II,131.14
+indoor,m,800m,III,142.14
+indoor,m,800m,"I j.",150
+indoor,m,800m,"II j.",170
+indoor,m,800m,"III j.",190
+indoor,m,1000m,LM,120
+indoor,m,1000m,SM,144
+indoor,m,1000m,SMK,150
+indoor,m,1000m,I,157
+indoor,m,1000m,II,169
+indoor,m,1000m,III,182
+indoor,m,1000m,"I j.",192
+indoor,m,1000m,"II j.",207
+indoor,m,1000m,"III j.",224
+indoor,m,1500m,LM,220
+indoor,m,1500m,SM,228
+indoor,m,1500m,SMK,237
+indoor,m,1500m,I,250
+indoor,m,1500m,II,267
+indoor,m,1500m,III,292
+indoor,m,1500m,"I j.",307
+indoor,m,1500m,"II j.",340
+indoor,m,1500m,"III j.",357
+indoor,m,3000m,LM,475
+indoor,m,3000m,SM,488
+indoor,m,3000m,SMK,509
+indoor,m,3000m,I,538
+indoor,m,3000m,II,573
+indoor,m,3000m,III,623
+indoor,m,3000m,"I j.",653
+indoor,m,3000m,"II j.",693
+indoor,m,4x200m,SMK,89
+indoor,m,4x200m,I,92
+indoor,m,4x200m,II,98
+indoor,m,4x200m,III,105.5
+indoor,m,4x200m,"I j.",108
+indoor,m,4x200m,"II j.",113
+indoor,m,4x200m,"III j.",120
+indoor,m,4x400m,LM,186
+indoor,m,4x400m,SM,192
+indoor,m,4x400m,SMK,200
+indoor,m,4x400m,I,208
+indoor,m,4x400m,II,220
+indoor,m,4x400m,III,236
+indoor,m,4x400m,"I j.",244
+indoor,m,4x400m,"II j.",256
+indoor,m,4x400m,"III j.",268
+indoor,m,60mh_106.7,LM,7.75
+indoor,m,60mh_106.7,SM,8.1
+indoor,m,60mh_106.7,SMK,8.44
+indoor,m,60mh_106.7,I,8.94
+indoor,m,60mh_106.7,II,9.44
+indoor,m,60mh_106.7,III,10.14
+indoor,m,60mh_99.1,SMK,8.34
+indoor,m,60mh_99.1,I,8.74
+indoor,m,60mh_99.1,II,9.24
+indoor,m,60mh_99.1,III,9.94
+indoor,m,60mh_91.4,SMK,8.24
+indoor,m,60mh_91.4,I,8.44
+indoor,m,60mh_91.4,II,8.94
+indoor,m,60mh_91.4,III,9.74
+indoor,m,60mh_91.4,"I j.",10.2
+indoor,m,60mh_91.4,"II j.",10.8
+indoor,m,60mh_83.8,I,18.64
+indoor,m,60mh_83.8,II,8.94
+indoor,m,60mh_83.8,III,9.84
+indoor,m,60mh_83.8,"I j.",10.3
+indoor,m,60mh_83.8,"II j.",11
+indoor,m,60mh_83.8,"III j.",12
+indoor,m,1500mSt,I,270
+indoor,m,1500mSt,II,288
+indoor,m,1500mSt,III,314
+indoor,m,1500mSt,"I j.",330
+indoor,m,1500mSt,"II j.",350
+indoor,m,1500mSt,"III j.",385
+indoor,m,2000mSt,SM,335
+indoor,m,2000mSt,SMK,350
+indoor,m,2000mSt,I,370
+indoor,m,2000mSt,II,395
+indoor,m,2000mSt,III,435
+indoor,m,2000mSt,"I j.",450
+indoor,m,3000mSt,SM,518
+indoor,m,3000mSt,SMK,547
+indoor,m,3000mSt,I,575
+indoor,m,3000mSt,II,615
+indoor,m,3000mSt,III,670
+indoor,m,1500mSt_76.2,I,270
+indoor,m,1500mSt_76.2,II,288
+indoor,m,1500mSt_76.2,III,314
+indoor,m,1500mSt_76.2,"I j.",330
+indoor,m,1500mSt_76.2,"II j.",350
+indoor,m,1500mSt_76.2,"III j.",385
+indoor,m,2000mSt_76.2,SM,335
+indoor,m,2000mSt_76.2,SMK,350
+indoor,m,2000mSt_76.2,I,370
+indoor,m,2000mSt_76.2,II,395
+indoor,m,2000mSt_76.2,III,435
+indoor,m,2000mSt_76.2,"I j.",450
+indoor,m,3000mSt_76.2,SM,518
+indoor,m,3000mSt_76.2,SMK,547
+indoor,m,3000mSt_76.2,I,575
+indoor,m,3000mSt_76.2,II,615
+indoor,m,3000mSt_76.2,III,670
+indoor,f,30m,III,5.14
+indoor,f,30m,"I j.",5
+indoor,f,30m,"II j.",5.2
+indoor,f,30m,"III j.",5.5
+indoor,f,60m,LM,7.25
+indoor,f,60m,SM,7.5
+indoor,f,60m,SMK,7.74
+indoor,f,60m,I,8.04
+indoor,f,60m,II,8.44
+indoor,f,60m,III,9.04
+indoor,f,60m,"I j.",9.1
+indoor,f,60m,"II j.",9.4
+indoor,f,60m,"III j.",9.8
+indoor,f,200m,LM,23.5
+indoor,f,200m,SM,24.54
+indoor,f,200m,SMK,26.04
+indoor,f,200m,I,27.44
+indoor,f,200m,II,29.24
+indoor,f,200m,III,31.74
+indoor,f,200m,"I j.",33
+indoor,f,200m,"II j.",34.5
+indoor,f,200m,"III j.",36.5
+indoor,f,300m,SMK,39.74
+indoor,f,300m,I,42.24
+indoor,f,300m,II,45.24
+indoor,f,300m,III,49.24
+indoor,f,300m,"I j.",52
+indoor,f,300m,"II j.",54
+indoor,f,300m,"III j.",57
+indoor,f,400m,LM,53
+indoor,f,400m,SM,55.14
+indoor,f,400m,SMK,57.64
+indoor,f,400m,I,61.14
+indoor,f,400m,II,65.14
+indoor,f,400m,III,71.14
+indoor,f,400m,"I j.",74
+indoor,f,400m,"II j.",78
+indoor,f,400m,"III j.",83
+indoor,f,600m,SMK,95.64
+indoor,f,600m,I,100.64
+indoor,f,600m,II,108.14
+indoor,f,600m,III,117.14
+indoor,f,600m,"I j.",123
+indoor,f,600m,"II j.",129
+indoor,f,600m,"III j.",138
+indoor,f,800m,LM,124
+indoor,f,800m,SM,129
+indoor,f,800m,SMK,134.64
+indoor,f,800m,I,143.64
+indoor,f,800m,II,156.64
+indoor,f,800m,III,176.64
+indoor,f,800m,"I j.",186.5
+indoor,f,800m,"II j.",199.5
+indoor,f,800m,"III j.",216.5
+indoor,f,1000m,LM,158
+indoor,f,1000m,SM,166
+indoor,f,1000m,SMK,177
+indoor,f,1000m,I,187
+indoor,f,1000m,II,202
+indoor,f,1000m,III,222
+indoor,f,1000m,"I j.",237
+indoor,f,1000m,"II j.",252
+indoor,f,1000m,"III j.",277
+indoor,f,1500m,LM,252
+indoor,f,1500m,SM,261.5
+indoor,f,1500m,SMK,277
+indoor,f,1500m,I,292
+indoor,f,1500m,II,317
+indoor,f,1500m,III,347
+indoor,f,1500m,"I j.",367
+indoor,f,1500m,"II j.",392
+indoor,f,1500m,"III j.",432
+indoor,f,3000m,LM,540
+indoor,f,3000m,SM,565
+indoor,f,3000m,SMK,591
+indoor,f,3000m,I,633
+indoor,f,3000m,II,688
+indoor,f,3000m,III,753
+indoor,f,3000m,"I j.",798
+indoor,f,3000m,"II j.",873
+indoor,f,4x200m,SM,96
+indoor,f,4x200m,SMK,102
+indoor,f,4x200m,I,107
+indoor,f,4x200m,II,115
+indoor,f,4x200m,III,125
+indoor,f,4x200m,"I j.",131
+indoor,f,4x200m,"II j.",137
+indoor,f,4x200m,"III j.",145
+indoor,f,4x400m,LM,200
+indoor,f,4x400m,SM,220
+indoor,f,4x400m,SMK,230
+indoor,f,4x400m,I,244
+indoor,f,4x400m,II,260
+indoor,f,4x400m,III,284
+indoor,f,4x400m,"I j.",296
+indoor,f,4x400m,"II j.",312
+indoor,f,60mh_83.8,LM,8.1
+indoor,f,60mh_83.8,SM,8.54
+indoor,f,60mh_83.8,SMK,8.94
+indoor,f,60mh_83.8,I,9.54
+indoor,f,60mh_83.8,II,10.34
+indoor,f,60mh_83.8,III,11.34
+indoor,f,60mh_76.2,SMK,9.04
+indoor,f,60mh_76.2,I,9.34
+indoor,f,60mh_76.2,II,9.74
+indoor,f,60mh_76.2,III,10.64
+indoor,f,60mh_76.2,"I j.",11.2
+indoor,f,60mh_76.2,"II j.",12.5
+indoor,f,60mh_76.2,"III j.",13
+indoor,f,1500mSt,I,313
+indoor,f,1500mSt,II,331
+indoor,f,1500mSt,III,347
+indoor,f,1500mSt,"I j.",370
+indoor,f,1500mSt,"II j.",390
+indoor,f,2000mSt,SM,378
+indoor,f,2000mSt,SMK,400
+indoor,f,2000mSt,I,420
+indoor,f,2000mSt,II,440
+indoor,f,2000mSt,III,455
+indoor,f,2000mSt,"I j.",470
+indoor,f,2000mSt,"II j.",500
+indoor,f,3000mSt,SM,610
+indoor,f,3000mSt,SMK,640
+indoor,f,3000mSt,I,680
+indoor,f,3000mSt,II,735
+indoor,f,3000mSt,III,790
+indoor,f,1500mSt_76.2,I,313
+indoor,f,1500mSt_76.2,II,331
+indoor,f,1500mSt_76.2,III,347
+indoor,f,1500mSt_76.2,"I j.",370
+indoor,f,1500mSt_76.2,"II j.",390
+indoor,f,2000mSt_76.2,SM,378
+indoor,f,2000mSt_76.2,SMK,400
+indoor,f,2000mSt_76.2,I,420
+indoor,f,2000mSt_76.2,II,440
+indoor,f,2000mSt_76.2,III,455
+indoor,f,2000mSt_76.2,"I j.",470
+indoor,f,2000mSt_76.2,"II j.",500
+indoor,f,3000mSt_76.2,SM,610
+indoor,f,3000mSt_76.2,SMK,640
+indoor,f,3000mSt_76.2,I,680
+indoor,f,3000mSt_76.2,II,735
+indoor,f,3000mSt_76.2,III,790
+road,m,5km,SMK,900
+road,m,5km,I,930
+road,m,5km,II,975
+road,m,5km,III,1050
+road,m,5km,"I j.",1110
+road,m,5km,"II j.",1170
+road,m,10km,LM,1700
+road,m,10km,SM,1770
+road,m,10km,SMK,1860
+road,m,10km,I,1950
+road,m,10km,II,2040
+road,m,10km,III,2220
+road,m,15km,SMK,2820
+road,m,15km,I,2940
+road,m,15km,II,3090
+road,m,15km,III,3360
+road,m,half_marathon,LM,3750
+road,m,half_marathon,SM,3930
+road,m,half_marathon,SMK,4080
+road,m,half_marathon,I,4320
+road,m,half_marathon,II,4560
+road,m,half_marathon,III,4980
+road,m,marathon,LM,8040
+road,m,marathon,SM,8520
+road,m,marathon,SMK,8880
+road,m,marathon,I,9420
+road,m,marathon,II,10800
+road,m,marathon,III,13200
+road,m,50km,LM,11100
+road,m,50km,SM,11700
+road,m,50km,SMK,12600
+road,m,50km,I,13800
+road,m,50km,II,15000
+road,m,50km,III,16200
+road,m,100km,LM,25200
+road,m,100km,SM,27000
+road,m,100km,SMK,28800
+road,m,100km,I,32400
+road,m,100km,II,36000
+road,m,100km,III,43200
+road,m,24h,LM,250
+road,m,24h,SM,240
+road,m,24h,SMK,220
+road,m,24h,I,200
+road,m,24h,II,180
+road,m,24h,III,160
+road,m,1kmW,I,245
+road,m,1kmW,II,275
+road,m,1kmW,III,285
+road,m,1kmW,"I j.",300
+road,m,1kmW,"II j.",315
+road,m,1kmW,"III j.",340
+road,m,2kmW,I,510
+road,m,2kmW,II,560
+road,m,2kmW,III,600
+road,m,2kmW,"I j.",650
+road,m,2kmW,"II j.",710
+road,m,2kmW,"III j.",750
+road,m,3kmW,LM,690
+road,m,3kmW,SM,735
+road,m,3kmW,SMK,765
+road,m,3kmW,I,810
+road,m,3kmW,II,870
+road,m,3kmW,III,960
+road,m,3kmW,"I j.",1020
+road,m,3kmW,"II j.",1080
+road,m,3kmW,"III j.",1140
+road,m,5kmW,LM,1200
+road,m,5kmW,SM,1260
+road,m,5kmW,SMK,1320
+road,m,5kmW,I,1380
+road,m,5kmW,II,1500
+road,m,5kmW,III,1650
+road,m,5kmW,"I j.",1800
+road,m,5kmW,"II j.",1890
+road,m,5kmW,"III j.",1980
+road,m,10000mW,LM,2460
+road,m,10000mW,SM,2580
+road,m,10000mW,SMK,2730
+road,m,10000mW,I,2850
+road,m,10000mW,II,3150
+road,m,10000mW,III,3450
+road,m,10000mW,"I j.",3660
+road,m,10000mW,"II j.",3900
+road,m,10kmW,LM,2460
+road,m,10kmW,SM,2580
+road,m,10kmW,SMK,2730
+road,m,10kmW,I,2850
+road,m,10kmW,II,3150
+road,m,10kmW,III,3450
+road,m,10kmW,"I j.",3660
+road,m,10kmW,"II j.",3900
+road,m,20000mW,LM,5010
+road,m,20000mW,SM,5460
+road,m,20000mW,SMK,5820
+road,m,20000mW,I,6240
+road,m,20000mW,II,6720
+road,m,20000mW,III,36000
+road,m,20kmW,LM,5010
+road,m,20kmW,SM,5460
+road,m,20kmW,SMK,5820
+road,m,20kmW,I,6240
+road,m,20kmW,II,6720
+road,m,20kmW,III,36000
+road,m,30kmw,LM,7620
+road,m,30kmw,SM,8400
+road,m,30kmw,SMK,9000
+road,m,30kmw,I,9900
+road,m,30kmw,II,10800
+road,m,30kmw,III,36000
+road,m,50kmw,LM,14400
+road,m,50kmw,SM,15600
+road,m,50kmw,SMK,17100
+road,m,50kmw,I,18900
+road,m,50kmw,II,36000
+road,f,5km,SMK,1035
+road,f,5km,I,1095
+road,f,5km,II,1170
+road,f,5km,III,1260
+road,f,5km,"I j.",1320
+road,f,5km,"II j.",1410
+road,f,10km,LM,1960
+road,f,10km,SM,2040
+road,f,10km,SMK,2160
+road,f,10km,I,2280
+road,f,10km,II,2430
+road,f,10km,III,2640
+road,f,15km,SMK,3300
+road,f,15km,I,3480
+road,f,15km,II,3780
+road,f,15km,III,4140
+road,f,half_marathon,LM,4410
+road,f,half_marathon,SM,4620
+road,f,half_marathon,SMK,4860
+road,f,half_marathon,I,5160
+road,f,half_marathon,II,5520
+road,f,half_marathon,III,6000
+road,f,marathon,LM,9300
+road,f,marathon,SM,10080
+road,f,marathon,SMK,10800
+road,f,marathon,I,11520
+road,f,marathon,II,12600
+road,f,marathon,III,14400
+road,f,50km,LM,13500
+road,f,50km,SM,14400
+road,f,50km,SMK,15300
+road,f,50km,I,16200
+road,f,50km,II,17100
+road,f,50km,III,18000
+road,f,100km,LM,30600
+road,f,100km,SM,32400
+road,f,100km,SMK,36000
+road,f,100km,I,39600
+road,f,100km,II,43200
+road,f,100km,III,50400
+road,f,24h,LM,220
+road,f,24h,SM,200
+road,f,24h,SMK,180
+road,f,24h,I,160
+road,f,24h,II,140
+road,f,24h,III,120
+road,f,1kmW,I,285
+road,f,1kmW,II,300
+road,f,1kmW,III,320
+road,f,1kmW,"I j.",330
+road,f,1kmW,"II j.",345
+road,f,1kmW,"III j.",360
+road,f,2kmW,SMK,560
+road,f,2kmW,I,595
+road,f,2kmW,II,630
+road,f,2kmW,III,690
+road,f,2kmW,"I j.",780
+road,f,2kmW,"II j.",815
+road,f,2kmW,"III j.",830
+road,f,3kmW,LM,780
+road,f,3kmW,SM,820
+road,f,3kmW,SMK,880
+road,f,3kmW,I,940
+road,f,3kmW,II,1000
+road,f,3kmW,III,1080
+road,f,3kmW,"I j.",1130
+road,f,3kmW,"II j.",1200
+road,f,3kmW,"III j.",1320
+road,f,5kmW,LM,1320
+road,f,5kmW,SM,1410
+road,f,5kmW,SMK,1500
+road,f,5kmW,I,1590
+road,f,5kmW,II,1710
+road,f,5kmW,III,1860
+road,f,5kmW,"I j.",1980
+road,f,5kmW,"II j.",2090
+road,f,5kmW,"III j.",2200
+road,f,10000mW,LM,2730
+road,f,10000mW,SM,2910
+road,f,10000mW,SMK,3120
+road,f,10000mW,I,3300
+road,f,10000mW,II,3540
+road,f,10000mW,III,3900
+road,f,10000mW,"I j.",4080
+road,f,10000mW,"II j.",4320
+road,f,10kmW,LM,2730
+road,f,10kmW,SM,2910
+road,f,10kmW,SMK,3120
+road,f,10kmW,I,3300
+road,f,10kmW,II,3540
+road,f,10kmW,III,3900
+road,f,10kmW,"I j.",4080
+road,f,10kmW,"II j.",4320
+road,f,20000mW,LM,5700
+road,f,20000mW,SM,6120
+road,f,20000mW,SMK,6420
+road,f,20000mW,I,6900
+road,f,20000mW,II,7500
+road,f,20000mW,III,36000
+road,f,20kmW,LM,5700
+road,f,20kmW,SM,6120
+road,f,20kmW,SMK,6420
+road,f,20kmW,I,6900
+road,f,20kmW,II,7500
+road,f,20kmW,III,36000
+trail,m,0.8km,"I j.",150
+trail,m,0.8km,"II j.",160
+trail,m,0.8km,"III j.",170
+trail,m,1km,II,165
+trail,m,1km,III,180
+trail,m,1km,"I j.",185
+trail,m,1km,"II j.",190
+trail,m,1km,"III j.",200
+trail,m,1.5km,II,265
+trail,m,1.5km,III,294
+trail,m,1.5km,"I j.",320
+trail,m,1.5km,"II j.",340
+trail,m,2km,II,365
+trail,m,2km,III,395
+trail,m,2km,"I j.",405
+trail,m,2km,"II j.",430
+trail,m,2km,"III j.",445
+trail,m,3km,SMK,508
+trail,m,3km,I,530
+trail,m,3km,II,570
+trail,m,3km,III,610
+trail,m,3km,"I j.",640
+trail,m,3km,"II j.",680
+trail,m,3km,"III j.",700
+trail,m,5km,SMK,880
+trail,m,5km,I,920
+trail,m,5km,II,980
+trail,m,5km,III,1050
+trail,m,5km,"I j.",1100
+trail,m,5km,"II j.",1140
+trail,m,5km,"III j.",1200
+trail,m,6km,SMK,1070
+trail,m,6km,I,1125
+trail,m,6km,II,1200
+trail,m,6km,III,1320
+trail,m,6km,"I j.",1500
+trail,m,8km,SMK,1460
+trail,m,8km,I,1520
+trail,m,8km,II,1620
+trail,m,8km,III,1740
+trail,m,8km,"I j.",1800
+trail,m,10km,SMK,1845
+trail,m,10km,I,1935
+trail,m,10km,II,2070
+trail,m,10km,III,2280
+trail,m,12km,SMK,2260
+trail,m,12km,I,2355
+trail,m,12km,II,2540
+trail,m,12km,III,2790
+trail,m,14km,SMK,2660
+trail,m,14km,I,2790
+trail,m,14km,II,3000
+trail,m,14km,III,3300
+trail,f,0.5km,SMK,76
+trail,f,0.5km,I,81
+trail,f,0.5km,II,87
+trail,f,0.5km,III,95
+trail,f,0.5km,"I j.",102
+trail,f,0.5km,"II j.",110
+trail,f,0.5km,"III j.",120
+trail,f,1km,SMK,173
+trail,f,1km,I,183
+trail,f,1km,II,195
+trail,f,1km,III,213
+trail,f,1km,"I j.",220
+trail,f,1km,"II j.",255
+trail,f,1km,"III j.",270
+trail,f,1.5km,SMK,277
+trail,f,1.5km,I,292
+trail,f,1.5km,II,315
+trail,f,1.5km,III,350
+trail,f,1.5km,"I j.",380
+trail,f,1.5km,"II j.",410
+trail,f,1.5km,"III j.",430
+trail,f,2km,SMK,380
+trail,f,2km,I,405
+trail,f,2km,II,435
+trail,f,2km,III,470
+trail,f,2km,"I j.",492
+trail,f,2km,"II j.",520
+trail,f,3km,SMK,590
+trail,f,3km,I,630
+trail,f,3km,II,680
+trail,f,3km,III,750
+trail,f,3km,"I j.",765
+trail,f,3km,"II j.",810
+trail,f,4km,SMK,810
+trail,f,4km,I,865
+trail,f,4km,II,930
+trail,f,4km,III,1010
+trail,f,4km,"I j.",1040
+trail,f,4km,"II j.",1100
+trail,f,5km,SMK,1020
+trail,f,5km,I,1090
+trail,f,5km,II,1170
+trail,f,5km,III,1310
+trail,f,5km,"I j.",1410
+trail,f,6km,SMK,1260
+trail,f,6km,I,1340
+trail,f,6km,II,1440
+trail,f,6km,III,1620
