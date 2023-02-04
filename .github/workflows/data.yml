@@ -1,4 +1,4 @@
-name: data
+name: Export data
 
 on:
   workflow_dispatch:
