@@ -272,27 +272,27 @@ return [
 			/*********/
 			/* FIELD */
 			/*********/
-			'high_jump' => [
+			'high_jump' => [ // Identical to indoor
 				'resultShift' => 11.534,
 				'conversionFactor' => 32.29,
 				'pointShift' => -5000,
 			],
-			'pole_vault' => [
+			'pole_vault' => [ // Identical to indoor
 				'resultShift' => 39.39,
 				'conversionFactor' => 3.042,
 				'pointShift' => -5000,
 			],
-			'long_jump' => [
+			'long_jump' => [ // Identical to indoor
 				'resultShift' => 48.41,
 				'conversionFactor' => 1.929,
 				'pointShift' => -5000,
 			],
-			'triple_jump' => [
+			'triple_jump' => [ // Identical to indoor
 				'resultShift' => 98.63,
 				'conversionFactor' => 0.4611,
 				'pointShift' => -5000,
 			],
-			'shot_put' => [
+			'shot_put' => [ // Identical to indoor
 				'resultShift' => 687.7,
 				'conversionFactor' => 0.042172,
 				'pointShift' => -20000,
@@ -583,27 +583,27 @@ return [
 			/*********/
 			/* FIELD */
 			/*********/
-			'high_jump' => [
+			'high_jump' => [ // Identical to indoor
 				'resultShift' => 10.574,
 				'conversionFactor' => 39.34,
 				'pointShift' => -5000,
 			],
-			'pole_vault' => [
+			'pole_vault' => [ // Identical to indoor
 				'resultShift' => 34.83,
 				'conversionFactor' => 3.953,
 				'pointShift' => -5000,
 			],
-			'long_jump' => [
+			'long_jump' => [ // Identical to indoor
 				'resultShift' => 49.24,
 				'conversionFactor' => 1.966,
 				'pointShift' => -5000,
 			],
-			'triple_jump' => [
+			'triple_jump' => [ // Identical to indoor
 				'resultShift' => 105.53,
 				'conversionFactor' => 0.4282,
 				'pointShift' => -5000,
 			],
-			'shot_put' => [
+			'shot_put' => [ // Identical to indoor
 				'resultShift' => 657.53,
 				'conversionFactor' => 0.0462,
 				'pointShift' => -20000,
@@ -770,27 +770,27 @@ return [
 			/*********/
 			/* FIELD */
 			/*********/
-			'high_jump' => [
+			'high_jump' => [ // Identical to outdoor
 				'resultShift' => 11.534,
 				'conversionFactor' => 32.29,
 				'pointShift' => -5000,
 			],
-			'pole_vault' => [
+			'pole_vault' => [ // Identical to outdoor
 				'resultShift' => 39.39,
 				'conversionFactor' => 3.042,
 				'pointShift' => -5000,
 			],
-			'long_jump' => [
+			'long_jump' => [ // Identical to outdoor
 				'resultShift' => 48.41,
 				'conversionFactor' => 1.929,
 				'pointShift' => -5000,
 			],
-			'triple_jump' => [
+			'triple_jump' => [ // Identical to outdoor
 				'resultShift' => 98.63,
 				'conversionFactor' => 0.4611,
 				'pointShift' => -5000,
 			],
-			'shot_put' => [
+			'shot_put' => [ // Identical to outdoor
 				'resultShift' => 687.7,
 				'conversionFactor' => 0.042172,
 				'pointShift' => -20000,
@@ -940,27 +940,27 @@ return [
 			/*********/
 			/* FIELD */
 			/*********/
-			'high_jump' => [
+			'high_jump' => [ // Identical to outdoor
 				'resultShift' => 10.574,
 				'conversionFactor' => 39.34,
 				'pointShift' => -5000,
 			],
-			'pole_vault' => [
+			'pole_vault' => [ // Identical to outdoor
 				'resultShift' => 34.83,
 				'conversionFactor' => 3.953,
 				'pointShift' => -5000,
 			],
-			'long_jump' => [
+			'long_jump' => [ // Identical to outdoor
 				'resultShift' => 49.24,
 				'conversionFactor' => 1.966,
 				'pointShift' => -5000,
 			],
-			'triple_jump' => [
+			'triple_jump' => [ // Identical to outdoor
 				'resultShift' => 105.53,
 				'conversionFactor' => 0.4282,
 				'pointShift' => -5000,
 			],
-			'shot_put' => [
+			'shot_put' => [ // Identical to outdoor
 				'resultShift' => 657.53,
 				'conversionFactor' => 0.0462,
 				'pointShift' => -20000,
