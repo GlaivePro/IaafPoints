@@ -28,8 +28,20 @@ jobs:
       - name: Prepare autoload
         run: composer dump-autoload
 
-      - name: Run JSON generator
+      - name: Generate JSON exports
         run: php bin/prepare_json.php
+
+      - name: Generate WA CSV exports
+        run: php bin/prepare_wa_csv.php
+
+      - name: Generate Combined CSV exports
+        run: php bin/prepare_combined_csv.php
+
+      - name: Generate Classifier CSV exports
+        run: php bin/prepare_classifier_csv.php
+
+      - name: Generate Youthguard CSV exports
+        run: php bin/prepare_youthguard_csv.php
 
       - name: Commit coef exports
         uses: stefanzweifel/git-auto-commit-action@v4
