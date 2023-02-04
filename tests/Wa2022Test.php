@@ -193,6 +193,67 @@ class Wa2022Test extends TestCase
 		]);
 	}
 
+	/**
+	 * @dataProvider indoorMenData
+	 */
+	public function testIndoorMenPoints(string $discipline, int|float $performance): void
+	{
+		$this->calculator->setOptions(['venueType' => 'indoor', 'gender' => 'm', 'discipline' => $discipline]);
+
+		$correctScore = 842;
+
+		// No "842" in some tables
+		if (in_array($discipline, ['55m', '60mh', 'pole_vault', 'long_jump']))
+			$correctScore = 843;
+
+		if (in_array($discipline, ['50mh', '55mh', 'high_jump']))
+			$correctScore = 844;
+
+		if (in_array($discipline, ['50m', '60m']))
+			$correctScore = 845;
+
+		$this->assertEquals(
+			$correctScore,
+			$this->calculator->getPoints($performance)
+		);
+	}
+
+	public function indoorMenData(): array
+	{
+		return $this->provide([
+			'50m' => 6.23,
+			'55m' => 6.73,
+			'60m' => 7.19,
+			'50mh' => 7.38,
+			'55mh' => 8.05,
+			'60mh' => 8.66,
+			'200m' => 23.07,
+			'300m' => 36.38,
+			'400m' => 51.30,
+			'500m' => 67.39,
+			'4x200m' => 92.05,
+			'4x400m' => 208.77,
+			'600m' => 84.53,
+			'800m' => 118.68,
+			'1000m' => 154.02,
+			'1500m' => 244.41,
+			'1mile' => 263.94,
+			'2000m' => 334.98,
+			'3000m' => 521.91,
+			'2miles' => 565.26,
+			'5000m' => 901.16,
+			'3000mW' => 805.72,
+			'5000mW' => 1357.24,
+			'10000mW' => 2828.70,
+			'high_jump' => 1.92,
+			'pole_vault' => 4.44,
+			'long_jump' => 6.63,
+			'triple_jump' => 13.93,
+			'shot_put' => 15.31,
+			'heptathlon' => 4570,
+		]);
+	}
+
 	protected function provide(array $data): array
 	{
 		array_walk(
