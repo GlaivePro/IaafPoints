@@ -21,10 +21,9 @@ foreach ($files->index() as $name => $input) {
 	]);
 
 	$data = include $input;
-	foreach ($genders as $gender => $disciplines)
+	foreach ($data as $gender => $disciplines)
 		foreach ($disciplines as $discipline => $coefs)
 			fputcsv($output, [
-				$venueType,
 				$gender,
 				$discipline,
 				$coefs['resultShift'],
