@@ -4,11 +4,11 @@ require_once __DIR__.'/../vendor/autoload.php';
 
 use GlaivePro\IaafPoints\Services\Files;
 
-$dir = __DIR__.'/../data/csv/combined/';
+$dir = __DIR__.'/../data/csv/youthguard/';
 if (!is_dir($dir))
 	mkdir($dir, recursive: true);
 
-$files = new Files('combined');
+$files = new Files('youthguard');
 foreach ($files->index() as $name => $input) {
 	$output = fopen($dir.$name.'.csv', 'w');
 
