@@ -17,7 +17,7 @@ Let's consider 100m outdoor men as an example. The reference time for this event
 is 17 seconds in the 2017 edition.
 
 Suppose John ran the distance in 11.78 seconds. That is 5.22 seconds better than
-the reference time. John's result is equivalent to 24.63 * 5.22^2 = 952 points
+the reference time. John's result is equivalent to 24.63 * 5.22^2 = 671 points
 (we round the decimals down to the nearest integer). The 24.63 is a coefficient
 specific to this event.
 
