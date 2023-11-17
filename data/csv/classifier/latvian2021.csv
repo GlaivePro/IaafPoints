@@ -608,6 +608,20 @@ outdoor,m,3000mSt_91.4,SMK,560
 outdoor,m,3000mSt_91.4,I,590
 outdoor,m,3000mSt_91.4,II,630
 outdoor,m,3000mSt_91.4,III,685
+outdoor,m,10000mW,LM,2460
+outdoor,m,10000mW,SM,2580
+outdoor,m,10000mW,SMK,2730
+outdoor,m,10000mW,I,2850
+outdoor,m,10000mW,II,3150
+outdoor,m,10000mW,III,3450
+outdoor,m,10000mW,"I j.",3660
+outdoor,m,10000mW,"II j.",3900
+outdoor,m,20000mW,LM,5010
+outdoor,m,20000mW,SM,5460
+outdoor,m,20000mW,SMK,5820
+outdoor,m,20000mW,I,6240
+outdoor,m,20000mW,II,6720
+outdoor,m,20000mW,III,36000
 outdoor,f,30m,III,5.14
 outdoor,f,30m,"I j.",5
 outdoor,f,30m,"II j.",5.2
@@ -823,6 +837,20 @@ outdoor,f,3000mSt_76.2,SMK,660
 outdoor,f,3000mSt_76.2,I,690
 outdoor,f,3000mSt_76.2,II,730
 outdoor,f,3000mSt_76.2,III,800
+outdoor,f,10000mW,LM,2730
+outdoor,f,10000mW,SM,2910
+outdoor,f,10000mW,SMK,3120
+outdoor,f,10000mW,I,3300
+outdoor,f,10000mW,II,3540
+outdoor,f,10000mW,III,3900
+outdoor,f,10000mW,"I j.",4080
+outdoor,f,10000mW,"II j.",4320
+outdoor,f,20000mW,LM,5700
+outdoor,f,20000mW,SM,6120
+outdoor,f,20000mW,SMK,6420
+outdoor,f,20000mW,I,6900
+outdoor,f,20000mW,II,7500
+outdoor,f,20000mW,III,36000
 indoor,m,30m,III,4.54
 indoor,m,30m,"I j.",4.5
 indoor,m,30m,"II j.",4.7
@@ -1194,14 +1222,6 @@ road,m,5kmW,III,1650
 road,m,5kmW,"I j.",1800
 road,m,5kmW,"II j.",1890
 road,m,5kmW,"III j.",1980
-road,m,10000mW,LM,2460
-road,m,10000mW,SM,2580
-road,m,10000mW,SMK,2730
-road,m,10000mW,I,2850
-road,m,10000mW,II,3150
-road,m,10000mW,III,3450
-road,m,10000mW,"I j.",3660
-road,m,10000mW,"II j.",3900
 road,m,10kmW,LM,2460
 road,m,10kmW,SM,2580
 road,m,10kmW,SMK,2730
@@ -1210,12 +1230,6 @@ road,m,10kmW,II,3150
 road,m,10kmW,III,3450
 road,m,10kmW,"I j.",3660
 road,m,10kmW,"II j.",3900
-road,m,20000mW,LM,5010
-road,m,20000mW,SM,5460
-road,m,20000mW,SMK,5820
-road,m,20000mW,I,6240
-road,m,20000mW,II,6720
-road,m,20000mW,III,36000
 road,m,20kmW,LM,5010
 road,m,20kmW,SM,5460
 road,m,20kmW,SMK,5820
@@ -1310,14 +1324,6 @@ road,f,5kmW,III,1860
 road,f,5kmW,"I j.",1980
 road,f,5kmW,"II j.",2090
 road,f,5kmW,"III j.",2200
-road,f,10000mW,LM,2730
-road,f,10000mW,SM,2910
-road,f,10000mW,SMK,3120
-road,f,10000mW,I,3300
-road,f,10000mW,II,3540
-road,f,10000mW,III,3900
-road,f,10000mW,"I j.",4080
-road,f,10000mW,"II j.",4320
 road,f,10kmW,LM,2730
 road,f,10kmW,SM,2910
 road,f,10kmW,SMK,3120
@@ -1326,12 +1332,6 @@ road,f,10kmW,II,3540
 road,f,10kmW,III,3900
 road,f,10kmW,"I j.",4080
 road,f,10kmW,"II j.",4320
-road,f,20000mW,LM,5700
-road,f,20000mW,SM,6120
-road,f,20000mW,SMK,6420
-road,f,20000mW,I,6900
-road,f,20000mW,II,7500
-road,f,20000mW,III,36000
 road,f,20kmW,LM,5700
 road,f,20kmW,SM,6120
 road,f,20kmW,SMK,6420
