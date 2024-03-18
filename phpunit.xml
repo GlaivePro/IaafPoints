@@ -15,7 +15,6 @@
 	<coverage>
 		<include>
 			<directory>src</directory>
-			<directory>resources</directory>
 		</include>
 	</coverage>
 </phpunit>
