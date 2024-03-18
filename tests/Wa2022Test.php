@@ -42,7 +42,7 @@ class Wa2022Test extends TestCase
 
 	public static function outdoorMenData(): array
 	{
-		return $this->provide([
+		return static::provide([
 			'100m' => 11.15,
 			'200m' => 22.62,
 			'300m' => 35.74,
@@ -132,7 +132,7 @@ class Wa2022Test extends TestCase
 
 	public static function outdoorWomenData(): array
 	{
-		return $this->provide([
+		return static::provide([
 			'100m' => 12.78,
 			'200m' => 26.12,
 			'300m' => 42.31,
@@ -220,7 +220,7 @@ class Wa2022Test extends TestCase
 
 	public static function indoorMenData(): array
 	{
-		return $this->provide([
+		return static::provide([
 			'50m' => 6.23,
 			'55m' => 6.73,
 			'60m' => 7.19,
