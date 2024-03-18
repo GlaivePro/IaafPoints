@@ -16,6 +16,7 @@ This package is used for the stats system of [Latvian Athletics Association](htt
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Contributing](#contributing)
 - [Changelog](#changelog)
 - [License](#license)
 
@@ -53,6 +54,14 @@ $points = $calculator->evaluate(21.61);
 ```
 
 See [docs](docs) for more details.
+
+## Contributing
+
+> [!IMPORTANT] 
+> Do not edit anything in `data/`, edit it in `resources/`. The files in `data/`
+> are auto-generated from files in `resources/`.
+
+More [here](CONTRIBUTING.md).
 
 ## Changelog
 

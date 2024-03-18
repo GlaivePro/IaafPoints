@@ -26,6 +26,11 @@ don't have xdebug, you can run the tests directly.
 vendor/bin/phpunit
 ```
 
+## Adding/editing data
+
+The contents in `data/` is generated from `resources/` via scripts in `bin/`.
+Only edit `resources/`, not data.
+
 ## TODO
 
 Any improvements will be seriously considered for merging into the package.
