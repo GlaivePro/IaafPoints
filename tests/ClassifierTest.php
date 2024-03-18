@@ -44,6 +44,7 @@ class ClassifierTest extends TestCase
 		$editions = $this->classifier->getSupportedEditionKeys();
 
 		$this->assertContains('latvian2018', $editions);
+		$this->assertContains('latvian2024', $editions);
 	}
 
 	public function testListsDisciplines()
