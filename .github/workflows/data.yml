@@ -44,7 +44,7 @@ jobs:
         run: php bin/prepare_youthguard_csv.php
 
       - name: Commit coef exports
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Update coef exports
           file_pattern: data/
