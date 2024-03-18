@@ -40,7 +40,7 @@ class Wa2022Test extends TestCase
 		);
 	}
 
-	public function outdoorMenData(): array
+	public static function outdoorMenData(): array
 	{
 		return $this->provide([
 			'100m' => 11.15,
@@ -130,7 +130,7 @@ class Wa2022Test extends TestCase
 		);
 	}
 
-	public function outdoorWomenData(): array
+	public static function outdoorWomenData(): array
 	{
 		return $this->provide([
 			'100m' => 12.78,
@@ -218,7 +218,7 @@ class Wa2022Test extends TestCase
 		);
 	}
 
-	public function indoorMenData(): array
+	public static function indoorMenData(): array
 	{
 		return $this->provide([
 			'50m' => 6.23,
@@ -279,9 +279,9 @@ class Wa2022Test extends TestCase
 		);
 	}
 
-	public function indoorWomenData(): array
+	public static function indoorWomenData(): array
 	{
-		return $this->provide([
+		return static::provide([
 			'50m' => 7.05,
 			'55m' => 7.63,
 			'60m' => 8.18,
@@ -315,7 +315,7 @@ class Wa2022Test extends TestCase
 		]);
 	}
 
-	protected function provide(array $data): array
+	protected static function provide(array $data): array
 	{
 		array_walk(
 			$data,
