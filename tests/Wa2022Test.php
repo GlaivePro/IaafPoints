@@ -1,6 +1,7 @@
 <?php
 
 use GlaivePro\IaafPoints\IaafCalculator;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -20,6 +21,7 @@ class Wa2022Test extends TestCase
 	/**
 	 * @dataProvider outdoorMenData
 	 */
+	#[DataProvider('outdoorMenData')]
 	public function testOutdoorMenPoints(string $discipline, int|float $performance): void
 	{
 		$this->calculator->setOptions(['venueType' => 'outdoor', 'gender' => 'm', 'discipline' => $discipline]);
@@ -106,6 +108,7 @@ class Wa2022Test extends TestCase
 	/**
 	 * @dataProvider outdoorWomenData
 	 */
+	#[DataProvider('outdoorWomenData')]
 	public function testOutdoorWomenPoints(string $discipline, int|float $performance): void
 	{
 		$this->calculator->setOptions(['venueType' => 'outdoor', 'gender' => 'f', 'discipline' => $discipline]);
@@ -196,6 +199,7 @@ class Wa2022Test extends TestCase
 	/**
 	 * @dataProvider indoorMenData
 	 */
+	#[DataProvider('indoorMenData')]
 	public function testIndoorMenPoints(string $discipline, int|float $performance): void
 	{
 		$this->calculator->setOptions(['venueType' => 'indoor', 'gender' => 'm', 'discipline' => $discipline]);
@@ -257,6 +261,7 @@ class Wa2022Test extends TestCase
 	/**
 	 * @dataProvider indoorWomenData
 	 */
+	#[DataProvider('indoorWomenData')]
 	public function testIndoorWomenPoints(string $discipline, int|float $performance): void
 	{
 		$this->calculator->setOptions(['venueType' => 'indoor', 'gender' => 'f', 'discipline' => $discipline]);
