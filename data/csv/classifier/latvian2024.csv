@@ -369,6 +369,15 @@ field,f,pentathlon_u16,III,1900
 field,f,pentathlon_u16,"I j.",1700
 field,f,pentathlon_u16,"II j.",1400
 field,f,pentathlon_u16,"III j.",1200
+outdoor,mixed,4x400m,LM,195
+outdoor,mixed,4x400m,SM,203
+outdoor,mixed,4x400m,SMK,212
+outdoor,mixed,4x400m,I,222
+outdoor,mixed,4x400m,II,236
+outdoor,mixed,4x400m,III,256
+outdoor,mixed,4x400m,"I j.",266
+outdoor,mixed,4x400m,"II j.",278
+outdoor,mixed,4x400m,"III j.",292
 outdoor,m,30m,III,4.54
 outdoor,m,30m,"I j.",4.5
 outdoor,m,30m,"II j.",4.7
@@ -875,6 +884,15 @@ outdoor,f,20000mW,SMK,6420
 outdoor,f,20000mW,I,6900
 outdoor,f,20000mW,II,7500
 outdoor,f,20000mW,III,36000
+indoor,mixed,4x200m,M,87.6
+indoor,mixed,4x200m,SM,91
+indoor,mixed,4x200m,SMK,95.5
+indoor,mixed,4x200m,I,99.5
+indoor,mixed,4x200m,II,106.5
+indoor,mixed,4x200m,III,115
+indoor,mixed,4x200m,"I j.",119.5
+indoor,mixed,4x200m,"II j.",125
+indoor,mixed,4x200m,"III j.",132.5
 indoor,m,30m,III,4.54
 indoor,m,30m,"I j.",4.5
 indoor,m,30m,"II j.",4.7
