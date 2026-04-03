@@ -42,9 +42,7 @@ class YouthguardCalculator extends Support\Calculator
 		$conversionFactor = $constants['conversionFactor'];
 		$exponent = $constants['exponent'];
 
-		$shiftedResult = $result - $resultShift;
-		if ($resultShift < 0)
-			$shiftedResult = -($result + $resultShift);
+		$shiftedResult = $result + $resultShift;
 
 		if ($shiftedResult < 0)
 			return 0;
