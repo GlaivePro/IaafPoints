@@ -90,6 +90,11 @@ class YouthguardCalculatorTest extends TestCase
 		$points = $this->calculator->evaluate($result);
 		$this->assertNull($points);
 
+		// Unknown discipline
+		$this->calculator->setOptions(['edition' => '2018', 'gender' => 'm', 'discipline' => 'unknown']);
+		$points = $this->calculator->evaluate($result);
+		$this->assertNull($points);
+
 		// Fine cases
 		$this->calculator->setOptions(['edition' => '2018', 'gender' => 'm', 'discipline' => '60m']);
 		$points = $this->calculator->evaluate($result);
