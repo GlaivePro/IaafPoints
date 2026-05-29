@@ -32,6 +32,9 @@ class IaafCalculator extends Support\Calculator
 
 		$discipline = $this->options['discipline'];
 
+		if (!$discipline)
+			return;
+
 		$constants = $this->constants()[$discipline] ?? null;
 
 		if (!$constants)

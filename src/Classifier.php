@@ -28,6 +28,9 @@ class Classifier extends Support\Calculator
 
 		$discipline = $this->options['discipline'];
 
+		if (!$discipline)
+			return;
+
 		$table = $this->constants()[$discipline] ?? null;
 
 		if (!$table)

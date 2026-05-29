@@ -30,7 +30,7 @@ class YouthguardCalculator extends Support\Calculator
 	 */
 	protected function calculatePoints($result, $discipline)
 	{
-		if (!$result)
+		if (!$result || !$discipline)
 			return null;
 
 		$constants = $this->constants()[$discipline] ?? null;

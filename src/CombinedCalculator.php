@@ -30,7 +30,7 @@ class CombinedCalculator extends Support\Calculator
 	 */
 	protected function calculatePoints($result, $discipline)
 	{
-		if (!$result)
+		if (!$result || !$discipline)
 			return null;
 
 		if (!$this->options['electronicMeasurement'])  //hand time corrections
@@ -86,7 +86,7 @@ class CombinedCalculator extends Support\Calculator
 	}
 
 	/** Calculate points for many results keyed by discipline. */
-	public function evaluateMany(array $results = null)
+	public function evaluateMany(?array $results = null)
 	{
 		if (!$results)
 			return null;
