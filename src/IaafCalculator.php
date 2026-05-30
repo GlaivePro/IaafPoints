@@ -66,8 +66,12 @@ class IaafCalculator extends Support\Calculator
 			if (in_array($this->options['discipline'], ['50m', '55m', '60m', '100m', '200m', '50mh', '55mh', '60mh', '100mh', '110mh']))
 				$result += 0.24;
 
-			//For sprints & hurdles up to 500m
-			if (in_array($this->options['discipline'], ['300m', '400m', '500m', '400mh']))
+			//For sprints & hurdles up to 400m
+			if (in_array($this->options['discipline'], ['300m', '400m', '300mh', '400mh']))
+				$result += 0.14;
+
+			// The correction for 500m has been removed in the 2025 edition.
+			if (in_array($this->options['edition'], ['2017', '2022']) && $this->options['discipline'] === '500m')
 				$result += 0.14;
 		}
 
