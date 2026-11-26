@@ -25,16 +25,8 @@ jobs:
         with:
           php-version: ${{matrix.php}}
 
-      #- name: Cache Composer dependencies
-      #  uses: actions/cache@v2
-      #  with:
-      #    path: /tmp/composer-cache
-      #    key: composer-${{ hashFiles('**/composer.json') }}
-
       - name: Install dependencies
-        uses: php-actions/composer@v6
-        with:
-          php_version: ${{matrix.php}}
+        run: composer install
 
       - name: Run tests
         run: composer test
